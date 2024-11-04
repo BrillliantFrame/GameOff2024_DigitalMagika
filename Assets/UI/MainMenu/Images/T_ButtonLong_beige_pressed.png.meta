@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c84af38ad21ebf54da98f67cf0c1d9e7
+guid: 494b728174b832642be4132b74ca50e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9160950461743030923
-    second: buttonLong_beige_0
+      213: 8785045919915647170
+    second: buttonLong_beige_pressed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buttonLong_beige_0
+      name: buttonLong_beige_pressed_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 190
-        height: 49
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b82e42d78eb322f70800000000000000
-      internalID: 9160950461743030923
+      spriteID: 2c0211018b0cae970800000000000000
+      internalID: 8785045919915647170
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      buttonLong_beige_0: 9160950461743030923
+      buttonLong_beige_pressed_0: 8785045919915647170
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

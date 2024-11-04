@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ebfb81dc9740c2e478c7e67aa957fac9
+guid: 48a888df93de4b74ab45a06edd68e8d8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6701641798444830039
-    second: buttonLong_blue_0
+      213: 7237467832292902019
+    second: buttonLong_brown_pressed_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buttonLong_blue_0
+      name: buttonLong_brown_pressed_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 190
-        height: 49
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a239c78a4cfef2a0800000000000000
-      internalID: -6701641798444830039
+      spriteID: 3848221d5a6a07460800000000000000
+      internalID: 7237467832292902019
       vertices: []
       indices: 
       edges: []
@@ -161,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      buttonLong_blue_0: -6701641798444830039
+      buttonLong_brown_pressed_0: 7237467832292902019
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

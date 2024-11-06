@@ -1,0 +1,47 @@
+Event	ID	Name			Wwise Object Path	Notes
+	452547817	Stop_All			\Default Work Unit\Stop_All	
+	582686005	Enemy_Walk			\Enemies\Forest_Skeleton\Enemy_Walk	
+	979951458	Player_DoubleJump			\Player\General\Player_DoubleJump	
+	1010055213	Enemy_Hit			\Enemies\Forest_Skeleton\Enemy_Hit	
+	1068092414	Player_Hurt			\Player\General\Player_Hurt	
+	1205999388	Enemy_Death			\Enemies\Forest_Skeleton\Enemy_Death	
+	1219048826	UI_Start			\UI\Menu\UI_Start	
+	1305133589	Player_Jump			\Player\General\Player_Jump	
+	1400460010	Player_AbilityReady			\Player\General\Player_AbilityReady	
+	1481642983	Ambience_Forest			\Ambience\Ambience_Forest	
+	2040126240	Enemy_Swing			\Enemies\Forest_Skeleton\Enemy_Swing	
+	2118900976	UI_Hover			\UI\Generic\UI_Hover	
+	2147561130	Player_Walk			\Player\General\Player_Walk	
+	2249769530	UI_Click			\UI\Generic\UI_Click	
+	2367336934	Pickup_interactible			\Player\General\Pickup_interactible	
+	2391028579	UI_Resume			\UI\Menu\UI_Resume	
+	2394582229	Player_Dash			\Player\General\Player_Dash	
+	2445914848	Player_Regen			\Player\General\Player_Regen	
+	2792155208	UI_Pause			\UI\Menu\UI_Pause	
+	2814314654	Trap_Hit			\Enemies\Traps\Trap_Hit	
+	3083087645	Player_Death			\Player\General\Player_Death	
+	4185496761	Enemy_Hurt			\Enemies\Forest_Skeleton\Enemy_Hurt	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	70717869	Player_Jump-004	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Jump\Player_Jump-004_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\Player_Jump-004		43816
+	78710796	SFX_Player_Walk-010	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Walk\SFX_Player_Walk-010_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Walk\SFX_Player_Walk-010		26800
+	112216464	Player_Jump-005	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Jump\Player_Jump-005_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\Player_Jump-005		43652
+	169326442	SFX_Player_Walk-006	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Walk\SFX_Player_Walk-006_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Walk\SFX_Player_Walk-006		40568
+	179428024	SFX_Player_Walk-008	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Walk\SFX_Player_Walk-008_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Walk\SFX_Player_Walk-008		45316
+	212883841	SFX_Player_Dash-001	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Dash\SFX_Player_Dash-001_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Dash\SFX_Player_Dash-001		77744
+	329842174	Player_Jump-002	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Jump\Player_Jump-002_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\Player_Jump-002		48536
+	365014671	SFX_Player_Dash-002	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Dash\SFX_Player_Dash-002_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Dash\SFX_Player_Dash-002		81836
+	597123459	Player_DoubleJump-003	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player_DoubleJump-003_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\DoubleJump\Player_DoubleJump-003		80744
+	631974311	Player_Jump-001	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Jump\Player_Jump-001_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\Player_Jump-001		51500
+	638672726	Player_DoubleJump-001	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player_DoubleJump-001_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\DoubleJump\Player_DoubleJump-001		97244
+	663841785	SFX_Player_Dash-003	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Dash\SFX_Player_Dash-003_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Dash\SFX_Player_Dash-003		77048
+	685714306	SFX_Player_Walk-004	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Walk\SFX_Player_Walk-004_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Walk\SFX_Player_Walk-004		43020
+	747244547	Player_Jump-003	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Jump\Player_Jump-003_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Jump\Player_Jump-003		49060
+	829965618	SFX_Player_Walk-003	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Walk\SFX_Player_Walk-003_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Walk\SFX_Player_Walk-003		45916
+	843490662	SFX_Player_Walk-007	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Walk\SFX_Player_Walk-007_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Walk\SFX_Player_Walk-007		34620
+	870570205	SFX_Player_Walk-005	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Walk\SFX_Player_Walk-005_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Walk\SFX_Player_Walk-005		27284
+	872003123	SFX_Player_Walk-002	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Walk\SFX_Player_Walk-002_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Walk\SFX_Player_Walk-002		32360
+	929754404	Player_DoubleJump-002	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player_DoubleJump-002_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\DoubleJump\Player_DoubleJump-002		82168
+	986366127	SFX_Player_Walk-009	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Walk\SFX_Player_Walk-009_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Walk\SFX_Player_Walk-009		43360
+	1058385355	SFX_Player_Walk-001	C:\Users\vainu\OneDrive\Documents\GitHub\GameOff2024_DigitalMagika\GameOff2024_DigitalMagika_WwiseProject\.cache\Windows\SFX\Player\Walk\SFX_Player_Walk-001_A9E8AC66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Walk\SFX_Player_Walk-001		28832
+

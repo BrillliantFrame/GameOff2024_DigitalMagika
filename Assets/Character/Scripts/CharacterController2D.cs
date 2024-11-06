@@ -113,6 +113,7 @@ public class CharacterController2D : MonoBehaviour
             Flip();
             _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed, _jumpingPower);
             _animator.SetTrigger("Jump");
+            AkSoundEngine.PostEvent("Player_Jump", gameObject);
         }
 
         if (context.performed && !IsGrounded() && _currentState == SkillState.READY)
@@ -121,6 +122,7 @@ public class CharacterController2D : MonoBehaviour
             useSkill(0f);
             _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed, _jumpingPower);
             _animator.SetTrigger("Jump");
+            AkSoundEngine.PostEvent("Player_DoubleJump", gameObject);
         }
 
         if (context.canceled && _rigidBody.linearVelocity.y > 0f)
@@ -140,6 +142,7 @@ public class CharacterController2D : MonoBehaviour
             _rigidBody.gravityScale = 0f;
             _rigidBody.linearVelocity = new Vector2(transform.localScale.x * _dashingPower, 0f);
             useSkill(_dashDurationTime);
+            AkSoundEngine.PostEvent("Player_Dash", gameObject);
         }
     }
 

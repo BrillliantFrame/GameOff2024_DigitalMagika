@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{971CB372-59AE-4C72-8B25-5EFFB412F0B0}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{971CB372-59AE-4C72-8B25-5EFFB412F0B0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Stop_All" ID="{A30CD7B3-0266-4A97-9713-948E850DBC62}">
+					<ChildrenList>
+						<Action Name="" ID="{2769FFAA-6FB2-4E47-8FBC-61EA79ACE791}" ShortID="318180940">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="ResumeStateTransition" Type="bool" Value="False"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FC472346-4033-455D-8FDF-048B3BC7C508}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Player" ID="{FC472346-4033-455D-8FDF-048B3BC7C508}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="General" ID="{EF523465-6FF3-494E-ABB3-650129E3D146}" ShortID="200380977">
+					<ChildrenList>
+						<Event Name="Player_Walk" ID="{A08A36FD-3B38-42FC-8706-9ACAD3715BF2}">
+							<ChildrenList>
+								<Action Name="" ID="{ED3450C6-8DE4-4786-85AF-107A4DA56F1A}" ShortID="768817799">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Walk" ID="{9304B953-FB22-4C1C-B6F5-63605E6C4FDF}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Jump" ID="{F03A0509-DBF7-4F01-B3DF-50DF378C98FC}">
+							<ChildrenList>
+								<Action Name="" ID="{F1DEAC54-3393-4326-BF43-B872426405AF}" ShortID="302160886">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{4F065D09-E4C7-4B97-8DE3-234928DE5DA4}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_DoubleJump" ID="{5452BAF8-3B06-4ABC-99A0-E30CF68EABBC}">
+							<ChildrenList>
+								<Action Name="" ID="{1EDC0B6B-6EF0-421B-89B7-B60E2F3A761A}" ShortID="1015502759">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DoubleJump" ID="{AE59E6EB-D39D-4046-8440-FCFE86A0131E}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Dash" ID="{DBEF490F-D1BA-46D7-B2DC-5E89AC1FBCF3}">
+							<ChildrenList>
+								<Action Name="" ID="{5F040AD1-9057-41F4-93A9-6E8CBEBE1A3A}" ShortID="247926240">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dash" ID="{FF0A1302-CC3F-401D-B79A-1BE0FEEF17DE}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_Hurt" ID="{FCADF5FD-9F02-4F0F-B712-F2ACD3672A51}"/>
+						<Event Name="Player_Regen" ID="{7A442C94-A87D-411E-8D2B-C76D3C219ABC}"/>
+						<Event Name="Player_AbilityReady" ID="{CB44A9D2-C904-48B1-854E-67B7990B03B9}"/>
+						<Event Name="Player_Death" ID="{008DF25B-1F8E-4630-8506-FDFA2E6F56CE}"/>
+						<Event Name="Pickup_interactible" ID="{2BA04F49-60F0-491C-AA94-8E603CA9DC3F}"/>
+						<Event Name="Player_Land" ID="{66FB9937-6AB1-4256-9075-93CACE71C1BF}">
+							<ChildrenList>
+								<Action Name="" ID="{D58DA4BA-D9CC-408C-9EAF-BA2EDD5FB7AC}" ShortID="766760805">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Land" ID="{FD71B238-6115-45DB-BFEF-B78F2990FA6C}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

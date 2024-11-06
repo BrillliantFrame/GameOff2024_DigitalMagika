@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Enemies" ID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Forest_Skeleton" ID="{7C64C039-C1FE-4F66-92D5-3FB43FFFAA25}" ShortID="731444273">
+					<ChildrenList>
+						<Event Name="Enemy_Walk" ID="{61094259-7493-413A-8885-A3BD8D056529}"/>
+						<Event Name="Enemy_Swing" ID="{1A97B0D2-0A88-4B13-AC21-6250651FE7E1}"/>
+						<Event Name="Enemy_Hit" ID="{DBBEEADC-D6BF-462E-A9B9-67798A8926CE}"/>
+						<Event Name="Enemy_Hurt" ID="{A924C3DE-BCA6-4EB1-BEF9-7B31CFC6AEC4}"/>
+						<Event Name="Enemy_Death" ID="{B74A769F-D559-40EA-AF27-DEE88C8CA6B5}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Traps" ID="{D9FBCE6E-5E7E-4E73-BA47-F272D3FC3B01}" ShortID="1047777452">
+					<ChildrenList>
+						<Event Name="Trap_Hit" ID="{59663102-E293-480A-A941-1647DE1680AD}"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

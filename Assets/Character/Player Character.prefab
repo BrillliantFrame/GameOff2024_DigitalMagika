@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 187308395388673093}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.15, z: 0}
+  m_LocalPosition: {x: 0, y: 0.232, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -130,8 +130,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.017640352, y: 0.58933115}
-  m_Size: {x: 0.3044238, y: 1.1122522}
+  m_Offset: {x: 0, y: 0.58933115}
+  m_Size: {x: 0.43, y: 1.1122522}
   m_Direction: 0
 --- !u!61 &8885423994442819526
 BoxCollider2D:
@@ -196,7 +196,7 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 192
-  _movementSpeed: 4
+  _movementSpeed: 6
   _jumpingPower: 11
   _dashingPower: 100
   _animator: {fileID: 3580601843160015879}

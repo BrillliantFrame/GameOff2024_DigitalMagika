@@ -30,6 +30,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
     private float _originalGravity = 0f;
     private bool _isFacingRight = true;
     private bool _isDashing = false;
+    private bool _isGrounded = false;
 
     //Skill Cooldown
     private float _cooldownTime = 0.0f;
@@ -97,15 +98,19 @@ public class CharacterController2D : Singleton<CharacterController2D>
         if (_isDashing)
             return;
 
-        if (IsGrounded())
-        {
-            _animator.SetBool("IsGrounded", true);
+        bool isGrounded = IsGrounded();
+
+        if (isGrounded)
             _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed, _rigidBody.linearVelocity.y);
-        }
         else
-        {
-            _animator.SetBool("IsGrounded", false);
             _rigidBody.linearVelocity = new Vector2(_rigidBody.linearVelocity.x, _rigidBody.linearVelocity.y);
+
+        if (_isGrounded != isGrounded)
+        {
+            _animator.SetBool("IsGrounded", isGrounded);
+            _isGrounded = isGrounded;
+            if(_isGrounded)
+                Debug.Log("Landed");
         }
     }
 
@@ -127,7 +132,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
             Flip();
             _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed, _jumpingPower);
             _animator.SetTrigger("Jump");
-            AkSoundEngine.PostEvent("Player_Jump", gameObject);
+            //AkSoundEngine.PostEvent("Player_Jump", gameObject);
         }
 
         if (context.performed && !IsGrounded() && _currentState == SkillState.READY)
@@ -136,7 +141,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
             useSkill(0f);
             _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed, _jumpingPower);
             _animator.SetTrigger("Jump");
-            AkSoundEngine.PostEvent("Player_DoubleJump", gameObject);
+            //AkSoundEngine.PostEvent("Player_DoubleJump", gameObject);
         }
 
         if (context.canceled && _rigidBody.linearVelocity.y > 0f)
@@ -156,7 +161,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
             _rigidBody.gravityScale = 0f;
             _rigidBody.linearVelocity = new Vector2(transform.localScale.x * _dashingPower, 0f);
             useSkill(_dashDurationTime);
-            AkSoundEngine.PostEvent("Player_Dash", gameObject);
+            //AkSoundEngine.PostEvent("Player_Dash", gameObject);
         }
     }
 
@@ -209,5 +214,12 @@ public class CharacterController2D : Singleton<CharacterController2D>
     {
         _currentState = SkillState.ACTIVE;
         _activeTime = activeTime;
+    }
+
+    void OnDrawGizmos()
+    {
+        // Display the ground check radius when selected
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(_groundCheck.position, 0.2f);
     }
 }

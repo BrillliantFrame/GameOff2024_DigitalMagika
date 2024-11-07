@@ -42,12 +42,12 @@ GameObject:
   - component: {fileID: 6500653967906144678}
   - component: {fileID: 292432506622935508}
   - component: {fileID: 3167180911772909460}
-  - component: {fileID: 6174400673467781133}
+  - component: {fileID: 8885423994442819526}
   - component: {fileID: 6584733346721146590}
   - component: {fileID: 927118327772156256}
   m_Layer: 0
   m_Name: Player Character
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,17 +130,17 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0641084, y: 0.29801497}
-  m_Size: {x: 0.66901904, y: 0.45610875}
-  m_Direction: 1
---- !u!61 &6174400673467781133
+  m_Offset: {x: -0.017640352, y: 0.58933115}
+  m_Size: {x: 0.3044238, y: 1.1122522}
+  m_Direction: 0
+--- !u!61 &8885423994442819526
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991555700541841860}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -195,7 +195,7 @@ MonoBehaviour:
   _groundCheck: {fileID: 1229977184981911223}
   _groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   _movementSpeed: 4
   _jumpingPower: 11
   _dashingPower: 100

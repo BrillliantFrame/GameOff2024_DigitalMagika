@@ -5,7 +5,7 @@ public class MS_MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene(1); // Load the first level in de scene manger buildindex
+        AppCore.Instance?.StartGame();
     }
 
     public void QuitGame()

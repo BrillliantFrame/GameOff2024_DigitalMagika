@@ -1,12 +1,15 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 enum SkillState
 {
     READY, ACTIVE, COOLDOWN
 }
 
-public class CharacterController2D : MonoBehaviour
+public class CharacterController2D : Singleton<CharacterController2D>
 {
 
     [SerializeField] private Rigidbody2D _rigidBody;
@@ -33,9 +36,20 @@ public class CharacterController2D : MonoBehaviour
     private float _activeTime = 0.0f;
     private SkillState _currentState = SkillState.READY;
 
-    private void Awake()
+    //Damage handling
+    private int _playerLives = 0;
+    private Vector2 _respawnPoint = Vector2.zero; //Should be set as the door location when entering a room
+    //Damage events
+    public event Action OnPlayerHealed;
+    public event Action OnPlayerDamaged;
+    public event Action OnPlayerLivesEnded;
+
+    protected override void Awake()
     {
+        base.Awake();
         _originalGravity = _rigidBody.gravityScale;
+        _playerLives = 3;
+        _respawnPoint = transform.position; //Should be set as the door location when entering a room
     }
 
     private void Update()
@@ -53,7 +67,7 @@ public class CharacterController2D : MonoBehaviour
                     if (_isDashing)
                     {
                         _rigidBody.gravityScale = _originalGravity;
-                        _rigidBody.linearVelocity = new Vector2(0f, 0f);
+                        _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed, 0f);
                         _isDashing = false;
                     }
                     _currentState = SkillState.COOLDOWN;
@@ -144,6 +158,35 @@ public class CharacterController2D : MonoBehaviour
             useSkill(_dashDurationTime);
             AkSoundEngine.PostEvent("Player_Dash", gameObject);
         }
+    }
+
+    public void ReceiveHealing(int healAmount)
+    {
+        _playerLives += healAmount;
+        OnPlayerHealed?.Invoke();
+    }
+
+    public IEnumerator OnDamage()
+    {
+        gameObject.SetActive(false);
+        OnPlayerDamaged?.Invoke();
+        _playerLives--;
+        if (_playerLives > 0)
+        {
+            transform.position = _respawnPoint;
+            yield return new WaitForSeconds(2);
+            gameObject.SetActive(true);
+        }
+        else
+        {
+            OnPlayerLivesEnded?.Invoke();
+        }
+    }
+
+    public void TeleportCharacter(Vector2 position)
+    {
+        transform.position = position;
+        _respawnPoint = position;
     }
 
     private bool IsGrounded()

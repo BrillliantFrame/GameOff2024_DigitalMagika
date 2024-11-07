@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{2D310C76-E86B-A023-A8C3-62AC2FC239F2}">
+		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{D1D6E487-359E-CB6F-368C-CDC72AAA6687}">
 			<ShortName>DigitalMagika_Soundbank</ShortName>
 			<Path>DigitalMagika_Soundbank.bnk</Path>
 			<Media>
@@ -108,7 +108,7 @@
 				</File>
 				<File Id="1058385355" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-001.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-001_A9E8AC66.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-001_6BF03914.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -170,5 +170,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{98736EDA-69E5-4AD6-3BB0-8135EFB6307D}</FileHash>
+	<FileHash>{4C14C936-5E84-34C3-9B81-ED25BDD81F27}</FileHash>
 </SoundBanksInfo>

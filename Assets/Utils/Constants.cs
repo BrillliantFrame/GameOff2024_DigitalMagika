@@ -5,6 +5,7 @@ public enum UIScenes
 
 public enum MapScenes
 {
-    FirstRoom,
-    SecondRoom
+    //FirstRoom,
+    //SecondRoom,
+    BasicMovementTut,
 }

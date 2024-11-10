@@ -26,7 +26,26 @@ public class LifeDisplay : MonoBehaviour
 
     private void Start()
     {
+        // Subscribe to CharacterController2D events
+        if (CharacterController2D.Instance != null)
+        {
+            CharacterController2D.Instance.OnPlayerDamaged += RemoveLife;
+            CharacterController2D.Instance.OnPlayerLivesEnded += GameOver;
+            CharacterController2D.Instance.OnPlayerHealed += AddLife;
+        }
+
         UpdateHeartIcons();
+    }
+
+    private void OnDestroy()
+    {
+        // Unsubscribe to prevent memory leaks
+        if (CharacterController2D.Instance != null)
+        {
+            CharacterController2D.Instance.OnPlayerDamaged -= RemoveLife;
+            CharacterController2D.Instance.OnPlayerLivesEnded -= GameOver;
+            CharacterController2D.Instance.OnPlayerHealed -= AddLife;
+        }
     }
 
     public void SetLives(int lives)
@@ -74,14 +93,4 @@ public class LifeDisplay : MonoBehaviour
     {
         Debug.Log("Game Over! Player has no lives left.");
     }
-
-    //Debugging
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.End))
-        {
-            RemoveLife();
-        }
-    }
-
 }

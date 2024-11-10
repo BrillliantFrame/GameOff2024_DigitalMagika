@@ -26,7 +26,7 @@ public class MS_AbilityCooldownManager : MonoBehaviour
         // Debugging to test function
         if (Input.GetKeyDown(KeyCode.Home))
         {
-            TriggerCooldown();
+            TriggerCooldown(5);
         }
 
         if (isOnCooldown)
@@ -49,12 +49,12 @@ public class MS_AbilityCooldownManager : MonoBehaviour
     }
 
     // Call this method to trigger the cooldown
-    public void TriggerCooldown()
+    public void TriggerCooldown(float cooldownDuration)
     {
         if (!isOnCooldown)
         {
             isOnCooldown = true;
-            cooldownTimer = cooldownDuration;
+            cooldownTimer = cooldownDuration; // Set from CharacterController2D
 
             // Show Abilities_B and display cooldown time
             AbilitiesA.SetActive(false);
@@ -63,4 +63,5 @@ public class MS_AbilityCooldownManager : MonoBehaviour
             cooldownText_2.gameObject.SetActive(true);
         }
     }
+
 }

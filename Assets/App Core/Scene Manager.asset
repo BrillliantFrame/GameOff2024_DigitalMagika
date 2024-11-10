@@ -18,6 +18,8 @@ MonoBehaviour:
   _gameplayScenes:
   - BuildIndex: 2
     SceneName: Player
+  - BuildIndex: 6
+    SceneName: Scene_GameUI
   _mapScenes:
   - BuildIndex: 5
     Scene: 0

@@ -23,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Rooms/1.BasicMovementTut.unity
     guid: 2ee7085ba2a08dd418d70924bd051814
+  - enabled: 1
+    path: Assets/Scenes/UI/Scene_GameUI.unity
+    guid: 5d42d42ad2db4df44888b4160bf1c935
   - enabled: 0
     path: Assets/Scenes/Rooms/Room 1.unity
     guid: c403468ec09a5af439ce55398fc5add7

@@ -36,6 +36,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
     private float _cooldownTime = 0.0f;
     private float _activeTime = 0.0f;
     private SkillState _currentState = SkillState.READY;
+    public event Action<float> OnCooldownTick;
 
     //Damage handling
     private int _playerLives = 0;
@@ -84,6 +85,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
                 {
                     _currentState = SkillState.READY;
                 }
+                OnCooldownTick?.Invoke(_cooldownTime);
                 break;
         }
 

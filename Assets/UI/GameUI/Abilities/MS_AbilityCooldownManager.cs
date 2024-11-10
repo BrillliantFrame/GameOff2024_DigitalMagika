@@ -8,8 +8,6 @@ public class MS_AbilityCooldownManager : MonoBehaviour
     public TMP_Text cooldownText_1;     // UI Text to display cooldown
     public TMP_Text cooldownText_2;     // UI Text to display cooldown
 
-    public float cooldownDuration = 5f; // Example cooldown duration in seconds
-    private float cooldownTimer;
     private bool isOnCooldown;
 
     private void Start()
@@ -19,48 +17,45 @@ public class MS_AbilityCooldownManager : MonoBehaviour
         AbilitiesB.SetActive(false);
         cooldownText_1.gameObject.SetActive(false); // Hide cooldown text initially
         cooldownText_2.gameObject.SetActive(false);
+
+        if (CharacterController2D.Instance != null)
+        {
+            CharacterController2D.Instance.OnCooldownTick += UpdateCooldownDisplay;
+        }
     }
 
-    private void Update()
+    private void OnDestroy()
     {
-        // Debugging to test function
-        if (Input.GetKeyDown(KeyCode.Home))
+        if (CharacterController2D.Instance != null)
         {
-            TriggerCooldown(5);
-        }
-
-        if (isOnCooldown)
-        {
-            // Update cooldown timer
-            cooldownTimer -= Time.deltaTime;
-            cooldownText_1.text = Mathf.Ceil(cooldownTimer).ToString() + "s"; // Show remaining cooldown time
-            cooldownText_2.text = Mathf.Ceil(cooldownTimer).ToString() + "s";
-
-            // If cooldown is over, switch back to Abilities_A
-            if (cooldownTimer <= 0)
-            {
-                isOnCooldown = false;
-                AbilitiesA.SetActive(true);
-                AbilitiesB.SetActive(false);
-                cooldownText_1.gameObject.SetActive(false);
-                cooldownText_2.gameObject.SetActive(false);
-            }
+            CharacterController2D.Instance.OnCooldownTick -= UpdateCooldownDisplay;
         }
     }
 
-    // Call this method to trigger the cooldown
-    public void TriggerCooldown(float cooldownDuration)
+    private void UpdateCooldownDisplay(float remainingTime)
     {
         if (!isOnCooldown)
         {
-            isOnCooldown = true;
-            cooldownTimer = cooldownDuration; // Set from CharacterController2D
-
             // Show Abilities_B and display cooldown time
             AbilitiesA.SetActive(false);
             AbilitiesB.SetActive(true);
             cooldownText_1.gameObject.SetActive(true);
             cooldownText_2.gameObject.SetActive(true);
+            isOnCooldown = true;
+        }
+
+        // Update cooldown timer text with remaining time
+        cooldownText_1.text = Mathf.Ceil(remainingTime).ToString() + "s";
+        cooldownText_2.text = Mathf.Ceil(remainingTime).ToString() + "s";
+
+        // When cooldown reaches zero, reset to Abilities_A
+        if (remainingTime <= 0)
+        {
+            isOnCooldown = false;
+            AbilitiesA.SetActive(true);
+            AbilitiesB.SetActive(false);
+            cooldownText_1.gameObject.SetActive(false);
+            cooldownText_2.gameObject.SetActive(false);
         }
     }
 

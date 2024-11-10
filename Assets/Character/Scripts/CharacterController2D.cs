@@ -2,12 +2,6 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
-
-enum SkillState
-{
-    READY, ACTIVE, COOLDOWN
-}
 
 public class CharacterController2D : Singleton<CharacterController2D>
 {
@@ -51,7 +45,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
         base.Awake();
         _originalGravity = _rigidBody.gravityScale;
         _playerLives = 3;
-        _respawnPoint = transform.position; //Should be set as the door location when entering a room
+        _respawnPoint = _rigidBody.transform.position; //Should be set as the door location when entering a room
     }
 
     private void Update()
@@ -111,7 +105,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
         {
             _animator.SetBool("IsGrounded", isGrounded);
             _isGrounded = isGrounded;
-            if(_isGrounded)
+            if (_isGrounded)
                 Debug.Log("Landed");
         }
     }
@@ -161,7 +155,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
             _isDashing = true;
             _originalGravity = _rigidBody.gravityScale;
             _rigidBody.gravityScale = 0f;
-            _rigidBody.linearVelocity = new Vector2(transform.localScale.x * _dashingPower, 0f);
+            _rigidBody.linearVelocity = new Vector2(_rigidBody.transform.localScale.x * _dashingPower, 0f);
             useSkill(_dashDurationTime);
             //AkSoundEngine.PostEvent("Player_Dash", gameObject);
         }
@@ -173,16 +167,21 @@ public class CharacterController2D : Singleton<CharacterController2D>
         OnPlayerHealed?.Invoke();
     }
 
-    public IEnumerator OnDamage()
+    public void OnDamage()
     {
-        gameObject.SetActive(false);
+        StartCoroutine(onDamage());
+    }
+
+    public IEnumerator onDamage()
+    {
+        _rigidBody.transform.gameObject.SetActive(false);
         OnPlayerDamaged?.Invoke();
         _playerLives--;
         if (_playerLives > 0)
         {
-            transform.position = _respawnPoint;
+            _rigidBody.transform.position = _respawnPoint;
             yield return new WaitForSeconds(2);
-            gameObject.SetActive(true);
+            _rigidBody.transform.gameObject.SetActive(true);
         }
         else
         {
@@ -192,8 +191,10 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
     public void TeleportCharacter(Vector2 position)
     {
-        transform.position = position;
+        _rigidBody.transform.gameObject.SetActive(false);
+        _rigidBody.transform.position = position;
         _respawnPoint = position;
+        _rigidBody.transform.gameObject.SetActive(true);
     }
 
     private bool IsGrounded()
@@ -205,22 +206,24 @@ public class CharacterController2D : Singleton<CharacterController2D>
     {
         if (_isFacingRight && _horizontalMovement < 0f || !_isFacingRight && _horizontalMovement > 0f)
         {
-            Vector3 localScale = transform.localScale;
+            Vector3 localScale = _rigidBody.transform.localScale;
             _isFacingRight = !_isFacingRight;
             localScale.x *= -1f;
-            transform.localScale = localScale;
+            _rigidBody.transform.localScale = localScale;
         }
     }
 
     private void useSkill(float activeTime)
     {
+        if (_currentState != SkillState.READY)
+            return;
         _currentState = SkillState.ACTIVE;
         _activeTime = activeTime;
     }
 
     void OnDrawGizmos()
     {
-        // Display the ground check radius when selected
+        // Display the ground check radius
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(_groundCheck.position, 0.2f);
     }

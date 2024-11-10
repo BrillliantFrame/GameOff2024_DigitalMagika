@@ -21,7 +21,7 @@ MonoBehaviour:
   - BuildIndex: 6
     SceneName: Scene_GameUI
   _mapScenes:
-  - BuildIndex: 5
+  - BuildIndex: 7
     Scene: 0
   - BuildIndex: 6
     Scene: 1

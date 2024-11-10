@@ -6,7 +6,7 @@ public class DamagingObject : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            StartCoroutine(collision.collider.GetComponent<CharacterController2D>()?.OnDamage());
+            CharacterController2D.Instance?.OnDamage();
         }
     }
 }

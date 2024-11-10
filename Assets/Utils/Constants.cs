@@ -9,3 +9,8 @@ public enum MapScenes
     //SecondRoom,
     BasicMovementTut,
 }
+
+enum SkillState
+{
+    READY, ACTIVE, COOLDOWN
+}

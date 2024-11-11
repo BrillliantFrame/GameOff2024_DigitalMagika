@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 80e84000577147f45a508377643aaca3
+guid: 6a2972c435f56ab43bb1585a03690d70
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1143174499505215132
-    second: UILeaf_01_120x120_0
+      213: 7462107910234088466
+    second: vector-image-vine-thorns-barbed-260nw-2213938693_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UILeaf_01_120x120_0
+      name: vector-image-vine-thorns-barbed-260nw-2213938693_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 13
-        width: 108
-        height: 91
+        x: 1
+        y: 14
+        width: 387
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c961b47862f5ddf00800000000000000
-      internalID: 1143174499505215132
+      spriteID: 214a221cb9bbe8760800000000000000
+      internalID: 7462107910234088466
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      UILeaf_01_120x120_0: 1143174499505215132
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

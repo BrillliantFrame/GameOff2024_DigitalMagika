@@ -7,7 +7,7 @@ public class SpinFunction : MonoBehaviour
     public float MaxRotate = 180;
     [SerializeField]
     private float CurrentRotation = 0f;
-    private int SpinDirection = 1;
+    public int SpinDirection = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

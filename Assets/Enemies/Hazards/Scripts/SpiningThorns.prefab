@@ -47,7 +47,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpinForce: 150
   MaxRotate: 180
-  Counter: 50
   CurrentRotation: 0
 --- !u!1 &3232705474520280528
 GameObject:
@@ -61,7 +60,7 @@ GameObject:
   - component: {fileID: 5114650144832669015}
   - component: {fileID: 7559309655505480059}
   - component: {fileID: 4208354881441133073}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Thorns
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 6a776e7606f2c584fa3dcf6c82d4b63b
+guid: d1446f2bdf441394188b6422484ad9c5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7760208644190873490
-    second: QuitText_0
+      213: 5219800181299293939
+    second: ReturnText_0
   - first:
-      213: 7906551997618296107
-    second: QuitText_1
+      213: -9138617749056039415
+    second: ReturnText_1
   - first:
-      213: 7340910563435292725
-    second: QuitText_2
-  - first:
-      213: 6914646120771605548
-    second: QuitText_3
+      213: -3781445085293334156
+    second: ReturnText_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,7 +103,20 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -120,100 +130,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: QuitText_0
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 23
-        width: 37
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 297a9e385acc1bb60800000000000000
-      internalID: 7760208644190873490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: QuitText_1
-      rect:
-        serializedVersion: 2
-        x: 243
-        y: 62
-        width: 9
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b259130b627b9bd60800000000000000
-      internalID: 7906551997618296107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: QuitText_2
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 33
-        width: 18
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 538297d734720e560800000000000000
-      internalID: 7340910563435292725
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: QuitText_3
-      rect:
-        serializedVersion: 2
-        x: 215
-        y: 33
-        width: 40
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c24df10f202c5ff50800000000000000
-      internalID: 6914646120771605548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -222,11 +144,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      QuitText_0: 7760208644190873490
-      QuitText_1: 7906551997618296107
-      QuitText_2: 7340910563435292725
-      QuitText_3: 6914646120771605548
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

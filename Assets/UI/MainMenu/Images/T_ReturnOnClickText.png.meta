@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: 00c3af88944bfe34f98735b187451995
+guid: 107db5f4bec013145ba0c2b41181b9e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7035328135090997201
-    second: PlayText_0
+      213: 6055543428781649847
+    second: ReturnOnClickText_0
   - first:
-      213: -3413010974008895823
-    second: PlayText_1
+      213: 4972628918433299652
+    second: ReturnOnClickText_1
   - first:
-      213: 8744123305208379388
-    second: PlayText_2
-  - first:
-      213: 2359661177193615504
-    second: PlayText_3
+      213: -6845958748582124114
+    second: ReturnOnClickText_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,7 +103,20 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -120,100 +130,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: PlayText_0
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 35
-        width: 30
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f28f69df55e7d5e90800000000000000
-      internalID: -7035328135090997201
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayText_1
-      rect:
-        serializedVersion: 2
-        x: 211
-        y: 35
-        width: 15
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b690bf1a9c82a0d0800000000000000
-      internalID: -3413010974008895823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayText_2
-      rect:
-        serializedVersion: 2
-        x: 227
-        y: 35
-        width: 26
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cf7f82751dd595970800000000000000
-      internalID: 8744123305208379388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PlayText_3
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 25
-        width: 28
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 090d7e0b6533fb020800000000000000
-      internalID: 2359661177193615504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -222,11 +144,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      PlayText_0: -7035328135090997201
-      PlayText_1: -3413010974008895823
-      PlayText_2: 8744123305208379388
-      PlayText_3: 2359661177193615504
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -3,12 +3,15 @@ using UnityEngine.UI;
 
 public class LifeDisplay : MonoBehaviour
 {
-    public GameObject heartPrefab;          // Reference to the heart icon prefab
+    public Sprite brokenHeartSprite;        // Reference to the broken heart sprite
+    public Sprite fullHeartSprite;          // Reference to the full heart sprite
     public Transform heartsContainer;       // The container for the heart icons
     public int initialLives = 3;            // Default lives count
-    private static LifeDisplay instance;    // Singleton instance for persistence
+    public Vector2 heartSize = new Vector2(50, 50); // Size of each heart icon
 
+    private static LifeDisplay instance;    // Singleton instance for persistence
     private static int currentLives;
+    private Image[] heartIcons;             // Array to store heart images
 
     private void Awake()
     {
@@ -24,25 +27,36 @@ public class LifeDisplay : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.End))
+        {
+            ReplaceHeartWithBroken();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Home))
+        {
+            AddLife();
+        }
+    }
+
     private void Start()
     {
-        // Subscribe to CharacterController2D events
         if (CharacterController2D.Instance != null)
         {
-            CharacterController2D.Instance.OnPlayerDamaged += RemoveLife;
+            CharacterController2D.Instance.OnPlayerDamaged += ReplaceHeartWithBroken;
             CharacterController2D.Instance.OnPlayerLivesEnded += GameOver;
             CharacterController2D.Instance.OnPlayerHealed += AddLife;
         }
 
-        UpdateHeartIcons();
+        InitializeHeartIcons();
     }
 
     private void OnDestroy()
     {
-        // Unsubscribe to prevent memory leaks
         if (CharacterController2D.Instance != null)
         {
-            CharacterController2D.Instance.OnPlayerDamaged -= RemoveLife;
+            CharacterController2D.Instance.OnPlayerDamaged -= ReplaceHeartWithBroken;
             CharacterController2D.Instance.OnPlayerLivesEnded -= GameOver;
             CharacterController2D.Instance.OnPlayerHealed -= AddLife;
         }
@@ -54,7 +68,7 @@ public class LifeDisplay : MonoBehaviour
         UpdateHeartIcons();
     }
 
-    private void UpdateHeartIcons()
+    private void InitializeHeartIcons()
     {
         // Clear existing heart icons
         foreach (Transform child in heartsContainer)
@@ -62,14 +76,39 @@ public class LifeDisplay : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        // Spawn new heart icons based on currentLives
-        for (int i = 0; i < currentLives; i++)
+        // Create Image components as heart icons based on initialLives
+        heartIcons = new Image[initialLives];
+        for (int i = 0; i < initialLives; i++)
         {
-            Instantiate(heartPrefab, heartsContainer);
+            GameObject heartObject = new GameObject("Heart" + i, typeof(Image));
+            heartObject.transform.SetParent(heartsContainer);
+
+            Image heartImage = heartObject.GetComponent<Image>();
+            heartImage.sprite = fullHeartSprite; // Set initial sprite to full heart
+            heartIcons[i] = heartImage;
+
+            // Set the size of each heart icon
+            RectTransform rectTransform = heartImage.GetComponent<RectTransform>();
+            rectTransform.sizeDelta = heartSize;
         }
     }
 
-    public void RemoveLife()
+    private void UpdateHeartIcons()
+    {
+        for (int i = 0; i < heartIcons.Length; i++)
+        {
+            if (i < currentLives)
+            {
+                heartIcons[i].sprite = fullHeartSprite; // Set to full heart
+            }
+            else
+            {
+                heartIcons[i].sprite = brokenHeartSprite; // Set to broken heart
+            }
+        }
+    }
+
+    public void ReplaceHeartWithBroken()
     {
         if (currentLives > 0)
         {
@@ -85,8 +124,11 @@ public class LifeDisplay : MonoBehaviour
 
     public void AddLife()
     {
-        currentLives++;
-        UpdateHeartIcons();
+        if (currentLives < initialLives)
+        {
+            currentLives++;
+            UpdateHeartIcons();
+        }
     }
 
     private void GameOver()

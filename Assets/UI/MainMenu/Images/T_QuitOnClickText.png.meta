@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 107db5f4bec013145ba0c2b41181b9e2
+guid: bec81355988dd664ca835850483ef62d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6055543428781649847
-    second: ReturnOnClickText_0
+      213: -6085008770913699522
+    second: QuitOnClickText_0
   - first:
-      213: 4972628918433299652
-    second: ReturnOnClickText_1
-  - first:
-      213: -6845958748582124114
-    second: ReturnOnClickText_2
+      213: 6049499428624577426
+    second: QuitOnClickText_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -103,7 +100,20 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -117,78 +127,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: ReturnOnClickText_0
-      rect:
-        serializedVersion: 2
-        x: 155
-        y: 33
-        width: 34
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7bf2b723aac990450800000000000000
-      internalID: 6055543428781649847
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ReturnOnClickText_1
-      rect:
-        serializedVersion: 2
-        x: 187
-        y: 32
-        width: 23
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4cc3d0bb7a3520540800000000000000
-      internalID: 4972628918433299652
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ReturnOnClickText_2
-      rect:
-        serializedVersion: 2
-        x: 208
-        y: 32
-        width: 87
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea5e8c32ac44ef0a0800000000000000
-      internalID: -6845958748582124114
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -197,10 +141,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ReturnOnClickText_0: 6055543428781649847
-      ReturnOnClickText_1: 4972628918433299652
-      ReturnOnClickText_2: -6845958748582124114
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

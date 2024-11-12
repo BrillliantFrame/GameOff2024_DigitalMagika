@@ -1,10 +1,34 @@
 fileFormatVersion: 2
-guid: 21d7fefa65a330747bbd805271d6de50
+guid: 3ea89824246796b439291f41ff4e1520
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3745238639644496160
-    second: ButtonBackgroundOnClick_01_100x450_0
+      213: -1341039725360955756
+    second: SettingsOnClickText_0
+  - first:
+      213: 1770259710467357554
+    second: SettingsOnClickText_1
+  - first:
+      213: 274306273026188250
+    second: SettingsOnClickText_2
+  - first:
+      213: 3603158445121846617
+    second: SettingsOnClickText_3
+  - first:
+      213: 2890599364374148271
+    second: SettingsOnClickText_4
+  - first:
+      213: 3865712076458980854
+    second: SettingsOnClickText_5
+  - first:
+      213: 2157013632676091317
+    second: SettingsOnClickText_6
+  - first:
+      213: 4952543735712905588
+    second: SettingsOnClickText_7
+  - first:
+      213: -2255569964375400294
+    second: SettingsOnClickText_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,7 +121,20 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -111,34 +148,12 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: ButtonBackgroundOnClick_01_100x450_0
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 6
-        width: 426
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 021d31b13b2c9f330800000000000000
-      internalID: 3745238639644496160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +162,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ButtonBackgroundOnClick_01_100x450_0: 3745238639644496160
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

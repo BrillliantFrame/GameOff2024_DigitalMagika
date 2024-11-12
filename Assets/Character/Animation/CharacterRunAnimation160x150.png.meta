@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: ecc799b77c2c710448ba834c2fcdee02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1791944573447346880
+    second: CharacterRunAnimation160x150_0
+  - first:
+      213: -5420284410545745227
+    second: CharacterRunAnimation160x150_1
+  - first:
+      213: -1727849388709294521
+    second: CharacterRunAnimation160x150_2
+  - first:
+      213: 4570210814809275082
+    second: CharacterRunAnimation160x150_3
+  - first:
+      213: 8558578624220062307
+    second: CharacterRunAnimation160x150_4
+  - first:
+      213: -385393474073813280
+    second: CharacterRunAnimation160x150_5
+  - first:
+      213: -1351854181263494946
+    second: CharacterRunAnimation160x150_6
+  - first:
+      213: -5213233205327822648
+    second: CharacterRunAnimation160x150_7
+  - first:
+      213: -8720512569820788066
+    second: CharacterRunAnimation160x150_8
+  - first:
+      213: -7472947371330648286
+    second: CharacterRunAnimation160x150_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CharacterRunAnimation160x150_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 134
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0456b7297ebb127e0800000000000000
+      internalID: -1791944573447346880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterRunAnimation160x150_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 325
+        width: 134
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b255d7eb0847c4b0800000000000000
+      internalID: -5420284410545745227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterRunAnimation160x150_2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 325
+        width: 126
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74e4b90b2227508e0800000000000000
+      internalID: -1727849388709294521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterRunAnimation160x150_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 165
+        width: 116
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acafa55a586ac6f30800000000000000
+      internalID: 4570210814809275082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterRunAnimation160x150_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 187
+        width: 134
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36263e6d9ed26c670800000000000000
+      internalID: 8558578624220062307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterRunAnimation160x150_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 186
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee931f5daec6aaf0800000000000000
+      internalID: -385393474073813280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterRunAnimation160x150_6
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 165
+        width: 125
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0b9a9d8cf3d3de0800000000000000
+      internalID: -1351854181263494946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterRunAnimation160x150_7
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 5
+        width: 106
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c00a294500e6a7b0800000000000000
+      internalID: -5213233205327822648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterRunAnimation160x150_8
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 5
+        width: 113
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ac08065048af680800000000000000
+      internalID: -8720512569820788066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterRunAnimation160x150_9
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 18
+        width: 120
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227c5aa85f1ca4890800000000000000
+      internalID: -7472947371330648286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c4223bc76df19ad418a183baac471cbb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CharacterRunAnimation160x150_0: -1791944573447346880
+      CharacterRunAnimation160x150_1: -5420284410545745227
+      CharacterRunAnimation160x150_2: -1727849388709294521
+      CharacterRunAnimation160x150_3: 4570210814809275082
+      CharacterRunAnimation160x150_4: 8558578624220062307
+      CharacterRunAnimation160x150_5: -385393474073813280
+      CharacterRunAnimation160x150_6: -1351854181263494946
+      CharacterRunAnimation160x150_7: -5213233205327822648
+      CharacterRunAnimation160x150_8: -8720512569820788066
+      CharacterRunAnimation160x150_9: -7472947371330648286
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

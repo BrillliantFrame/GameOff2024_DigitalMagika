@@ -19,6 +19,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
     [SerializeField] private float _skillCooldownTime = 10f;
     [SerializeField] private float _dashDurationTime = 0.5f;
 
+    [SerializeField] private PlayerInput _playerInput;
+
     //Movement
     private float _horizontalMovement;
     private float _originalGravity = 0f;
@@ -172,7 +174,25 @@ public class CharacterController2D : Singleton<CharacterController2D>
         StartCoroutine(onDamage());
     }
 
-    public IEnumerator onDamage()
+    public void TeleportCharacter(Vector2 position)
+    {
+        _rigidBody.transform.gameObject.SetActive(false);
+        _rigidBody.transform.position = position;
+        _respawnPoint = position;
+        _rigidBody.transform.gameObject.SetActive(true);
+    }
+
+    public void DisableInput()
+    {
+        _playerInput.enabled = false;
+    }
+
+    public void EnableInput()
+    {
+        _playerInput.enabled = true;
+    }
+
+    private IEnumerator onDamage()
     {
         _rigidBody.transform.gameObject.SetActive(false);
         OnPlayerDamaged?.Invoke();
@@ -187,14 +207,6 @@ public class CharacterController2D : Singleton<CharacterController2D>
         {
             OnPlayerLivesEnded?.Invoke();
         }
-    }
-
-    public void TeleportCharacter(Vector2 position)
-    {
-        _rigidBody.transform.gameObject.SetActive(false);
-        _rigidBody.transform.position = position;
-        _respawnPoint = position;
-        _rigidBody.transform.gameObject.SetActive(true);
     }
 
     private bool IsGrounded()

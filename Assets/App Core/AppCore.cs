@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.U2D.Animation;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -26,18 +25,18 @@ public class AppCore : Singleton<AppCore>
 
     private IEnumerator wrapLoading(Action actions)
     {
-        //blockPlayerInput(true);
+        CharacterController2D.Instance?.DisableInput();
         yield return _loadingScreen.show();
         //Do actions between loading screens
         actions();
         yield return GetSceneLoadProgress();
-        //blockPlayerInput(false);
         yield return _loadingScreen.hide();
+        CharacterController2D.Instance?.EnableInput();
     }
 
     private IEnumerator wrapLoadingAwait(Action actions)
     {
-        //blockPlayerInput(true);
+        CharacterController2D.Instance?.DisableInput();
         yield return _loadingScreen.show();
         //Do actions between loading screens
         actions();
@@ -77,8 +76,8 @@ public class AppCore : Singleton<AppCore>
 
     private IEnumerator loadingDone()
     {
-        //blockPlayerInput(false);
         yield return _loadingScreen.hide();
+        CharacterController2D.Instance?.EnableInput();
     }
 
     public void MainMenu()

@@ -87,6 +87,7 @@ MonoBehaviour:
   _animator: {fileID: 3580601843160015879}
   _skillCooldownTime: 1.5
   _dashDurationTime: 0.05
+  _playerInput: {fileID: 4746998734886452354}
 --- !u!1 &5887662589216585385
 GameObject:
   m_ObjectHideFlags: 0

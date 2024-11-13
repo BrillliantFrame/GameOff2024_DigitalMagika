@@ -224,7 +224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4174957781397181928, guid: 18eb26a5916e4294aa1893832da2a8d4, type: 3}
       propertyPath: DestinationDoorIndex
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7408592599352760511, guid: 18eb26a5916e4294aa1893832da2a8d4, type: 3}
       propertyPath: m_LocalPosition.x

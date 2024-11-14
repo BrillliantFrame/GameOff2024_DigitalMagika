@@ -6,23 +6,25 @@ public class Monolyth : MonoBehaviour
     [Range(0, 3)]
     private int _monolythNumber;
 
-    private int glyph;
+    private int _glyph;
 
     void Start()
     {
+        var manager = Resources.Load<MonolythManager>("Monolyth Manager");
+
         switch (_monolythNumber)
         {
             case 0:
-                glyph = Resources.Load<MonolythManager>("Monolyth Manager").FirstMonolyth;
+                _glyph = manager.FirstMonolyth;
                 break;
             case 1:
-                glyph = Resources.Load<MonolythManager>("Monolyth Manager").SecondMonolyth;
+                _glyph = manager.SecondMonolyth;
                 break;
             case 2:
-                glyph = Resources.Load<MonolythManager>("Monolyth Manager").ThirdMonolyth;
+                _glyph = manager.ThirdMonolyth;
                 break;
             default:
-                glyph = Resources.Load<MonolythManager>("Monolyth Manager").FourthMonolyth;
+                _glyph = manager.FourthMonolyth;
                 break;
         }
     }

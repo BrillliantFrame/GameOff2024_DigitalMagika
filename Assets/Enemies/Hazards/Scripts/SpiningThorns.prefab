@@ -48,6 +48,7 @@ MonoBehaviour:
   SpinForce: 150
   MaxRotate: 180
   CurrentRotation: 0
+  SpinDirection: 1
 --- !u!1 &3232705474520280528
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +182,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.87, y: 0.98}
+  m_Size: {x: 3.87, y: 0.5}
   m_EdgeRadius: 0
 --- !u!114 &4208354881441133073
 MonoBehaviour:

@@ -16,6 +16,12 @@ public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
         }
     }
 
+    protected virtual void OnDestroy()
+    {
+        if (Instance == this)
+            Instance = null;
+    }
+
     protected virtual void OnApplicationQuit()
     {
         Instance = null;

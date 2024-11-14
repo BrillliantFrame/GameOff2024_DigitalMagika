@@ -129,6 +129,20 @@ public class AppCore : Singleton<AppCore>
         }));
     }
 
+    public void BackToMain()
+    {
+        StartCoroutine(wrapLoading(() =>
+        {
+            //Resources.Load<CharacterData>("Character Data").ResetData();
+            _scenes.GetGameplayScenes().ForEach(scene =>
+            {
+                _scenesLoading.Add(SceneManager.UnloadSceneAsync(scene.BuildIndex));
+            });
+            _scenesLoading.Add(SceneManager.UnloadSceneAsync(_currentMapIndex));
+            _scenesLoading.Add(SceneManager.LoadSceneAsync(_scenes.GetMainMenuIndex(), LoadSceneMode.Additive));
+        }));
+    }
+
     public int GetLastDoorIndex()
     {
         return _currentDoorIndex;

@@ -5581,6 +5581,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 6710878120514865199, guid: 70d43f489557a094d9e4d12414f16e4e, type: 3}
+      propertyPath: _roomItems
+      value: 
+      objectReference: {fileID: 11400000, guid: 01e818db209af404e9bb7e53a28f9670, type: 2}
+    - target: {fileID: 6710878120514865199, guid: 70d43f489557a094d9e4d12414f16e4e, type: 3}
+      propertyPath: _items.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6710878120514865199, guid: 70d43f489557a094d9e4d12414f16e4e, type: 3}
+      propertyPath: '_items.Array.data[0]'
+      value: 
+      objectReference: {fileID: 798630012}
     - target: {fileID: 7027952734673806361, guid: 70d43f489557a094d9e4d12414f16e4e, type: 3}
       propertyPath: m_SortingOrder
       value: 4
@@ -5663,6 +5675,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e5d8688e81282d439851486eebf3abd, type: 3}
+--- !u!1 &798630012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7589130585602649024, guid: 7e5d8688e81282d439851486eebf3abd, type: 3}
+  m_PrefabInstance: {fileID: 798630011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1221341713
 GameObject:
   m_ObjectHideFlags: 0

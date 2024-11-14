@@ -9,8 +9,14 @@ public class RoomManager : MonoBehaviour
     [SerializeField]
     private List<RoomDoor> _doors = new List<RoomDoor>();
 
+    [SerializeField]
+    private List<GameObject> _items = new List<GameObject>();
+    [SerializeField]
+    private RoomItems _roomItems;
+
     void Start()
     {
+        AppCore.Instance.SetRoomManager(this);
         bool isTeleporting = AppCore.Instance.IsTeleporting();
         if (isTeleporting)
             CharacterController2D.Instance?.TeleportCharacter(_teleportLocation.position);
@@ -23,7 +29,38 @@ public class RoomManager : MonoBehaviour
                 Debug.LogError($"This door had a Door index of {doorIndex}");
         }
 
+        if (_roomItems != null)
+        {
+            HidePickedUpItems();
+        }
+
         AppCore.Instance?.LoadingDone();
+    }
+
+    private void HidePickedUpItems()
+    {
+        for (int i = 0; i < _roomItems.Items.Count; i++)
+        {
+            var item = _roomItems.Items[i];
+            if (!item.Available)
+            {
+                _items[i].SetActive(false);
+            }
+        }
+    }
+
+    public void PickUpItem(GameObject pickedUp)
+    {
+        for (int i = 0; i < _roomItems.Items.Count; i++)
+        {
+            var item = _roomItems.Items[i];
+
+            if (pickedUp == _items[i])
+            {
+                item.Available = false;
+                i = _roomItems.Items.Count;
+            }
+        }
     }
 
     void OnDrawGizmos()

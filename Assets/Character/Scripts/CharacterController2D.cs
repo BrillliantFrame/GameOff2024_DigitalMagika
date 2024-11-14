@@ -105,11 +105,11 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
         if (_isGrounded != isGrounded)
         {
-            _animator.SetBool("IsGrounded", isGrounded);
             _isGrounded = isGrounded;
             if (_isGrounded)
                 Debug.Log("Landed");
         }
+        _animator.SetBool("IsGrounded", _isGrounded);
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -180,6 +180,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
         _rigidBody.transform.position = position;
         _respawnPoint = position;
         _rigidBody.transform.gameObject.SetActive(true);
+        //_isGrounded = false;
     }
 
     public void DisableInput()

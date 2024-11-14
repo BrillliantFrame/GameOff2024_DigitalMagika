@@ -10,7 +10,9 @@ public class HealthPickup : CollectableObject
         if (collider.tag == "Player")
         {
             collider.GetComponent<CharacterController2D>()?.ReceiveHealing(_healthRecovered);
-            Destroy(gameObject);
+            AppCore.Instance?.PickUpItem(gameObject);
+            gameObject.SetActive(false);
+            //Destroy(gameObject);
         }
     }
 }

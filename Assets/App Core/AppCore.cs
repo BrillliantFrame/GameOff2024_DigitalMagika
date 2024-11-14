@@ -18,6 +18,8 @@ public class AppCore : Singleton<AppCore>
     private int _currentDoorIndex = -1;
     private bool _isTeleporting = false;
 
+    private RoomManager _currentRoomManager;
+
     void Start()
     {
         MainMenu();
@@ -94,7 +96,7 @@ public class AppCore : Singleton<AppCore>
         _currentDoorIndex = -1;
         StartCoroutine(wrapLoadingAwait(() =>
         {
-            //Resources.Load<CharacterData>("Character Data").ResetData();
+            Resources.Load<GameItemsManager>("Game Items Manager").ResetGameItems();
             _scenesLoading.Add(SceneManager.UnloadSceneAsync(_scenes.GetMainMenuIndex()));
             _scenes.GetGameplayScenes().ForEach(scene =>
             {
@@ -151,5 +153,15 @@ public class AppCore : Singleton<AppCore>
     public bool IsTeleporting()
     {
         return _isTeleporting;
+    }
+
+    public void SetRoomManager(RoomManager roomManager)
+    {
+        _currentRoomManager = roomManager;
+    }
+
+    public void PickUpItem(GameObject pickedUp)
+    {
+        _currentRoomManager?.PickUpItem(pickedUp);
     }
 }

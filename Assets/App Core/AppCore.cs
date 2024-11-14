@@ -97,6 +97,7 @@ public class AppCore : Singleton<AppCore>
         StartCoroutine(wrapLoadingAwait(() =>
         {
             Resources.Load<GameItemsManager>("Game Items Manager").ResetGameItems();
+            Resources.Load<MonolythManager>("Monolyth Manager").ShuffleMonolyths();
             _scenesLoading.Add(SceneManager.UnloadSceneAsync(_scenes.GetMainMenuIndex()));
             _scenes.GetGameplayScenes().ForEach(scene =>
             {

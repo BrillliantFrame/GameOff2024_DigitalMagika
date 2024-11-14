@@ -16,8 +16,8 @@ public class RoomManager : MonoBehaviour
 
     void Start()
     {
-        AppCore.Instance.SetRoomManager(this);
-        bool isTeleporting = AppCore.Instance.IsTeleporting();
+        AppCore.Instance?.SetRoomManager(this);
+        bool isTeleporting = AppCore.Instance?.IsTeleporting() ?? true;
         if (isTeleporting)
             CharacterController2D.Instance?.TeleportCharacter(_teleportLocation.position);
         else

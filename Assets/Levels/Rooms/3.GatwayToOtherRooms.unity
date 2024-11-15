@@ -11509,6 +11509,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 435261587}
     m_Modifications:
+    - target: {fileID: 4848808602378630693, guid: 7e5d8688e81282d439851486eebf3abd, type: 3}
+      propertyPath: SpinForce
+      value: 125
+      objectReference: {fileID: 0}
     - target: {fileID: 5386779706647469046, guid: 7e5d8688e81282d439851486eebf3abd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.09

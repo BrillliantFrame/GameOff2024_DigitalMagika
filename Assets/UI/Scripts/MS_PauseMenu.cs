@@ -37,9 +37,11 @@ public class MS_PauseMenu : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
+        Time.timeScale = 1f;
+        AppCore.Instance?.BackToMain();
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        ToggleOptionsMenu();
-        SceneManager.LoadScene("Scene_MainMenu");
+        
     }
 }

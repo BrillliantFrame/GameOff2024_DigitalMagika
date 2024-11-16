@@ -13,6 +13,8 @@ public class LifeDisplay : MonoBehaviour
     private static int currentLives;
     private Image[] heartIcons;             // Array to store heart images
 
+    public GameObject gameOver;
+
     private void Awake()
     {
         if (instance == null)
@@ -37,6 +39,11 @@ public class LifeDisplay : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Home))
         {
             AddLife();
+        }
+
+        if (currentLives <= 0)
+        {
+            GameOver();
         }
     }
 
@@ -115,8 +122,9 @@ public class LifeDisplay : MonoBehaviour
             currentLives--;
             UpdateHeartIcons();
 
-            if (currentLives <= 0)
+            if (currentLives == 0)
             {
+                Debug.Log("Lives: " + currentLives);
                 GameOver();
             }
         }
@@ -133,6 +141,22 @@ public class LifeDisplay : MonoBehaviour
 
     private void GameOver()
     {
-        Debug.Log("Game Over! Player has no lives left.");
+        gameOver.SetActive(true);
+
+        Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        
+    }
+
+    public void ReturnToMainMenu()
+    {
+        Time.timeScale = 1f;
+        AppCore.Instance?.BackToMain();
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
     }
 }

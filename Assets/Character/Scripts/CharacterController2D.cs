@@ -80,6 +80,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
                 else
                 {
                     _currentState = SkillState.READY;
+                    AkSoundEngine.PostEvent("Player_AbilityReady", gameObject);
                 }
                 OnCooldownTick?.Invoke(_cooldownTime);
                 break;
@@ -107,7 +108,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
         {
             _isGrounded = isGrounded;
             if (_isGrounded)
-                Debug.Log("Landed");
+                AkSoundEngine.PostEvent("Player_Landing", gameObject);
         }
         _animator.SetBool("IsGrounded", _isGrounded);
     }
@@ -130,7 +131,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
             Flip();
             _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed, _jumpingPower);
             _animator.SetTrigger("Jump");
-            //AkSoundEngine.PostEvent("Player_Jump", gameObject);
+            AkSoundEngine.PostEvent("Player_Jump", gameObject);
         }
 
         if (context.performed && !IsGrounded() && _currentState == SkillState.READY)
@@ -139,7 +140,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
             useSkill(0f);
             _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed, _jumpingPower);
             _animator.SetTrigger("Jump");
-            //AkSoundEngine.PostEvent("Player_DoubleJump", gameObject);
+            AkSoundEngine.PostEvent("Player_DoubleJump", gameObject);
         }
 
         if (context.canceled && _rigidBody.linearVelocity.y > 0f)
@@ -159,7 +160,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
             _rigidBody.gravityScale = 0f;
             _rigidBody.linearVelocity = new Vector2(_rigidBody.transform.localScale.x * _dashingPower, 0f);
             useSkill(_dashDurationTime);
-            //AkSoundEngine.PostEvent("Player_Dash", gameObject);
+            AkSoundEngine.PostEvent("Player_Dash", gameObject);
         }
     }
 

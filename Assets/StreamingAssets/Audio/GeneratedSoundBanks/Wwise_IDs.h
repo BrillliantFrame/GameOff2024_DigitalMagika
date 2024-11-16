@@ -26,6 +26,7 @@ namespace AK
         static const AkUniqueID PLAYER_DOUBLEJUMP = 979951458U;
         static const AkUniqueID PLAYER_HURT = 1068092414U;
         static const AkUniqueID PLAYER_JUMP = 1305133589U;
+        static const AkUniqueID PLAYER_LANDING = 1282282006U;
         static const AkUniqueID PLAYER_REGEN = 2445914848U;
         static const AkUniqueID PLAYER_WALK = 2147561130U;
         static const AkUniqueID STOP_ALL = 452547817U;
@@ -37,6 +38,21 @@ namespace AK
         static const AkUniqueID UI_START = 1219048826U;
     } // namespace EVENTS
 
+    namespace SWITCHES
+    {
+        namespace FOOTSTEP
+        {
+            static const AkUniqueID GROUP = 1866025847U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEP
+
+    } // namespace SWITCHES
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -45,7 +61,10 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMB = 1117531639U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

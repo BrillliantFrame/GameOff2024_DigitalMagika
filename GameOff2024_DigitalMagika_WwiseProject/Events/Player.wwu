@@ -10,7 +10,7 @@
 								<Action Name="" ID="{ED3450C6-8DE4-4786-85AF-107A4DA56F1A}" ShortID="768817799">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Walk" ID="{9304B953-FB22-4C1C-B6F5-63605E6C4FDF}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+											<ObjectRef Name="Footstep" ID="{8D758C82-21BE-4638-B957-A5A5D57561A7}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -50,11 +50,31 @@
 							</ChildrenList>
 						</Event>
 						<Event Name="Player_Hurt" ID="{FCADF5FD-9F02-4F0F-B712-F2ACD3672A51}"/>
-						<Event Name="Player_Regen" ID="{7A442C94-A87D-411E-8D2B-C76D3C219ABC}"/>
-						<Event Name="Player_AbilityReady" ID="{CB44A9D2-C904-48B1-854E-67B7990B03B9}"/>
+						<Event Name="Player_Regen" ID="{7A442C94-A87D-411E-8D2B-C76D3C219ABC}">
+							<ChildrenList>
+								<Action Name="" ID="{FFBC330C-CA42-4356-BD5A-2FE45F32CCBE}" ShortID="456872269">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_Regen" ID="{A99B3C93-4CAD-4F14-A0C1-3A25A398FC1D}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_AbilityReady" ID="{CB44A9D2-C904-48B1-854E-67B7990B03B9}">
+							<ChildrenList>
+								<Action Name="" ID="{DA1BCD1F-7B42-4D77-A47A-9867B5B9E4CD}" ShortID="932957078">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Player_AbilityReady" ID="{B41415D7-5874-4A75-A9E0-2312BF636650}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Player_Death" ID="{008DF25B-1F8E-4630-8506-FDFA2E6F56CE}"/>
 						<Event Name="Pickup_interactible" ID="{2BA04F49-60F0-491C-AA94-8E603CA9DC3F}"/>
-						<Event Name="Player_Land" ID="{66FB9937-6AB1-4256-9075-93CACE71C1BF}">
+						<Event Name="Player_Landing" ID="{66FB9937-6AB1-4256-9075-93CACE71C1BF}">
 							<ChildrenList>
 								<Action Name="" ID="{D58DA4BA-D9CC-408C-9EAF-BA2EDD5FB7AC}" ShortID="766760805">
 									<ReferenceList>

@@ -13,6 +13,7 @@
 				<Language Name="SFX" ID="{C1A29F84-D35D-4239-BE40-EA6A9EF85C8B}"/>
 			</LanguageList>
 			<PropertyList>
+				<Property Name="AutoSoundBankEnabled" Type="bool" Value="True"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>

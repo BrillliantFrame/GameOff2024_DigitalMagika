@@ -9,6 +9,7 @@ public class HealthPickup : CollectableObject
     {
         if (collider.tag == "Player")
         {
+            AkSoundEngine.PostEvent("Player_Regen", gameObject);
             collider.GetComponent<CharacterController2D>()?.ReceiveHealing(_healthRecovered);
             AppCore.Instance?.PickUpItem(gameObject);
             gameObject.SetActive(false);

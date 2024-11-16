@@ -12,8 +12,28 @@
 				</Folder>
 				<Folder Name="Generic" ID="{02A528B1-92DC-47BB-AC0E-C03D3521F897}" ShortID="492192796">
 					<ChildrenList>
-						<Event Name="UI_Hover" ID="{50D7113C-8A48-41B6-928B-DD32D67F8496}"/>
-						<Event Name="UI_Click" ID="{5B2AD75B-1BDB-41F5-972C-18929275A26B}"/>
+						<Event Name="UI_Hover" ID="{50D7113C-8A48-41B6-928B-DD32D67F8496}">
+							<ChildrenList>
+								<Action Name="" ID="{4FFDFDCE-75DE-42D5-8F9C-0BABBE377A67}" ShortID="627876069">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Hover" ID="{E5EC87D4-335A-4085-B5A2-24508DA15483}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Click" ID="{5B2AD75B-1BDB-41F5-972C-18929275A26B}">
+							<ChildrenList>
+								<Action Name="" ID="{566B614A-4B5D-49BA-BBB1-8798082847C0}" ShortID="1015767304">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Click" ID="{256A6E86-747B-46E4-8EF3-793B2A9179EC}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

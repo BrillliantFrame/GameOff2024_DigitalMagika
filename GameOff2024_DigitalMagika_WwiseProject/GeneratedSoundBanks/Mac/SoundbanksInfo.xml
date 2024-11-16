@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A2A9D5EF-7DEA-1AA4-B468-546764E4E0FE}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -19,20 +19,35 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="1117531639" Name="AMB"/>
+				<Bus Id="1551306167" Name="UI"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="1866025847" Name="Footstep">
+					<Switches>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2195636714" Name="Dirt"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{D1D6E487-359E-CB6F-368C-CDC72AAA6687}">
+		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{EB91CBD7-BC75-1D95-8C23-E955BBDCE4C0}">
 			<ShortName>DigitalMagika_Soundbank</ShortName>
 			<Path>DigitalMagika_Soundbank.bnk</Path>
 			<Media>
+				<File Id="14838391" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Land\Player_Landing-002.wav</ShortName>
+					<CachePath>SFX/Player/Land/Player_Landing-002_818F3B66.wem</CachePath>
+				</File>
 				<File Id="70717869" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Jump\Player_Jump-004.wav</ShortName>
 					<CachePath>SFX/Player/Jump/Player_Jump-004_818F3B66.wem</CachePath>
 				</File>
 				<File Id="78710796" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-010.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-010_818F3B66.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-010_8E324C96.wem</CachePath>
 				</File>
 				<File Id="112216464" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Jump\Player_Jump-005.wav</ShortName>
@@ -40,15 +55,19 @@
 				</File>
 				<File Id="169326442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-006.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-006_818F3B66.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-006_8E324C96.wem</CachePath>
 				</File>
 				<File Id="179428024" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-008.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-008_818F3B66.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-008_8E324C96.wem</CachePath>
 				</File>
 				<File Id="212883841" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Dash\SFX_Player_Dash-001.wav</ShortName>
 					<CachePath>SFX/Player/Dash/SFX_Player_Dash-001_818F3B66.wem</CachePath>
+				</File>
+				<File Id="216896190" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Land\Player_Landing-003.wav</ShortName>
+					<CachePath>SFX/Player/Land/Player_Landing-003_818F3B66.wem</CachePath>
 				</File>
 				<File Id="329842174" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Jump\Player_Jump-002.wav</ShortName>
@@ -57,6 +76,10 @@
 				<File Id="365014671" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Dash\SFX_Player_Dash-002.wav</ShortName>
 					<CachePath>SFX/Player/Dash/SFX_Player_Dash-002_818F3B66.wem</CachePath>
+				</File>
+				<File Id="545289031" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Regen.wav</ShortName>
+					<CachePath>SFX/Player_Regen_75555A02.wem</CachePath>
 				</File>
 				<File Id="597123459" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_DoubleJump-003.wav</ShortName>
@@ -76,7 +99,11 @@
 				</File>
 				<File Id="685714306" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-004.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-004_818F3B66.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-004_8E324C96.wem</CachePath>
+				</File>
+				<File Id="724485415" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Player_AbilityReady.wav</ShortName>
+					<CachePath>SFX/SFX_Player_AbilityReady_9CB5BAA7.wem</CachePath>
 				</File>
 				<File Id="747244547" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Jump\Player_Jump-003.wav</ShortName>
@@ -84,19 +111,27 @@
 				</File>
 				<File Id="829965618" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-003.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-003_818F3B66.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-003_8E324C96.wem</CachePath>
+				</File>
+				<File Id="839807089" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI\UI_Click.wav</ShortName>
+					<CachePath>SFX/UI/UI_Click_6B1868A8.wem</CachePath>
 				</File>
 				<File Id="843490662" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-007.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-007_818F3B66.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-007_8E324C96.wem</CachePath>
 				</File>
 				<File Id="870570205" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-005.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-005_818F3B66.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-005_8E324C96.wem</CachePath>
+				</File>
+				<File Id="871603075" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI\UI_Hover.wav</ShortName>
+					<CachePath>SFX/UI/UI_Hover_323A5926.wem</CachePath>
 				</File>
 				<File Id="872003123" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-002.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-002_818F3B66.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-002_8E324C96.wem</CachePath>
 				</File>
 				<File Id="929754404" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_DoubleJump-002.wav</ShortName>
@@ -104,11 +139,15 @@
 				</File>
 				<File Id="986366127" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-009.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-009_818F3B66.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-009_8E324C96.wem</CachePath>
+				</File>
+				<File Id="1048895883" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player\Land\Player_Landing-001.wav</ShortName>
+					<CachePath>SFX/Player/Land/Player_Landing-001_818F3B66.wem</CachePath>
 				</File>
 				<File Id="1058385355" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-001.wav</ShortName>
-					<CachePath>SFX/Player/Walk/SFX_Player_Walk-001_6BF03914.wem</CachePath>
+					<CachePath>SFX/Player/Walk/SFX_Player_Walk-001_D83B00E4.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -119,7 +158,11 @@
 				<Event Id="2040126240" Name="Enemy_Swing" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="582686005" Name="Enemy_Walk" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2367336934" Name="Pickup_interactible" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1400460010" Name="Player_AbilityReady" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1400460010" Name="Player_AbilityReady" DurationType="OneShot" DurationMin="0.5014436" DurationMax="0.70914835">
+					<MediaRefs>
+						<MediaRef Id="724485415"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2394582229" Name="Player_Dash" DurationType="OneShot" DurationMin="0.38841748" DurationMax="0.520125">
 					<MediaRefs>
 						<MediaRef Id="212883841"/>
@@ -145,30 +188,77 @@
 						<MediaRef Id="747244547"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2445914848" Name="Player_Regen" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2147561130" Name="Player_Walk" DurationType="OneShot" DurationMin="0.13486712" DurationMax="0.29156017">
+				<Event Id="1282282006" Name="Player_Landing" DurationType="OneShot" DurationMin="0.15708907" DurationMax="0.24487999">
 					<MediaRefs>
-						<MediaRef Id="78710796"/>
-						<MediaRef Id="169326442"/>
-						<MediaRef Id="179428024"/>
-						<MediaRef Id="685714306"/>
-						<MediaRef Id="829965618"/>
-						<MediaRef Id="843490662"/>
-						<MediaRef Id="870570205"/>
-						<MediaRef Id="872003123"/>
-						<MediaRef Id="986366127"/>
-						<MediaRef Id="1058385355"/>
+						<MediaRef Id="14838391"/>
+						<MediaRef Id="216896190"/>
+						<MediaRef Id="1048895883"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="2445914848" Name="Player_Regen" DurationType="OneShot" DurationMin="1.2289344" DurationMax="1.2289344">
+					<MediaRefs>
+						<MediaRef Id="545289031"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2147561130" Name="Player_Walk" DurationType="OneShot" DurationMin="0.13486712" DurationMax="0.29156017">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1866025847" Id="2058049674"/>
+							<MediaRefs>
+								<MediaRef Id="78710796"/>
+								<MediaRef Id="169326442"/>
+								<MediaRef Id="179428024"/>
+								<MediaRef Id="685714306"/>
+								<MediaRef Id="829965618"/>
+								<MediaRef Id="843490662"/>
+								<MediaRef Id="870570205"/>
+								<MediaRef Id="872003123"/>
+								<MediaRef Id="986366127"/>
+								<MediaRef Id="1058385355"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="1866025847" Id="2195636714" Default="true"/>
+							<MediaRefs>
+								<MediaRef Id="78710796"/>
+								<MediaRef Id="169326442"/>
+								<MediaRef Id="179428024"/>
+								<MediaRef Id="685714306"/>
+								<MediaRef Id="829965618"/>
+								<MediaRef Id="843490662"/>
+								<MediaRef Id="870570205"/>
+								<MediaRef Id="872003123"/>
+								<MediaRef Id="986366127"/>
+								<MediaRef Id="1058385355"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="452547817" Name="Stop_All" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2814314654" Name="Trap_Hit" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2249769530" Name="UI_Click" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2118900976" Name="UI_Hover" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2249769530" Name="UI_Click" DurationType="OneShot" DurationMin="0.019087015" DurationMax="0.026993115">
+					<MediaRefs>
+						<MediaRef Id="839807089"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2118900976" Name="UI_Hover" DurationType="OneShot" DurationMin="0.021963015" DurationMax="0.031060394">
+					<MediaRefs>
+						<MediaRef Id="871603075"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2792155208" Name="UI_Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2391028579" Name="UI_Resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1219048826" Name="UI_Start" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1866025847" Name="Footstep">
+					<Switches>
+						<Switch Id="2058049674" Name="Wood"/>
+						<Switch Id="2195636714" Name="Dirt"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4C14C936-5E84-34C3-9B81-ED25BDD81F27}</FileHash>
+	<FileHash>{21865BBE-DA06-A374-4DE2-4AF90E9507D0}</FileHash>
 </SoundBanksInfo>

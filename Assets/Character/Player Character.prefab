@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 187308395388673093}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.615, z: 0}
+  m_LocalPosition: {x: 0, y: -0.596, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -57,7 +57,7 @@ Transform:
   m_GameObject: {fileID: 1991555700541841860}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.061, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -82,11 +82,12 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   _movementSpeed: 6
-  _jumpingPower: 11
-  _dashingPower: 100
+  _jumpingHorizontalPercent: 0.7
+  _jumpingPower: 10.5
+  _dashingPower: 20
   _animator: {fileID: 3580601843160015879}
-  _skillCooldownTime: 1.5
-  _dashDurationTime: 0.05
+  _skillCooldownTime: 1
+  _dashDurationTime: 0.2
   _playerInput: {fileID: 4746998734886452354}
 --- !u!1 &5887662589216585385
 GameObject:

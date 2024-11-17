@@ -82,14 +82,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   _movementSpeed: 6
-  _jumpingHorizontalPercent: 0.7
-  _jumpingPower: 10.5
+  _jumpingHorizontalPercent: 0.8
+  _jumpingPower: 12
   _dashingPower: 20
   _animator: {fileID: 3580601843160015879}
   _characterAnimationEvents: {fileID: 1245736618023054127}
   _skillCooldownTime: 1
   _dashDurationTime: 0.2
   _playerInput: {fileID: 4746998734886452354}
+  _isGodMode: 0
 --- !u!1 &5887662589216585385
 GameObject:
   m_ObjectHideFlags: 0

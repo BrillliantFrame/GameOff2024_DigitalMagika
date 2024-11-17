@@ -15,13 +15,15 @@ public class CharacterController2D : Singleton<CharacterController2D>
     [SerializeField] private float _jumpingPower = 16f;
     [SerializeField] private float _dashingPower = 24f;
 
-    //[SerializeField] private TrailRenderer tr;
     [SerializeField] private Animator _animator;
+    [SerializeField] private CharacterAnimationEvents _characterAnimationEvents;
 
     [SerializeField] private float _skillCooldownTime = 10f;
     [SerializeField] private float _dashDurationTime = 0.5f;
 
     [SerializeField] private PlayerInput _playerInput;
+
+    [SerializeField] private bool _isGodMode = false;
 
     //Movement
     private float _horizontalMovement;
@@ -47,12 +49,15 @@ public class CharacterController2D : Singleton<CharacterController2D>
     private bool _jumpPerformed = false;
     private bool _jumpReleased = false;
 
+    private bool _invulnerable = false;
+
     protected override void Awake()
     {
         base.Awake();
         _originalGravity = _rigidBody.gravityScale;
         _playerLives = 3;
         _respawnPoint = _rigidBody.transform.position; //Should be set as the door location when entering a room
+        _characterAnimationEvents.OnDeathAnimationEnd += onDeathAnimationEnd;
     }
 
     private void Update()
@@ -195,7 +200,20 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
     public void OnDamage()
     {
-        StartCoroutine(onDamage());
+        if (!_invulnerable)
+        {
+            DisableInput();
+            _playerLives--;
+            OnPlayerDamaged?.Invoke();
+            if (_playerLives > 0)
+            {
+                _animator.SetBool("IsDead", true);
+            }
+            else
+            {
+                OnPlayerLivesEnded?.Invoke();
+            }
+        }
     }
 
     public void TeleportCharacter(Vector2 position)
@@ -204,34 +222,33 @@ public class CharacterController2D : Singleton<CharacterController2D>
         _rigidBody.transform.position = position;
         _respawnPoint = position;
         _rigidBody.transform.gameObject.SetActive(true);
-        //_isGrounded = false;
     }
 
     public void DisableInput()
     {
+        _invulnerable = true;
         _playerInput.enabled = false;
     }
 
     public void EnableInput()
     {
         _playerInput.enabled = true;
+        _invulnerable = false || _isGodMode;
     }
 
-    private IEnumerator onDamage()
+    private void onDeathAnimationEnd()
     {
+        StartCoroutine(_onDeathAnimationEnd());
+    }
+
+    private IEnumerator _onDeathAnimationEnd()
+    {
+        _animator.SetBool("IsDead", false);
         _rigidBody.transform.gameObject.SetActive(false);
-        OnPlayerDamaged?.Invoke();
-        _playerLives--;
-        if (_playerLives > 0)
-        {
-            _rigidBody.transform.position = _respawnPoint;
-            yield return new WaitForSeconds(2);
-            _rigidBody.transform.gameObject.SetActive(true);
-        }
-        else
-        {
-            OnPlayerLivesEnded?.Invoke();
-        }
+        _rigidBody.transform.position = _respawnPoint;
+        yield return new WaitForSeconds(1);
+        _rigidBody.transform.gameObject.SetActive(true);
+        EnableInput();
     }
 
     private bool IsGrounded()

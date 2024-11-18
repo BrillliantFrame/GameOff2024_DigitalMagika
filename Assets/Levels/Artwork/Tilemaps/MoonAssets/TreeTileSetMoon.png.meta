@@ -2184,6 +2184,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: TreeTileSetMoon_85_
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 180
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6b2308be14d48f408ac754d05f35d87
+      internalID: -1741855220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -2198,7 +2220,6 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TreeTileSetMoon_0: 4504819601127729647
       TreeTileSetMoon_103: 615640242
       TreeTileSetMoon_108: 1698502560
       TreeTileSetMoon_109: 1240847926
@@ -2305,6 +2326,7 @@ TextureImporter:
       TreeTileSetMoon_82_: 57737828
       TreeTileSetMoon_83_: 1411350686
       TreeTileSetMoon_84_: -550260114
+      TreeTileSetMoon_85_: 4504819601127729647
       TreeTileSetMoon_86_: -114935115
       TreeTileSetMoon_87_: -1570304136
       TreeTileSetMoon_88_: 1509683863

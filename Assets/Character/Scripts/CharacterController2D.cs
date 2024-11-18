@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class CharacterController2D : Singleton<CharacterController2D>
 {
 
+    [Header("Physics")]
     [SerializeField] private Rigidbody2D _rigidBody;
     [SerializeField] private Transform _groundCheck;
     [SerializeField] private LayerMask _groundLayer;
@@ -14,15 +15,22 @@ public class CharacterController2D : Singleton<CharacterController2D>
     [SerializeField] private float _jumpingHorizontalPercent = 0.5f;
     [SerializeField] private float _jumpingPower = 16f;
     [SerializeField] private float _dashingPower = 24f;
+    [SerializeField] private PlayerInput _playerInput;
 
+    [Header("Animation")]
     [SerializeField] private Animator _animator;
     [SerializeField] private CharacterAnimationEvents _characterAnimationEvents;
 
+    [Header("Skills")]
     [SerializeField] private float _skillCooldownTime = 10f;
     [SerializeField] private float _dashDurationTime = 0.5f;
 
-    [SerializeField] private PlayerInput _playerInput;
-
+    [Header("Particles and Trails")]
+    [SerializeField] private ParticleSystem _dashParticleSystem;
+    [SerializeField] private TrailRenderer _dashTrailRenderer;
+    [SerializeField] private ParticleSystem _jumpParticleSystem;
+    
+    [Header("Cheats")]
     [SerializeField] private bool _isGodMode = false;
 
     //Movement
@@ -78,6 +86,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
                         _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed, 0f);
                         _isDashing = false;
                         _animator.SetBool("IsDashing", false);
+                        _dashParticleSystem.Stop(true, ParticleSystemStopBehavior.StopEmitting);
+                        _dashTrailRenderer.emitting = false;
                     }
                     _currentState = SkillState.COOLDOWN;
                     _cooldownTime = _skillCooldownTime;
@@ -126,6 +136,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
                 useSkill(0f);
                 _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed * _jumpingHorizontalPercent, _jumpingPower);
                 _animator.SetTrigger("Jump");
+                _jumpParticleSystem.Play();
                 AkSoundEngine.PostEvent("Player_DoubleJump", gameObject);
             }
         }
@@ -184,6 +195,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
             Flip();
             _isDashing = true;
             _animator.SetBool("IsDashing", true);
+            _dashParticleSystem.Play();
+            _dashTrailRenderer.emitting = true;
             _originalGravity = _rigidBody.gravityScale;
             _rigidBody.gravityScale = 0f;
             _rigidBody.linearVelocity = new Vector2(_rigidBody.transform.localScale.x * _dashingPower, 0f);

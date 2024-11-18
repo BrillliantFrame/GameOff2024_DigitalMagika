@@ -409,8 +409,8 @@ MonoBehaviour:
         guid: 494fa02bf0601c49aa948e603ca9dc3f
       Path: Events\Player\General\Pickup_interactible
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Player_AbilityReady
       guid: d2a944cb04c9b148854e67b7990b03b9
       id: 1400460010
@@ -429,8 +429,8 @@ MonoBehaviour:
         guid: d2a944cb04c9b148854e67b7990b03b9
       Path: Events\Player\General\Player_AbilityReady
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.70914835
+      minDuration: 0.5014436
     - name: Player_Dash
       guid: 0f49efdbbad1d746b2dc5e89ac1fbcf3
       id: 2394582229
@@ -449,8 +449,8 @@ MonoBehaviour:
         guid: 0f49efdbbad1d746b2dc5e89ac1fbcf3
       Path: Events\Player\General\Player_Dash
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.520125
+      minDuration: 0.38841748
     - name: Player_Death
       guid: 5bf28d008e1f30468506fdfa2e6f56ce
       id: 3083087645
@@ -469,8 +469,8 @@ MonoBehaviour:
         guid: 5bf28d008e1f30468506fdfa2e6f56ce
       Path: Events\Player\General\Player_Death
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Player_DoubleJump
       guid: f8ba5254063bbc4a99a0e30cf68eabbc
       id: 979951458
@@ -489,8 +489,8 @@ MonoBehaviour:
         guid: f8ba5254063bbc4a99a0e30cf68eabbc
       Path: Events\Player\General\Player_DoubleJump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.6181686
+      minDuration: 0.4073084
     - name: Player_Hurt
       guid: fdf5adfc029f0f4fb712f2acd3672a51
       id: 1068092414
@@ -509,8 +509,8 @@ MonoBehaviour:
         guid: fdf5adfc029f0f4fb712f2acd3672a51
       Path: Events\Player\General\Player_Hurt
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Player_Jump
       guid: 09053af0f7db014fb3df50df378c98fc
       id: 1305133589
@@ -529,8 +529,8 @@ MonoBehaviour:
         guid: 09053af0f7db014fb3df50df378c98fc
       Path: Events\Player\General\Player_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.32709205
+      minDuration: 0.21997723
     - name: Player_Landing
       guid: 3799fb66b16a5642907593cace71c1bf
       id: 1282282006
@@ -549,8 +549,8 @@ MonoBehaviour:
         guid: 3799fb66b16a5642907593cace71c1bf
       Path: Events\Player\General\Player_Landing
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.24487999
+      minDuration: 0.15708907
     - name: Player_Regen
       guid: 942c447a7da81e418d2bc76d3c219abc
       id: 2445914848
@@ -569,8 +569,8 @@ MonoBehaviour:
         guid: 942c447a7da81e418d2bc76d3c219abc
       Path: Events\Player\General\Player_Regen
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.2289344
+      minDuration: 1.2289344
     - name: Player_Walk
       guid: fd368aa0383bfc4287069acad3715bf2
       id: 2147561130
@@ -589,8 +589,8 @@ MonoBehaviour:
         guid: fd368aa0383bfc4287069acad3715bf2
       Path: Events\Player\General\Player_Walk
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.29156017
+      minDuration: 0.13486712
   - PhysicalPath: Events\UI.wwu
     PathAndIcons:
     - ElementName: Events
@@ -656,8 +656,8 @@ MonoBehaviour:
         guid: 5bd72a5bdb1bf541972c18929275a26b
       Path: Events\UI\Generic\UI_Click
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.026993115
+      minDuration: 0.019087015
     - name: UI_Hover
       guid: 3c11d750488ab641928bdd32d67f8496
       id: 2118900976
@@ -676,8 +676,8 @@ MonoBehaviour:
         guid: 3c11d750488ab641928bdd32d67f8496
       Path: Events\UI\Generic\UI_Hover
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.031060394
+      minDuration: 0.021963015
     - name: UI_Pause
       guid: 5fbe916e2e61d242bd87f5aa6bea1691
       id: 2792155208
@@ -696,8 +696,8 @@ MonoBehaviour:
         guid: 5fbe916e2e61d242bd87f5aa6bea1691
       Path: Events\UI\Menu\UI_Pause
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: UI_Resume
       guid: 06484bb1a712ef41ae22cadf02ac7aaa
       id: 2391028579
@@ -716,8 +716,8 @@ MonoBehaviour:
         guid: 06484bb1a712ef41ae22cadf02ac7aaa
       Path: Events\UI\Menu\UI_Resume
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: UI_Start
       guid: 7e7a4dd8870a934fb7aaeeec5c52066c
       id: 1219048826
@@ -736,8 +736,8 @@ MonoBehaviour:
         guid: 7e7a4dd8870a934fb7aaeeec5c52066c
       Path: Events\UI\Menu\UI_Start
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

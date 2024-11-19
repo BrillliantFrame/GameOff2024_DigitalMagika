@@ -1164,7 +1164,7 @@ GameObject:
   - component: {fileID: 1825361527992132292}
   - component: {fileID: 4370919827277845020}
   m_Layer: 0
-  m_Name: Test2_Moontrees
+  m_Name: TreeTrunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

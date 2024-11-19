@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 186445861718097473}
   - component: {fileID: 2812381316650035370}
   m_Layer: 0
-  m_Name: Test1_MoonTrees
+  m_Name: TreeStumps
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

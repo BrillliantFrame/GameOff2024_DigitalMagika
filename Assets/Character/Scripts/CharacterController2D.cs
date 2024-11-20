@@ -22,6 +22,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
     [SerializeField] private CharacterAnimationEvents _characterAnimationEvents;
 
     [Header("Skills")]
+    [Min(0f)]
+    [SerializeField] private int _extraJumps = 1;
     [SerializeField] private float _skillCooldownTime = 10f;
     [SerializeField] private float _dashDurationTime = 0.5f;
 
@@ -29,7 +31,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
     [SerializeField] private ParticleSystem _dashParticleSystem;
     [SerializeField] private TrailRenderer _dashTrailRenderer;
     [SerializeField] private ParticleSystem _jumpParticleSystem;
-    
+
     [Header("Cheats")]
     [SerializeField] private bool _isGodMode = false;
 
@@ -54,6 +56,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
     public event Action OnPlayerDamaged;
     public event Action OnPlayerLivesEnded;
 
+    private int _remainingExtraJumps = 1;
     private bool _jumpPerformed = false;
     private bool _jumpReleased = false;
 
@@ -62,10 +65,12 @@ public class CharacterController2D : Singleton<CharacterController2D>
     protected override void Awake()
     {
         base.Awake();
+        checkForCheats();
         _originalGravity = _rigidBody.gravityScale;
         _playerLives = 3;
         _respawnPoint = _rigidBody.transform.position; //Should be set as the door location when entering a room
         _characterAnimationEvents.OnDeathAnimationEnd += onDeathAnimationEnd;
+        _remainingExtraJumps = _extraJumps;
     }
 
     private void Update()
@@ -130,10 +135,10 @@ public class CharacterController2D : Singleton<CharacterController2D>
                 _animator.SetTrigger("Jump");
                 AkSoundEngine.PostEvent("Player_Jump", gameObject);
             }
-            else if (_currentState == SkillState.READY)
+            else if (_remainingExtraJumps > 0)
             {
                 Flip();
-                useSkill(0f);
+                _remainingExtraJumps--;
                 _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed * _jumpingHorizontalPercent, _jumpingPower);
                 _animator.SetTrigger("Jump");
                 _jumpParticleSystem.Play();
@@ -159,7 +164,10 @@ public class CharacterController2D : Singleton<CharacterController2D>
         {
             _isGrounded = isGrounded;
             if (_isGrounded)
+            {
+                _remainingExtraJumps = _extraJumps;
                 AkSoundEngine.PostEvent("Player_Landing", gameObject);
+            }
         }
         _animator.SetFloat("VerticalSpeed", _rigidBody.linearVelocity.y);
         _animator.SetBool("IsGrounded", _isGrounded);
@@ -247,6 +255,29 @@ public class CharacterController2D : Singleton<CharacterController2D>
     {
         _playerInput.enabled = true;
         _invulnerable = false || _isGodMode;
+    }
+
+    private void checkForCheats()
+    {
+        var availableCheats = Resources.Load<AvailableCheats>("Available Cheats");
+        foreach (var cheat in availableCheats.Cheats)
+        {
+            if (cheat.Enabled && cheat.Found)
+            {
+                switch (cheat.CheatName)
+                {
+                    case Cheats.ManaBarrier:
+                        _isGodMode = true;
+                        break;
+                    case Cheats.RefreshingBoon:
+                        _skillCooldownTime = 0;
+                        break;
+                    case Cheats.MagicalBeanStew:
+                        _extraJumps = 2;
+                        break;
+                }
+            }
+        }
     }
 
     private void onDeathAnimationEnd()

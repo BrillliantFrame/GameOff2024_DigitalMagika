@@ -40,3 +40,10 @@ enum SkillState
 {
     READY, ACTIVE, COOLDOWN
 }
+
+public enum Cheats
+{
+    ManaBarrier,
+    RefreshingBoon,
+    MagicalBeanStew
+}

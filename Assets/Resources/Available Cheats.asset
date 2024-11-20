@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad80f2c39712944a58063474d99eb6, type: 3}
+  m_Name: Available Cheats
+  m_EditorClassIdentifier: 
+  Cheats:
+  - CheatName: 0
+    Enabled: 0
+    Found: 0
+  - CheatName: 1
+    Enabled: 1
+    Found: 1
+  - CheatName: 2
+    Enabled: 0
+    Found: 0

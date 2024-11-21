@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f26fa5a80fa3b29419eb7953b16dd767, type: 3}
-  m_Name: Room Items X
+  m_Name: Room Items_ComboSkeletons+Spikes
   m_EditorClassIdentifier: 
   Items:
-  - Available: 0
-  - Available: 0
+  - Available: 1

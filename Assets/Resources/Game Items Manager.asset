@@ -15,3 +15,10 @@ MonoBehaviour:
   _roomsItemSetup:
   - {fileID: 11400000, guid: 01e818db209af404e9bb7e53a28f9670, type: 2}
   - {fileID: 11400000, guid: 9441fc13c86cc79448658a351492bb6f, type: 2}
+  - {fileID: 11400000, guid: 6fae0757b5550974f93ef4bb718b1ad9, type: 2}
+  - {fileID: 11400000, guid: d04bd8114a97b3143b9991093b087809, type: 2}
+  - {fileID: 11400000, guid: 0664b9ce2669381498d58a365e0f4667, type: 2}
+  - {fileID: 11400000, guid: 7d2458089dbeb0c46b42769884d19660, type: 2}
+  - {fileID: 11400000, guid: bf3dfbedbe9a6e8439c107ee42c72aa6, type: 2}
+  - {fileID: 11400000, guid: 6146ba6947685a9488b92ecaa617b5c3, type: 2}
+  - {fileID: 11400000, guid: 5bd4890cf345f4e429e98b7c223676fa, type: 2}

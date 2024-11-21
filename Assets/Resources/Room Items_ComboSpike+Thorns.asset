@@ -9,16 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58ad80f2c39712944a58063474d99eb6, type: 3}
-  m_Name: Available Cheats
+  m_Script: {fileID: 11500000, guid: f26fa5a80fa3b29419eb7953b16dd767, type: 3}
+  m_Name: Room Items_ComboSpike+Thorns
   m_EditorClassIdentifier: 
-  Cheats:
-  - CheatName: 0
-    Enabled: 0
-    Found: 0
-  - CheatName: 1
-    Enabled: 0
-    Found: 0
-  - CheatName: 2
-    Enabled: 0
-    Found: 0
+  Items:
+  - Available: 1

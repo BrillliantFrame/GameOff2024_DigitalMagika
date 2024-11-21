@@ -4178,11 +4178,54 @@ PrefabInstance:
       propertyPath: LevelDestination
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6710878120514865199, guid: 70d43f489557a094d9e4d12414f16e4e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5758177547481667866, guid: 70d43f489557a094d9e4d12414f16e4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 782304545}
   m_SourcePrefab: {fileID: 100100000, guid: 70d43f489557a094d9e4d12414f16e4e, type: 3}
+--- !u!1 &782304542 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5758177547481667866, guid: 70d43f489557a094d9e4d12414f16e4e, type: 3}
+  m_PrefabInstance: {fileID: 782304541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &782304543 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7845007102016600242, guid: 70d43f489557a094d9e4d12414f16e4e, type: 3}
+  m_PrefabInstance: {fileID: 782304541}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72e55e14df6c9274ea59ca6880171792, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &782304544 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7693160003957837444, guid: 70d43f489557a094d9e4d12414f16e4e, type: 3}
+  m_PrefabInstance: {fileID: 782304541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &782304545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782304542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30868418c56aa594e98e4f128570af76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _teleportLocation: {fileID: 782304544}
+  _doors:
+  - {fileID: 782304543}
+  _items:
+  - {fileID: 798630012}
+  _roomItems: {fileID: 11400000, guid: 01e818db209af404e9bb7e53a28f9670, type: 2}
 --- !u!1001 &798630011
 PrefabInstance:
   m_ObjectHideFlags: 0

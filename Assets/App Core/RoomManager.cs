@@ -14,7 +14,7 @@ public class RoomManager : MonoBehaviour
     [SerializeField]
     private RoomItems _roomItems;
 
-    void Start()
+    protected void Start()
     {
         AppCore.Instance?.SetRoomManager(this);
         bool isTeleporting = AppCore.Instance?.IsTeleporting() ?? true;

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CharacterIdleAnimation160x100_Singl_0: 8468883755824176468
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

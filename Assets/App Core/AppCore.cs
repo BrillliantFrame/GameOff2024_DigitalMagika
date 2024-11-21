@@ -84,6 +84,7 @@ public class AppCore : Singleton<AppCore>
 
     public void MainMenu()
     {
+        Debug.Log("============Fade out gameplay music here if already playing============");
         StartCoroutine(wrapLoading(() =>
         {
             _scenesLoading.Add(SceneManager.LoadSceneAsync(_scenes.GetMainMenuIndex(), LoadSceneMode.Additive));
@@ -92,6 +93,7 @@ public class AppCore : Singleton<AppCore>
 
     public void StartGame()
     {
+        Debug.Log("============Fade out main menu music here============");
         _isTeleporting = true;
         _currentDoorIndex = -1;
         StartCoroutine(wrapLoadingAwait(() =>

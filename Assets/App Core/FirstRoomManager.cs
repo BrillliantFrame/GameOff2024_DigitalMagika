@@ -5,6 +5,7 @@ public class FirstRoomManager : RoomManager
     void Start()
     {
         base.Start();
-        Debug.Log("============Start gameplay music here!!============");
+        AkSoundEngine.PostEvent("InGame_Music", gameObject);
+        
     }
 }

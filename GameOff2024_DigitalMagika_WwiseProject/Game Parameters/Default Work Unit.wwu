@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0BE6E616-A067-409A-B2D1-F957E5449311}" SchemaVersion="119">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{0BE6E616-A067-409A-B2D1-F957E5449311}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0BE6E616-A067-409A-B2D1-F957E5449311}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="PauseMenu_RTPC" ID="{3DCDD527-3393-46FF-A870-D2660884219F}"/>
+				<GameParameter Name="LowPassPauseMenu_RTPC" ID="{79B89F30-74B0-44F5-9E85-117B90D48457}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

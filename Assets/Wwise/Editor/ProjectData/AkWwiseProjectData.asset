@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7ad13577a62adb40926f2d6ed13223f7
     GuidInternal: 
-    m_lastTime: -8584697681030195929
+    m_lastTime: -8584694468868696311
     List:
     - name: AMB
       guid: 6348bb5347bb5f408140ca3cdbcc3832
@@ -71,6 +71,23 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: fa95330f1e7aab40a4008ec5e0050ff5
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7ad13577a62adb40926f2d6ed13223f7
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Music
+        ObjectType: 2
+        guid: fa95330f1e7aab40a4008ec5e0050ff5
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music
     - name: SFX
       guid: c538ad174593804fa5d52e57e849dab9
       id: 393239870
@@ -117,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 82a4ce4cf142d943902904ea4d8dd2ba
     GuidInternal: 
-    m_lastTime: -8584697681030130958
+    m_lastTime: -8584693730241996837
     List:
     - name: DigitalMagika_Soundbank
       guid: e9c276abb091af46adfd241bb7311241
@@ -145,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events\Ambience
     guid: cbe1a3c647c9ef4d92b71b254451e67c
     GuidInternal: 
-    m_lastTime: -8584705152648737250
+    m_lastTime: -8584693712472663118
     List:
     - name: Ambience_Forest
       guid: 14e56e5d9d27be47a1e9b1a54da6e5b4
@@ -162,8 +179,8 @@ MonoBehaviour:
         guid: 14e56e5d9d27be47a1e9b1a54da6e5b4
       Path: Events\Ambience\Ambience_Forest
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -175,7 +192,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 72b31c97ae59724c8b255effb412f0b0
     GuidInternal: 
-    m_lastTime: -8584705152648737250
+    m_lastTime: -8584693649155524482
     List:
     - name: Stop_All
       guid: b3d70ca36602974a9713948e850dbc62
@@ -361,6 +378,70 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Music
+      ObjectType: 12
+      guid: 0b2f18ede3b70f46946ef0f770e6ca69
+    ParentPath: Events\Music
+    guid: 0b2f18ede3b70f46946ef0f770e6ca69
+    GuidInternal: 
+    m_lastTime: -8584693705805602599
+    List:
+    - name: GameOver_Music
+      guid: 51e3b34306e96444964c88832aec8464
+      id: 816370673
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 0b2f18ede3b70f46946ef0f770e6ca69
+      - ElementName: GameOver_Music
+        ObjectType: 3
+        guid: 51e3b34306e96444964c88832aec8464
+      Path: Events\Music\GameOver_Music
+      maxAttenuation: 0
+      maxDuration: 40
+      minDuration: 40
+    - name: InGame_Music
+      guid: de0a68e97e4d0f4da7da5e947c2e29fc
+      id: 2613926250
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 0b2f18ede3b70f46946ef0f770e6ca69
+      - ElementName: InGame_Music
+        ObjectType: 3
+        guid: de0a68e97e4d0f4da7da5e947c2e29fc
+      Path: Events\Music\InGame_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MainMenu_Music
+      guid: 791c323ff95eeb449e26bfc45822cc86
+      id: 1929327811
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 0b2f18ede3b70f46946ef0f770e6ca69
+      - ElementName: MainMenu_Music
+        ObjectType: 3
+        guid: 791c323ff95eeb449e26bfc45822cc86
+      Path: Events\Music\MainMenu_Music
+      maxAttenuation: 0
+      maxDuration: 86.4
+      minDuration: 86.4
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -750,8 +831,36 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 16e6e60b67a09a40b2d1f957e5449311
     GuidInternal: 
-    m_lastTime: -8584705152648727265
-    List: []
+    m_lastTime: -8584694442712598677
+    List:
+    - name: LowPassPauseMenu_RTPC
+      guid: 309fb879b074f5449e85117b90d48457
+      id: 543675501
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 16e6e60b67a09a40b2d1f957e5449311
+      - ElementName: LowPassPauseMenu_RTPC
+        ObjectType: 13
+        guid: 309fb879b074f5449e85117b90d48457
+      Path: Game Parameters\Default Work Unit\LowPassPauseMenu_RTPC
+    - name: PauseMenu_RTPC
+      guid: 27d5cd3d9333ff46a870d2660884219f
+      id: 1823067074
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 16e6e60b67a09a40b2d1f957e5449311
+      - ElementName: PauseMenu_RTPC
+        ObjectType: 13
+        guid: 27d5cd3d9333ff46a870d2660884219f
+      Path: Game Parameters\Default Work Unit\PauseMenu_RTPC
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -845,7 +954,7 @@ MonoBehaviour:
     m_lastTime: -8584705152648318377
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 060000000a0000000d0000000f000000140000001500000016000000
+  ExpandedWaapiItemIds: 0500000006000000080000000a0000000d0000000e0000000f00000014000000150000001600000018000000190000001a000000220000002300000024000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

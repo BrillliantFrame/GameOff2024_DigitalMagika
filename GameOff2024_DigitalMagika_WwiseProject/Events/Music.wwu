@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{ED182F0B-B7E3-460F-946E-F0F770E6CA69}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Music" ID="{ED182F0B-B7E3-460F-946E-F0F770E6CA69}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="MainMenu_Music" ID="{3F321C79-5EF9-44EB-9E26-BFC45822CC86}">
+					<ChildrenList>
+						<Action Name="" ID="{7AFE526A-DA28-4076-9E98-CDE3850FC45C}" ShortID="862358054">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InGame Music" ID="{69AA76A0-4F50-4851-9F89-9B6940B01865}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F254696D-CB4A-4385-99B2-1003EE239D25}" ShortID="558579645">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{BD13E760-1683-461D-A0D0-C176B969B383}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="GameOver_Music" ID="{43B3E351-E906-4464-964C-88832AEC8464}">
+					<ChildrenList>
+						<Action Name="" ID="{BFD3C2ED-9888-44BB-8A6A-2D632C4F47EB}" ShortID="901751250">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{C0AD57C3-1BF1-4CEE-B2A6-C8CE7657AFDD}" ShortID="212745954">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{2C8A301E-48D4-467B-AFED-13C3C8C8C51B}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="InGame_Music" ID="{E9680ADE-4D7E-4D0F-A7DA-5E947C2E29FC}">
+					<ChildrenList>
+						<Action Name="" ID="{0E09EF02-7BD7-4C1F-9C7C-9DB78DB1EBE0}" ShortID="903672409">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{BD13E760-1683-461D-A0D0-C176B969B383}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3EB33152-5E12-4213-A7AD-ED98A5ACF482}" ShortID="85795405">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InGame Music" ID="{69AA76A0-4F50-4851-9F89-9B6940B01865}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

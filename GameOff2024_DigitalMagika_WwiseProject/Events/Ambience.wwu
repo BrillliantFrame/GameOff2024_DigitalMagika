@@ -3,7 +3,34 @@
 	<Events>
 		<WorkUnit Name="Ambience" ID="{C6A3E1CB-C947-4DEF-92B7-1B254451E67C}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Ambience_Forest" ID="{5D6EE514-279D-47BE-A1E9-B1A54DA6E5B4}"/>
+				<Event Name="Ambience_Forest" ID="{5D6EE514-279D-47BE-A1E9-B1A54DA6E5B4}">
+					<ChildrenList>
+						<Action Name="" ID="{492C6D4F-5C94-43D1-86D2-EA10169682B7}" ShortID="413406320">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_BaseForest" ID="{0B4F7EE0-30BC-41A5-A8BD-743FFB85B5B1}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{73D84EA9-32E3-47B3-A30B-6F4373C48943}" ShortID="997713374">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Birds_Chirp" ID="{425EB70B-3806-4321-A111-28EEEB45F5E5}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C6E4B091-308D-44B4-851D-BB53DDF3DC60}" ShortID="515691981">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ambience_Birds" ID="{FB04CE45-2C08-4C0D-8708-1C3DF608F3C9}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

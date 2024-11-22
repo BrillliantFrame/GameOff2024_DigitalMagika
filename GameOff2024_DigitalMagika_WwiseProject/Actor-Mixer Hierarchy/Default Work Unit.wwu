@@ -988,6 +988,691 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Ambience" ID="{EAC638D0-04CA-4BE2-9817-A88736F27627}" ShortID="73141304">
+					<ChildrenList>
+						<Sound Name="Ambience_BaseForest" ID="{0B4F7EE0-30BC-41A5-A8BD-743FFB85B5B1}" ShortID="227067772">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience_BaseForest" ID="{967F18E3-564C-4FC8-A3AC-B255796B266A}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Ambience\Ambience_BaseForest.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="51192356"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{FD29C836-3D78-4ACB-AAF0-32E157090BFA}" ShortID="339683942">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="LowPassPauseMenu_RTPC" ID="{79B89F30-74B0-44F5-9E85-117B90D48457}" WorkUnitID="{0BE6E616-A067-409A-B2D1-F957E5449311}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{E71966C9-49F5-417D-A62E-63B5CB050DE5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>53</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience_BaseForest" ID="{967F18E3-564C-4FC8-A3AC-B255796B266A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Folder Name="OneShots" ID="{596FDAE1-45D7-4E16-9D2A-7A514C72914D}" ShortID="44098468">
+							<ChildrenList>
+								<RandomSequenceContainer Name="Birds_Chirp" ID="{425EB70B-3806-4321-A111-28EEEB45F5E5}" ShortID="671866980">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{50EC531D-51E2-4501-9AA9-2F8733B33676}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="OneShots_Birds-001" ID="{78F12085-21EA-45D3-810B-D1F065CE4283}" ShortID="1032765099">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-001" ID="{FE2D89A0-9475-4689-8F22-0736750A5A86}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="393426045"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-001" ID="{FE2D89A0-9475-4689-8F22-0736750A5A86}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShots_Birds-002" ID="{32645D88-2B72-4E9A-B4B3-99F97E104F68}" ShortID="708037028">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-002" ID="{B7F187BC-143B-45E3-8566-429CEB5D1774}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="944694747"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-002" ID="{B7F187BC-143B-45E3-8566-429CEB5D1774}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShots_Birds-003" ID="{2DA92DEB-E855-412C-B688-74EB9295D6A8}" ShortID="670175093">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-003" ID="{B96EA8D9-86AF-4FD0-80D9-9A0B4DED5C0E}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="483104109"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-003" ID="{B96EA8D9-86AF-4FD0-80D9-9A0B4DED5C0E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShots_Birds-004" ID="{D04F7025-9C55-4880-8BD2-9C3E7EA17C81}" ShortID="297183925">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-004" ID="{A1065304-6112-4CE9-B723-5EC7333C8831}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="17072997"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-004" ID="{A1065304-6112-4CE9-B723-5EC7333C8831}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShots_Birds-005" ID="{F10F5D6C-48C7-4865-9EC0-DE6F07015B04}" ShortID="219308075">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-005" ID="{A164C52B-69A3-496E-BBA1-83C1A3E9F9C2}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="856943193"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-005" ID="{A164C52B-69A3-496E-BBA1-83C1A3E9F9C2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShots_Birds-006" ID="{41527756-C5FA-4B27-9135-14705E4859B4}" ShortID="760694325">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-006" ID="{0C820543-5381-4A61-9DD9-C5D0DF1ACC2F}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="300932186"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-006" ID="{0C820543-5381-4A61-9DD9-C5D0DF1ACC2F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShots_Birds-007" ID="{68DE9B89-2074-43AB-A473-0B4782399891}" ShortID="658876092">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-007" ID="{2F150DA6-5A2A-4AB3-BA5C-E32238EFA060}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="254063972"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-007" ID="{2F150DA6-5A2A-4AB3-BA5C-E32238EFA060}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShots_Birds-008" ID="{A1DDDD92-F2E7-4812-AF5C-D457D637E4CF}" ShortID="81614502">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-008" ID="{66A90BB9-2A29-4B68-BF35-F2B5F5EFE04F}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1005937750"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-008" ID="{66A90BB9-2A29-4B68-BF35-F2B5F5EFE04F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShots_Birds-009" ID="{FE82CFAD-1874-4884-B847-1654F677A4B2}" ShortID="895306094">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-009" ID="{49C1B179-C37C-43C8-8B22-46EB8CCBA286}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="137759144"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-009" ID="{49C1B179-C37C-43C8-8B22-46EB8CCBA286}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShots_Birds-010" ID="{4F1F7ADB-08B0-47C5-BEE9-EB3E91CCB7C7}" ShortID="595766330">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-010" ID="{1257CAA3-4EE4-4B08-91AA-3371E681199A}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-010.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1038102564"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-010" ID="{1257CAA3-4EE4-4B08-91AA-3371E681199A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShots_Birds-011" ID="{61F186FE-7152-4F46-83A3-9133CDBF927F}" ShortID="967519666">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShots_Birds-011" ID="{818B5C6A-D7C2-4E5A-8952-C102C8AB6596}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Birds_Chirp\OneShots_Birds-011.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="103463811"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShots_Birds-011" ID="{818B5C6A-D7C2-4E5A-8952-C102C8AB6596}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{CCF4D13A-E449-4D37-AB3C-00761E4828F6}">
+											<ChildrenList>
+												<Path2D Name="Birds_Chirp_Path" ID="{3E4EF1DE-D36E-4964-9D22-41BCB13EE4ED}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="87"/>
+														<Property Name="RandomY" Type="Real64" Value="80"/>
+														<Property Name="RandomZ" Type="Real64" Value="69"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-0.2681</XPos>
+															<YPos>-0.39578</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{188317A8-1C24-4D79-A705-69C6B5175A4A}" ShortID="305727981">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{716BC433-1FD1-47FA-86FB-7C34E9182161}" ShortID="134196066">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="LowPassPauseMenu_RTPC" ID="{79B89F30-74B0-44F5-9E85-117B90D48457}" WorkUnitID="{0BE6E616-A067-409A-B2D1-F957E5449311}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{5BE6E2B7-60FC-43D5-BBD0-F922F8D12645}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>55</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Frogs" ID="{C983B81C-B468-4634-8B85-A048FACBFE8E}" ShortID="869762744">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4040C12C-FFCB-4588-8FC1-BFAE41AA5B92}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="OneShote_Frogs-001" ID="{ED9222E7-C323-4924-9A51-C76FDCE03ED2}" ShortID="371479858">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShote_Frogs-001" ID="{5FD95F1E-ADA2-43CF-810E-651126F9E259}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Frogs\OneShote_Frogs-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="709441836"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShote_Frogs-001" ID="{5FD95F1E-ADA2-43CF-810E-651126F9E259}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShote_Frogs-002" ID="{2EEFB2D7-5B08-4B2A-A16D-0A6D0760D36A}" ShortID="748725044">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShote_Frogs-002" ID="{A8EC4321-F1A3-448A-A9DC-9529D9A65A95}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Frogs\OneShote_Frogs-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="518344671"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShote_Frogs-002" ID="{A8EC4321-F1A3-448A-A9DC-9529D9A65A95}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShote_Frogs-003" ID="{94F88E9F-BFA7-4552-8BD6-434AFCAAF8FF}" ShortID="136184567">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShote_Frogs-003" ID="{35D9C469-E3FE-4BEA-B605-011EA0DD6BA5}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Frogs\OneShote_Frogs-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="24412832"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShote_Frogs-003" ID="{35D9C469-E3FE-4BEA-B605-011EA0DD6BA5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OneShote_Frogs-004" ID="{4C5306DA-1D75-4F82-9409-76157A40DF30}" ShortID="870467783">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OneShote_Frogs-004" ID="{F18DCBC1-B6E1-4B76-90D3-4AE16996AF36}">
+													<Language>SFX</Language>
+													<AudioFile>OneShots\Frogs\OneShote_Frogs-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="878203289"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OneShote_Frogs-004" ID="{F18DCBC1-B6E1-4B76-90D3-4AE16996AF36}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{481979F2-A565-4826-A751-0CF018EF621C}">
+											<ChildrenList>
+												<Path2D Name="Frogs_Path" ID="{DD91FE47-A93C-4F3B-86CB-2DC914BCBFB1}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="100"/>
+														<Property Name="RandomY" Type="Real64" Value="100"/>
+														<Property Name="RandomZ" Type="Real64" Value="100"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{EF67944B-0E52-44C9-B835-A04908B104B6}" ShortID="606237021">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+						<Sound Name="Ambience_Birds" ID="{FB04CE45-2C08-4C0D-8708-1C3DF608F3C9}" ShortID="201400266">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ambience_Birds" ID="{95C98167-A70A-4F16-B2BF-16B9599E07B8}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.290829031376144"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.484715052293566"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.22968924055044"/>
+										<Property Name="TrimEnd" Type="Real64" Value="79.2993825552285"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Ambience_Birds.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="144028624"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{C932086B-EB1A-4B6A-8780-CD54D5512386}" ShortID="394125929">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="LowPassPauseMenu_RTPC" ID="{79B89F30-74B0-44F5-9E85-117B90D48457}" WorkUnitID="{0BE6E616-A067-409A-B2D1-F957E5449311}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{332CF2F5-EFAF-4DB5-A728-4E0A718F20A6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>60</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="Ambience_Birds" ID="{95C98167-A70A-4F16-B2BF-16B9599E07B8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

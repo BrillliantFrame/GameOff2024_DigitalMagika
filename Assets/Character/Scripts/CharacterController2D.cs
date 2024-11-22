@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
 
 public class CharacterController2D : Singleton<CharacterController2D>
 {
@@ -324,5 +325,10 @@ public class CharacterController2D : Singleton<CharacterController2D>
         // Display the ground check radius
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(_groundCheck.position, 0.2f);
+    }
+
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("Ambience_Forest", gameObject);
     }
 }

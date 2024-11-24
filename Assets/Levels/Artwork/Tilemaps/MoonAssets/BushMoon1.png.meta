@@ -124,7 +124,7 @@ TextureImporter:
         width: 591
         height: 414
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -137,33 +137,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: BushMoon1_1
-      rect:
-        serializedVersion: 2
-        x: 542
-        y: 288
-        width: 10
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5968b55e0486e17e0800000000000000
-      internalID: -1792880973711702379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1634e6815c306f64fb5836a79ed8294f
     internalID: 0
     vertices: []
     indices: 

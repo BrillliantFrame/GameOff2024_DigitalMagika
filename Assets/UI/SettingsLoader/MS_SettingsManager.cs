@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,6 +7,8 @@ public class MS_SettingsManager : MonoBehaviour
 {
     [Header("Audio Settings")]
     public Slider masterVolumeSlider;
+    public AudioSource[] audioSources;
+
     public Slider musicVolumeSlider;
     public Slider sfxVolumeSlider;
 
@@ -22,21 +25,51 @@ public class MS_SettingsManager : MonoBehaviour
 
     private void Start()
     {
-        // Load saved settings here
-        LoadSettings();
+        audioSources = Object.FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
+
+        // Setup resolutions first before loading settings
         SetupResolutionDropdown();
+        LoadSettings();
     }
+
+    public void SetMasterVolume()
+    {
+        // Get the value from the masterVolumeSlider directly
+        float volume = masterVolumeSlider.value;
+
+        // Set the global volume using AudioListener
+        AudioListener.volume = volume;
+
+        // Optionally, you can log to confirm that the volume is being set
+        Debug.Log("Master volume set to: " + volume);
+
+        // Save the volume to PlayerPrefs for persistence
+        PlayerPrefs.SetFloat("MasterVolume", volume);
+        PlayerPrefs.Save();
+    }
+
 
     private void SetupResolutionDropdown()
     {
         resolutions = Screen.resolutions;
+
+        if (resolutions == null || resolutions.Length == 0)
+        {
+            Debug.LogError("No screen resolutions found!");
+            return;
+        }
+
+        Debug.Log($"Found {resolutions.Length} screen resolutions.");
+
         ResolutionDropdown.ClearOptions();
 
+        List<string> options = new List<string>();
         int currentResolutionIndex = 0;
+
         for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + " x " + resolutions[i].height;
-            ResolutionDropdown.options.Add(new TMP_Dropdown.OptionData(option));
+            options.Add(option);
 
             if (resolutions[i].width == Screen.currentResolution.width &&
                 resolutions[i].height == Screen.currentResolution.height)
@@ -45,35 +78,50 @@ public class MS_SettingsManager : MonoBehaviour
             }
         }
 
+        ResolutionDropdown.AddOptions(options);
+
+        // Default to the current resolution
         ResolutionDropdown.value = currentResolutionIndex;
         ResolutionDropdown.RefreshShownValue();
-        SafeSettings();
+
+        Debug.Log("Resolution dropdown successfully initialized.");
     }
 
-    public void SetMasterVolume(float volume)
+    public void SetResolution()
     {
-        AudioListener.volume = volume;
-        PlayerPrefs.SetFloat("MasterVolume", volume);
-        SafeSettings();
-    }
+        if (resolutions == null || resolutions.Length == 0)
+        {
+            Debug.LogError("Resolutions array is not initialized or empty!");
+            return;
+        }
 
-    public void SetResolution(int resolutionIndex)
-    {
+        int resolutionIndex = ResolutionDropdown.value;
+
+        if (resolutionIndex < 0 || resolutionIndex >= resolutions.Length)
+        {
+            Debug.LogError("Resolution index is out of bounds!");
+            return;
+        }
+
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
         PlayerPrefs.SetInt("ResolutionIndex", resolutionIndex);
         SafeSettings();
+
+        Debug.Log($"Resolution set to: {resolution.width} x {resolution.height}");
     }
 
-    public void SetFullscreen(bool isFullscreen)
+    public void SetFullscreen()
     {
+        bool isFullscreen = FullscreenToggle.isOn;
         Screen.fullScreen = isFullscreen;
         PlayerPrefs.SetInt("Fullscreen", isFullscreen ? 1 : 0);
         SafeSettings();
     }
 
-    public void SetQuality(int qualityIndex)
+    public void SetQuality()
     {
+        int qualityIndex = QualityDropdown.value;
         QualitySettings.SetQualityLevel(qualityIndex);
         PlayerPrefs.SetInt("QualityLevel", qualityIndex);
         SafeSettings();

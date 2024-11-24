@@ -16,3 +16,9 @@ MonoBehaviour:
   _secondMonolyth: 0
   _thirdMonolyth: 0
   _fourthMonolyth: 0
+  _firstKeystoneGlyph: {fileID: 2189292911971096897, guid: b47f5fb3df57e2c4fbd03682d2c66268, type: 3}
+  _secondKeystoneGlyph: {fileID: -225568313693726576, guid: bcc41c0b075b897429a5899f3126c907, type: 3}
+  _thirdKeystoneGlyph: {fileID: -5692259767792655896, guid: a754e1ce1d5db164485d0e7483884c1f, type: 3}
+  _fourthKeystoneGlyph: {fileID: -5157649950783654657, guid: 725a1a5893faf6c46ac28ee0f9f24745, type: 3}
+  _fifthKeystoneGlyph: {fileID: -3875992275732404595, guid: aa7b253fb9ed06e4cba0a9b8254aabc4, type: 3}
+  _sixthKeystoneGlyph: {fileID: -2161726813862364105, guid: 63cf77545b481b243bd9c9b68ff47e69, type: 3}

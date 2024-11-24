@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 5c5df1d5784f35845a0b0bd470ce3804
+guid: aa7b253fb9ed06e4cba0a9b8254aabc4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4913283045530170890
-    second: BushMoon1_0
-  - first:
-      213: -1792880973711702379
-    second: BushMoon1_1
+      213: -3875992275732404595
+    second: Keystone 4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BushMoon1_0
+      name: Keystone 4_0
       rect:
         serializedVersion: 2
-        x: 356
-        y: 293
-        width: 591
-        height: 414
+        x: 0
+        y: 0
+        width: 185
+        height: 309
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,30 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6f9893e0a1380dbb0800000000000000
-      internalID: -4913283045530170890
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BushMoon1_1
-      rect:
-        serializedVersion: 2
-        x: 542
-        y: 288
-        width: 10
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5968b55e0486e17e0800000000000000
-      internalID: -1792880973711702379
+      spriteID: d86efc4af85b53ac0800000000000000
+      internalID: -3875992275732404595
       vertices: []
       indices: 
       edges: []
@@ -172,9 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BushMoon1_0: -4913283045530170890
-      BushMoon1_1: -1792880973711702379
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

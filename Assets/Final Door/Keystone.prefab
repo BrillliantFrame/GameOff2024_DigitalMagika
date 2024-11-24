@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _glyph: 0
+  _spriteRenderer: {fileID: 411013101919920380}
 --- !u!61 &4284676412836715437
 BoxCollider2D:
   m_ObjectHideFlags: 0

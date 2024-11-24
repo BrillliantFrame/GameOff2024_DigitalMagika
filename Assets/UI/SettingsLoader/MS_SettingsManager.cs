@@ -37,8 +37,8 @@ public class MS_SettingsManager : MonoBehaviour
         // Get the value from the masterVolumeSlider directly
         float volume = masterVolumeSlider.value;
 
-        // Set the global volume using AudioListener
-        AudioListener.volume = volume;
+        AkSoundEngine.SetRTPCValue("MasterVolume", volume);
+
 
         // Optionally, you can log to confirm that the volume is being set
         Debug.Log("Master volume set to: " + volume);

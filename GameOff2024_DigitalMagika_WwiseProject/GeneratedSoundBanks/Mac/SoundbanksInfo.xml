@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DE3CF4AE-92D3-9F23-EA50-C214859DC95E}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C48D6163-2DA4-F020-013F-A6479859FC01}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -28,6 +28,7 @@
 			<GameParameters>
 				<GameParameter Id="543675501" Name="LowPassPauseMenu_RTPC"/>
 				<GameParameter Id="1823067074" Name="PauseMenu_RTPC"/>
+				<GameParameter Id="2918011349" Name="MasterVolume"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="1866025847" Name="Footstep">
@@ -459,5 +460,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{066F9E2D-5E82-176F-A7DB-1888E8B79872}</FileHash>
+	<FileHash>{4D694DE8-5F71-9D3D-1D53-50D6717B44B8}</FileHash>
 </SoundBanksInfo>

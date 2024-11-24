@@ -59,6 +59,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID LOWPASSPAUSEMENU_RTPC = 543675501U;
+        static const AkUniqueID MASTERVOLUME = 2918011349U;
         static const AkUniqueID PAUSEMENU_RTPC = 1823067074U;
     } // namespace GAME_PARAMETERS
 

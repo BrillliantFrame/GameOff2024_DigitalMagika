@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7ad13577a62adb40926f2d6ed13223f7
     GuidInternal: 
-    m_lastTime: -8584693099406268198
+    m_lastTime: -8584691359367477414
     List:
     - name: AMB
       guid: 6348bb5347bb5f408140ca3cdbcc3832
@@ -192,7 +192,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 72b31c97ae59724c8b255effb412f0b0
     GuidInternal: 
-    m_lastTime: -8584693099410036625
+    m_lastTime: -8584691359367392279
     List:
     - name: Stop_All
       guid: b3d70ca36602974a9713948e850dbc62
@@ -831,7 +831,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 16e6e60b67a09a40b2d1f957e5449311
     GuidInternal: 
-    m_lastTime: -8584693099410036625
+    m_lastTime: -8584691359367316839
     List:
     - name: LowPassPauseMenu_RTPC
       guid: 309fb879b074f5449e85117b90d48457
@@ -847,6 +847,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 309fb879b074f5449e85117b90d48457
       Path: Game Parameters\Default Work Unit\LowPassPauseMenu_RTPC
+    - name: MasterVolume
+      guid: 4689d84a82a36042990da9e02de0c1a1
+      id: 2918011349
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 16e6e60b67a09a40b2d1f957e5449311
+      - ElementName: MasterVolume
+        ObjectType: 13
+        guid: 4689d84a82a36042990da9e02de0c1a1
+      Path: Game Parameters\Default Work Unit\MasterVolume
     - name: PauseMenu_RTPC
       guid: 27d5cd3d9333ff46a870d2660884219f
       id: 1823067074

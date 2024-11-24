@@ -50,3 +50,5 @@ MonoBehaviour:
   ResolutionDropdown: {fileID: 0}
   FullscreenToggle: {fileID: 0}
   QualityDropdown: {fileID: 0}
+  uiScaleSlider: {fileID: 0}
+  mainCanvas: {fileID: 0}

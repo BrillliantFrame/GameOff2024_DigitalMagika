@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<GameParameter Name="PauseMenu_RTPC" ID="{3DCDD527-3393-46FF-A870-D2660884219F}"/>
 				<GameParameter Name="LowPassPauseMenu_RTPC" ID="{79B89F30-74B0-44F5-9E85-117B90D48457}"/>
+				<GameParameter Name="MasterVolume" ID="{4AD88946-A382-4260-990D-A9E02DE0C1A1}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="75"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: 4377930751575145379
     second: TileSetHalfLedges_1
+  - first:
+      213: 4639452892589379275
+    second: TileSetHalfLedges_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,10 +109,10 @@ TextureImporter:
       name: TileSetHalfLedges_0
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 192
-        height: 224
+        x: 384
+        y: 63
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +131,10 @@ TextureImporter:
       name: TileSetHalfLedges_1
       rect:
         serializedVersion: 2
-        x: 319
-        y: 0
-        width: 160
-        height: 256
+        x: 113
+        y: 226
+        width: 80
+        height: 80
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,11 +149,473 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 223
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb6a39656e6ef04095d8d4b5fa5deed
+      internalID: 332946603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_4
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 223
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd9e64b64918b044bd9a1fd400bb739
+      internalID: -1235988218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 302
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4d0fdd53968eb4fb6b8f9b187a727f
+      internalID: -199913606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_7
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 302
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad5fe5247482814d83bcea75164337c
+      internalID: -157780794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 226
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a8a8c09475e9f4da683bfb324bded1
+      internalID: -374482309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_10
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 146
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5de90c50ec566740a8c531aeee919fd
+      internalID: 877322383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_11
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 66
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4f44ba5b9391f449e0068b0621dd45
+      internalID: -1495978738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 143
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a80e0cf6ad0e9b4298054abeac64a03
+      internalID: -1887250598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_13
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 143
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23a6a1c9a33bd6e458aa13a331f05460
+      internalID: 2147196002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 223
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3874bea7ab7077a4d87fb771ecc31652
+      internalID: 1320688042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 222
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a86f6d71d712044bfe47aeb0039083
+      internalID: 1858490760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_16
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 222
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2472b7bf1660fa40acfb800f83837ad
+      internalID: -1166587661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_17
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 142
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed45e114f8f709544b3492752f500fec
+      internalID: 1551163263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 146
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1a2ba20c197fa4fb474d6bed87bb78
+      internalID: 1431478899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_19
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 66
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13ade809d7e3e94db2cc725178ad360
+      internalID: -522325502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_20
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 63
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bd5fcd33ba9c54690dada47dc56c9e
+      internalID: -234051714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_21
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 63
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8c61a94f526f14aa8d7e50352ee81d
+      internalID: -1413616000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 143
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d0bd2f2889e984aa008e1f6ff30781
+      internalID: -1637335475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_23
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 142
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9bd31aa16b0bf4b92ff1d0a1a197c2
+      internalID: 791112768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 62
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd651e2999440cd47a5c334681e37b4d
+      internalID: -963645946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileSetHalfLedges_25
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 62
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c8d8241aaf82940ad40e61f3e0d52d
+      internalID: -458768022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8d231e88bb8ea1641a738b86734b5574
+    spriteID: 7e97a5195dab99547b90a53b38cc448b
     internalID: 0
     vertices: []
     indices: 
@@ -162,6 +627,32 @@ TextureImporter:
     nameFileIdTable:
       TileSetHalfLedges_0: -1409551521860044759
       TileSetHalfLedges_1: 4377930751575145379
+      TileSetHalfLedges_10: 877322383
+      TileSetHalfLedges_11: -1495978738
+      TileSetHalfLedges_12: -1887250598
+      TileSetHalfLedges_13: 2147196002
+      TileSetHalfLedges_14: 1320688042
+      TileSetHalfLedges_15: 1858490760
+      TileSetHalfLedges_16: -1166587661
+      TileSetHalfLedges_17: 1551163263
+      TileSetHalfLedges_18: 1431478899
+      TileSetHalfLedges_19: -522325502
+      TileSetHalfLedges_2: 4639452892589379275
+      TileSetHalfLedges_20: -234051714
+      TileSetHalfLedges_21: -1413616000
+      TileSetHalfLedges_22: -1637335475
+      TileSetHalfLedges_23: 791112768
+      TileSetHalfLedges_24: -963645946
+      TileSetHalfLedges_25: -458768022
+      TileSetHalfLedges_26: -1733424579
+      TileSetHalfLedges_27: -1473257166
+      TileSetHalfLedges_3: 332946603
+      TileSetHalfLedges_4: -1235988218
+      TileSetHalfLedges_5: -376131678
+      TileSetHalfLedges_6: -199913606
+      TileSetHalfLedges_7: -157780794
+      TileSetHalfLedges_8: 518533128
+      TileSetHalfLedges_9: -374482309
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

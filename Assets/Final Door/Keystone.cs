@@ -21,4 +21,11 @@ public class Keystone : MonoBehaviour
             _glyph = 0;
         }
     }
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "Player")
+        {
+            ActivateKeystone();
+        }
+    }
 }

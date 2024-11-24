@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7ad13577a62adb40926f2d6ed13223f7
     GuidInternal: 
-    m_lastTime: -8584693100359689522
+    m_lastTime: -8584693099406268198
     List:
     - name: AMB
       guid: 6348bb5347bb5f408140ca3cdbcc3832
@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 82a4ce4cf142d943902904ea4d8dd2ba
     GuidInternal: 
-    m_lastTime: -8584693100216560404
+    m_lastTime: -8584693099326276956
     List:
     - name: DigitalMagika_Soundbank
       guid: e9c276abb091af46adfd241bb7311241
@@ -162,7 +162,7 @@ MonoBehaviour:
     ParentPath: Events\Ambience
     guid: cbe1a3c647c9ef4d92b71b254451e67c
     GuidInternal: 
-    m_lastTime: -8584693100361988340
+    m_lastTime: -8584693099410036625
     List:
     - name: Ambience_Forest
       guid: 14e56e5d9d27be47a1e9b1a54da6e5b4
@@ -192,7 +192,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 72b31c97ae59724c8b255effb412f0b0
     GuidInternal: 
-    m_lastTime: -8584693100361978334
+    m_lastTime: -8584693099410036625
     List:
     - name: Stop_All
       guid: b3d70ca36602974a9713948e850dbc62
@@ -209,8 +209,8 @@ MonoBehaviour:
         guid: b3d70ca36602974a9713948e850dbc62
       Path: Events\Default Work Unit\Stop_All
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Enemies.wwu
     PathAndIcons:
     - ElementName: Events
@@ -389,7 +389,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 0b2f18ede3b70f46946ef0f770e6ca69
     GuidInternal: 
-    m_lastTime: -8584693100361978334
+    m_lastTime: -8584693099410036625
     List:
     - name: GameOver_Music
       guid: 51e3b34306e96444964c88832aec8464
@@ -406,8 +406,8 @@ MonoBehaviour:
         guid: 51e3b34306e96444964c88832aec8464
       Path: Events\Music\GameOver_Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 40
+      minDuration: 40
     - name: InGame_Music
       guid: de0a68e97e4d0f4da7da5e947c2e29fc
       id: 2613926250
@@ -440,8 +440,8 @@ MonoBehaviour:
         guid: 791c323ff95eeb449e26bfc45822cc86
       Path: Events\Music\MainMenu_Music
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 86.4
+      minDuration: 86.4
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -831,7 +831,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 16e6e60b67a09a40b2d1f957e5449311
     GuidInternal: 
-    m_lastTime: -8584693100361978334
+    m_lastTime: -8584693099410036625
     List:
     - name: LowPassPauseMenu_RTPC
       guid: 309fb879b074f5449e85117b90d48457

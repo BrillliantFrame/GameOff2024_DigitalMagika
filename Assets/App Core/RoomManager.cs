@@ -1,5 +1,7 @@
-using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
+using System.Collections.Generic;
 using UnityEngine;
 
 public class RoomManager : MonoBehaviour
@@ -63,6 +65,7 @@ public class RoomManager : MonoBehaviour
         }
     }
 
+#if UNITY_EDITOR
     void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
@@ -89,4 +92,5 @@ public class RoomManager : MonoBehaviour
             }
         }
     }
+#endif
 }

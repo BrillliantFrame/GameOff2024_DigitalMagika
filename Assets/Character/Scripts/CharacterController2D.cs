@@ -234,6 +234,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
             else
             {
                 OnPlayerLivesEnded?.Invoke();
+                AkSoundEngine.PostEvent("GameOver_Music", gameObject);
             }
         }
     }

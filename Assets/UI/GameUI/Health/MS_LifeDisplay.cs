@@ -44,6 +44,7 @@ public class LifeDisplay : MonoBehaviour
         if (currentLives <= 0)
         {
             GameOver();
+
         }
     }
 
@@ -152,6 +153,7 @@ public class LifeDisplay : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
+        AkSoundEngine.PostEvent("Stop_All", gameObject);
         Time.timeScale = 1f;
         AppCore.Instance?.BackToMain();
 

@@ -76,6 +76,7 @@ public class SkeletonArcher : MonoBehaviour
     {
         _currentState = SkillState.ACTIVE;
         _drawTime = _bowDrawTime;
+        AkSoundEngine.PostEvent("Enemy_Aim", gameObject);
         Debug.Log("Taking aim");
     }
 
@@ -83,6 +84,7 @@ public class SkeletonArcher : MonoBehaviour
     {
         Arrow prefab = Instantiate(_arrowPrefab, transform.position, Quaternion.identity);
         prefab.Shoot(transform.localScale.x);
+        AkSoundEngine.PostEvent("Enemy_Shot", gameObject);
     }
 
     void OnDrawGizmos()

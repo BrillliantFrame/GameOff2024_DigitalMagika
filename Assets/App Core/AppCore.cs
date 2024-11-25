@@ -84,7 +84,6 @@ public class AppCore : Singleton<AppCore>
 
     public void MainMenu()
     {
-        Debug.Log("============Fade out gameplay music here if already playing============");
         StartCoroutine(wrapLoading(() =>
         {
             _scenesLoading.Add(SceneManager.LoadSceneAsync(_scenes.GetMainMenuIndex(), LoadSceneMode.Additive));

@@ -39,7 +39,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{55ECB4F7-CBE3-E46E-E6F1-E03F93B168B2}">
+		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{0DE590A5-BB2E-39CD-C648-129D5A7C0866}">
 			<ShortName>DigitalMagika_Soundbank</ShortName>
 			<Path>DigitalMagika_Soundbank.bnk</Path>
 			<Media>
@@ -159,6 +159,10 @@
 					<ShortName>OneShots\Birds_Chirp\OneShots_Birds-003.wav</ShortName>
 					<CachePath>SFX/OneShots/Birds_Chirp/OneShots_Birds-003_8E324C96.wem</CachePath>
 				</File>
+				<File Id="510042710" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Skeleton_Shot\Skeleton_Shot-002.wav</ShortName>
+					<CachePath>SFX/Skeleton_Shot/Skeleton_Shot-002_8E324C96.wem</CachePath>
+				</File>
 				<File Id="543866815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>1st Violin MSTR.wav</ShortName>
 					<CachePath>SFX/1st Violin MSTR_56CEF360.wem</CachePath>
@@ -174,6 +178,10 @@
 				<File Id="617332298" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Marimba MSTR.wav</ShortName>
 					<CachePath>SFX/Marimba MSTR_56CEF360.wem</CachePath>
+				</File>
+				<File Id="630368386" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Skeleton_Aim-001.wav</ShortName>
+					<CachePath>SFX/Skeleton_Aim-001_8E324C96.wem</CachePath>
 				</File>
 				<File Id="631974311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Jump\Player_Jump-001.wav</ShortName>
@@ -206,6 +214,10 @@
 				<File Id="747244547" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Jump\Player_Jump-003.wav</ShortName>
 					<CachePath>SFX/Player/Jump/Player_Jump-003_818F3B66.wem</CachePath>
+				</File>
+				<File Id="760794307" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Skeleton_Aim-002.wav</ShortName>
+					<CachePath>SFX/Skeleton_Aim-002_8E324C96.wem</CachePath>
 				</File>
 				<File Id="762196346" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Xylophone MSTR.wav</ShortName>
@@ -251,6 +263,10 @@
 					<ShortName>OneShots\Birds_Chirp\OneShots_Birds-002.wav</ShortName>
 					<CachePath>SFX/OneShots/Birds_Chirp/OneShots_Birds-002_8E324C96.wem</CachePath>
 				</File>
+				<File Id="960420287" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Skeleton_Shot\Skeleton_Shot-003.wav</ShortName>
+					<CachePath>SFX/Skeleton_Shot/Skeleton_Shot-003_8E324C96.wem</CachePath>
+				</File>
 				<File Id="986366127" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-009.wav</ShortName>
 					<CachePath>SFX/Player/Walk/SFX_Player_Walk-009_8E324C96.wem</CachePath>
@@ -278,6 +294,10 @@
 				<File Id="1038914040" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Celesta MSTR.wav</ShortName>
 					<CachePath>SFX/Celesta MSTR_56CEF360.wem</CachePath>
+				</File>
+				<File Id="1047474701" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Skeleton_Shot\Skeleton_Shot-001.wav</ShortName>
+					<CachePath>SFX/Skeleton_Shot/Skeleton_Shot-001_8E324C96.wem</CachePath>
 				</File>
 				<File Id="1048895883" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Land\Player_Landing-001.wav</ShortName>
@@ -316,11 +336,22 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
+				<Event Id="1076033001" Name="Enemy_Aim" DurationType="OneShot" DurationMin="1.5733154" DurationMax="2.4108813">
+					<MediaRefs>
+						<MediaRef Id="630368386"/>
+						<MediaRef Id="760794307"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1205999388" Name="Enemy_Death" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1010055213" Name="Enemy_Hit" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="4185496761" Name="Enemy_Hurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2040126240" Name="Enemy_Swing" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="582686005" Name="Enemy_Walk" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3598801546" Name="Enemy_Shot" DurationType="OneShot" DurationMin="1.1522088" DurationMax="1.4858496">
+					<MediaRefs>
+						<MediaRef Id="510042710"/>
+						<MediaRef Id="960420287"/>
+						<MediaRef Id="1047474701"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="816370673" Name="GameOver_Music" DurationType="OneShot" DurationMin="40" DurationMax="40">
 					<MediaRefs>
 						<MediaRef Id="464550981"/>
@@ -460,5 +491,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4D694DE8-5F71-9D3D-1D53-50D6717B44B8}</FileHash>
+	<FileHash>{560AC19E-FDE4-C187-EF37-4876CA2FCD53}</FileHash>
 </SoundBanksInfo>

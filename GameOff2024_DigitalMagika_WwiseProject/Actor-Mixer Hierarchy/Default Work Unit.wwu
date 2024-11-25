@@ -1673,6 +1673,213 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Enemy" ID="{225026B2-6BF0-4395-9D55-DD0298CDB4EC}" ShortID="52990024">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Skeleton_Aim" ID="{3788BE9C-5DAC-4333-9E6B-650DF7DB1A62}" ShortID="245326856">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{13B413CF-6F34-48C6-B6E0-A6AE9437F615}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="300"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{3FE0775A-E4E4-4DB5-B237-E4FCD152D372}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-7"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="SFX" ID="{17AD38C5-9345-4F80-A5D5-2E57E849DAB9}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Skeleton_Aim-001" ID="{61488BAB-CAB3-43DC-8B46-31BD9A95B09D}" ShortID="12495788">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skeleton_Aim-001" ID="{3C8FDB4A-80D9-461C-8BD7-A7416E636A87}">
+											<Language>SFX</Language>
+											<AudioFile>Enemy\Skeleton_Aim\Skeleton_Aim-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="983029226"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Skeleton_Aim-001_01" ID="{C88B0CA6-F073-4F9C-956E-1CEA1F5FDB3F}">
+											<Language>SFX</Language>
+											<AudioFile>Skeleton_Aim-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="630368386"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skeleton_Aim-001_01" ID="{C88B0CA6-F073-4F9C-956E-1CEA1F5FDB3F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Skeleton_Aim-002" ID="{6302C3B7-BFEC-4B4D-8805-6FB8798A9534}" ShortID="725140820">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skeleton_Aim-002" ID="{1886C624-F873-4969-8265-77727C8666E1}">
+											<Language>SFX</Language>
+											<AudioFile>Enemy\Skeleton_Aim\Skeleton_Aim-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="201343854"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Skeleton_Aim-002_01" ID="{E3079B17-43DF-443E-9578-00F8CD96557D}">
+											<Language>SFX</Language>
+											<AudioFile>Skeleton_Aim-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="760794307"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skeleton_Aim-002_01" ID="{E3079B17-43DF-443E-9578-00F8CD96557D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Skeleton_Shot" ID="{EC349982-D01C-412F-B6A4-2C521E1FCE20}" ShortID="10953907">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5107178D-D4A5-4974-9E12-6B040D80096C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{C5AF93E5-CE95-4408-8408-5E6C04F0F80A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-7"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Skeleton_Shot-001" ID="{F7C40DCF-9425-4E98-A1D0-639222DCFF93}" ShortID="656004253">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skeleton_Shot-001" ID="{73AA5001-7D0B-434A-9E3D-DCB88A4100A9}">
+											<Language>SFX</Language>
+											<AudioFile>Skeleton_Shot\Skeleton_Shot-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1047474701"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skeleton_Shot-001" ID="{73AA5001-7D0B-434A-9E3D-DCB88A4100A9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Skeleton_Shot-002" ID="{C736DC60-B771-42C7-96A4-9CB22B0B5345}" ShortID="963662319">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skeleton_Shot-002" ID="{A0E440C3-359E-42DA-8D4B-6415FA06B383}">
+											<Language>SFX</Language>
+											<AudioFile>Skeleton_Shot\Skeleton_Shot-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="510042710"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skeleton_Shot-002" ID="{A0E440C3-359E-42DA-8D4B-6415FA06B383}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Skeleton_Shot-003" ID="{6DB837EA-062D-4D44-9A07-39BF54FE04CB}" ShortID="976977310">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Skeleton_Shot-003" ID="{CC243364-3A5A-4EE6-A5F7-8E9105D1DB27}">
+											<Language>SFX</Language>
+											<AudioFile>Skeleton_Shot\Skeleton_Shot-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="960420287"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Skeleton_Shot-003" ID="{CC243364-3A5A-4EE6-A5F7-8E9105D1DB27}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

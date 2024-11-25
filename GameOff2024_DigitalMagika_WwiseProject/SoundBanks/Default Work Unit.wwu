@@ -7,7 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Enemy_Death" ID="{B74A769F-D559-40EA-AF27-DEE88C8CA6B5}" WorkUnitID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Regen" ID="{7A442C94-A87D-411E-8D2B-C76D3C219ABC}" WorkUnitID="{FC472346-4033-455D-8FDF-048B3BC7C508}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Enemy_Walk" ID="{61094259-7493-413A-8885-A3BD8D056529}" WorkUnitID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Enemy_Shot" ID="{61094259-7493-413A-8885-A3BD8D056529}" WorkUnitID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Hover" ID="{50D7113C-8A48-41B6-928B-DD32D67F8496}" WorkUnitID="{343418BD-87D3-4ED7-8289-2B59BB71619C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Resume" ID="{B14B4806-12A7-41EF-AE22-CADF02AC7AAA}" WorkUnitID="{343418BD-87D3-4ED7-8289-2B59BB71619C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Click" ID="{5B2AD75B-1BDB-41F5-972C-18929275A26B}" WorkUnitID="{343418BD-87D3-4ED7-8289-2B59BB71619C}" Origin="Manual" Filter="7"/>
@@ -25,7 +25,7 @@
 						<ObjectRef Name="Pickup_interactible" ID="{2BA04F49-60F0-491C-AA94-8E603CA9DC3F}" WorkUnitID="{FC472346-4033-455D-8FDF-048B3BC7C508}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_All" ID="{A30CD7B3-0266-4A97-9713-948E850DBC62}" WorkUnitID="{971CB372-59AE-4C72-8B25-5EFFB412F0B0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_DoubleJump" ID="{5452BAF8-3B06-4ABC-99A0-E30CF68EABBC}" WorkUnitID="{FC472346-4033-455D-8FDF-048B3BC7C508}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Enemy_Swing" ID="{1A97B0D2-0A88-4B13-AC21-6250651FE7E1}" WorkUnitID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Enemy_Aim" ID="{1A97B0D2-0A88-4B13-AC21-6250651FE7E1}" WorkUnitID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="InGame_Music" ID="{E9680ADE-4D7E-4D0F-A7DA-5E947C2E29FC}" WorkUnitID="{ED182F0B-B7E3-460F-946E-F0F770E6CA69}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Enemy_Hurt" ID="{A924C3DE-BCA6-4EB1-BEF9-7B31CFC6AEC4}" WorkUnitID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Jump" ID="{F03A0509-DBF7-4F01-B3DF-50DF378C98FC}" WorkUnitID="{FC472346-4033-455D-8FDF-048B3BC7C508}" Origin="Manual" Filter="7"/>

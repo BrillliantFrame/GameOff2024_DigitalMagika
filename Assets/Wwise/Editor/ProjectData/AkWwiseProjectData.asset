@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 82a4ce4cf142d943902904ea4d8dd2ba
     GuidInternal: 
-    m_lastTime: -8584693099326276956
+    m_lastTime: -8584691152626004214
     List:
     - name: DigitalMagika_Soundbank
       guid: e9c276abb091af46adfd241bb7311241
@@ -222,8 +222,28 @@ MonoBehaviour:
     ParentPath: Events\Enemies
     guid: 48fd38db52193c43b60dbfeda18a94f4
     GuidInternal: 
-    m_lastTime: -8584705152648737250
+    m_lastTime: -8584691152626091773
     List:
+    - name: Enemy_Aim
+      guid: d2b0971a880a134bac216250651fe7e1
+      id: 1076033001
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enemies
+        ObjectType: 12
+        guid: 48fd38db52193c43b60dbfeda18a94f4
+      - ElementName: Forest_Skeleton
+        ObjectType: 4
+        guid: 39c0647cfec1664f92d53fb43fffaa25
+      - ElementName: Enemy_Aim
+        ObjectType: 3
+        guid: d2b0971a880a134bac216250651fe7e1
+      Path: Events\Enemies\Forest_Skeleton\Enemy_Aim
+      maxAttenuation: 0
+      maxDuration: 2.4108813
+      minDuration: 1.5733154
     - name: Enemy_Death
       guid: 9f764ab759d5ea40af27dee88c8ca6b5
       id: 1205999388
@@ -284,29 +304,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Enemy_Swing
-      guid: d2b0971a880a134bac216250651fe7e1
-      id: 2040126240
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Enemies
-        ObjectType: 12
-        guid: 48fd38db52193c43b60dbfeda18a94f4
-      - ElementName: Forest_Skeleton
-        ObjectType: 4
-        guid: 39c0647cfec1664f92d53fb43fffaa25
-      - ElementName: Enemy_Swing
-        ObjectType: 3
-        guid: d2b0971a880a134bac216250651fe7e1
-      Path: Events\Enemies\Forest_Skeleton\Enemy_Swing
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Enemy_Walk
+    - name: Enemy_Shot
       guid: 5942096193743a418885a3bd8d056529
-      id: 582686005
+      id: 3598801546
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -317,10 +317,10 @@ MonoBehaviour:
       - ElementName: Forest_Skeleton
         ObjectType: 4
         guid: 39c0647cfec1664f92d53fb43fffaa25
-      - ElementName: Enemy_Walk
+      - ElementName: Enemy_Shot
         ObjectType: 3
         guid: 5942096193743a418885a3bd8d056529
-      Path: Events\Enemies\Forest_Skeleton\Enemy_Walk
+      Path: Events\Enemies\Forest_Skeleton\Enemy_Shot
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

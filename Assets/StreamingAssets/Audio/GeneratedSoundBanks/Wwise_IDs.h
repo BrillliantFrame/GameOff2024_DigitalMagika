@@ -14,11 +14,11 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMBIENCE_FOREST = 1481642983U;
+        static const AkUniqueID ENEMY_AIM = 1076033001U;
         static const AkUniqueID ENEMY_DEATH = 1205999388U;
         static const AkUniqueID ENEMY_HIT = 1010055213U;
         static const AkUniqueID ENEMY_HURT = 4185496761U;
-        static const AkUniqueID ENEMY_SWING = 2040126240U;
-        static const AkUniqueID ENEMY_WALK = 582686005U;
+        static const AkUniqueID ENEMY_SHOT = 3598801546U;
         static const AkUniqueID GAMEOVER_MUSIC = 816370673U;
         static const AkUniqueID INGAME_MUSIC = 2613926250U;
         static const AkUniqueID MAINMENU_MUSIC = 1929327811U;

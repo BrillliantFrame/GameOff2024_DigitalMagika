@@ -16,6 +16,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
     [SerializeField] private float _jumpingHorizontalPercent = 0.5f;
     [SerializeField] private float _jumpingPower = 16f;
     [SerializeField] private float _dashingPower = 24f;
+    [SerializeField] private float _coyoteTime = 0.2f;
+    [SerializeField] private float _jumpBufferTime = 0.2f;
     [SerializeField] private PlayerInput _playerInput;
 
     [Header("Animation")]
@@ -42,6 +44,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
     private bool _isFacingRight = true;
     private bool _isDashing = false;
     private bool _isGrounded = false;
+    private float _coyoteTimeCounter;
+    private float _jumpBufferCounter;
 
     //Skill Cooldown
     private float _cooldownTime = 0.0f;
@@ -113,7 +117,21 @@ public class CharacterController2D : Singleton<CharacterController2D>
                 break;
         }
 
-        if (_isDashing || !IsGrounded())
+        bool isGrounded = IsGrounded();
+
+        if (isGrounded)
+        {
+            _coyoteTimeCounter = _coyoteTime;
+        }
+        else
+        {
+            _coyoteTimeCounter -= Time.deltaTime;
+        }
+
+        if (!_jumpPerformed)
+            _jumpBufferCounter -= Time.deltaTime;
+
+        if (_isDashing || !isGrounded)
             return;
 
         Flip();
@@ -126,15 +144,15 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
         bool isGrounded = IsGrounded();
 
-        if (_jumpPerformed)
+        if (_jumpBufferCounter > 0f)
         {
-            _jumpPerformed = false;
-            if (isGrounded)
+            if (_coyoteTimeCounter > 0f)
             {
                 Flip();
                 _rigidBody.linearVelocity = new Vector2(_horizontalMovement * _movementSpeed * _jumpingHorizontalPercent, _jumpingPower);
                 _animator.SetTrigger("Jump");
                 AkSoundEngine.PostEvent("Player_Jump", gameObject);
+                _jumpBufferCounter = 0f;
             }
             else if (_remainingExtraJumps > 0)
             {
@@ -144,6 +162,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
                 _animator.SetTrigger("Jump");
                 _jumpParticleSystem.Play();
                 AkSoundEngine.PostEvent("Player_DoubleJump", gameObject);
+                _jumpBufferCounter = 0f;
             }
         }
         else if (_jumpReleased && _rigidBody.linearVelocity.y > 0f)
@@ -190,10 +209,12 @@ public class CharacterController2D : Singleton<CharacterController2D>
         {
             _jumpPerformed = false;
             _jumpReleased = true;
+            _coyoteTimeCounter = 0f;
         }
         else
         {
             _jumpPerformed = context.performed;
+            _jumpBufferCounter = _jumpBufferTime;
         }
     }
 

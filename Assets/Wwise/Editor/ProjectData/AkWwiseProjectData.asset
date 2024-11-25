@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7ad13577a62adb40926f2d6ed13223f7
     GuidInternal: 
-    m_lastTime: -8584691359367477414
+    m_lastTime: -8584690845907748042
     List:
     - name: AMB
       guid: 6348bb5347bb5f408140ca3cdbcc3832
@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 82a4ce4cf142d943902904ea4d8dd2ba
     GuidInternal: 
-    m_lastTime: -8584691152626004214
+    m_lastTime: -8584690845907591427
     List:
     - name: DigitalMagika_Soundbank
       guid: e9c276abb091af46adfd241bb7311241
@@ -222,7 +222,7 @@ MonoBehaviour:
     ParentPath: Events\Enemies
     guid: 48fd38db52193c43b60dbfeda18a94f4
     GuidInternal: 
-    m_lastTime: -8584691152626091773
+    m_lastTime: -8584690845910586313
     List:
     - name: Enemy_Aim
       guid: d2b0971a880a134bac216250651fe7e1
@@ -322,8 +322,8 @@ MonoBehaviour:
         guid: 5942096193743a418885a3bd8d056529
       Path: Events\Enemies\Forest_Skeleton\Enemy_Shot
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1.4858496
+      minDuration: 1.1522088
     - name: Forest_Skeleton
       guid: 39c0647cfec1664f92d53fb43fffaa25
       id: 1182069928
@@ -831,7 +831,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 16e6e60b67a09a40b2d1f957e5449311
     GuidInternal: 
-    m_lastTime: -8584691359367316839
+    m_lastTime: -8584690845910586313
     List:
     - name: LowPassPauseMenu_RTPC
       guid: 309fb879b074f5449e85117b90d48457

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 7ad13577a62adb40926f2d6ed13223f7
     GuidInternal: 
-    m_lastTime: -8584690845907748042
+    m_lastTime: -8584690586777058067
     List:
     - name: AMB
       guid: 6348bb5347bb5f408140ca3cdbcc3832
@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 82a4ce4cf142d943902904ea4d8dd2ba
     GuidInternal: 
-    m_lastTime: -8584690845907591427
+    m_lastTime: -8584690586776923263
     List:
     - name: DigitalMagika_Soundbank
       guid: e9c276abb091af46adfd241bb7311241
@@ -222,7 +222,7 @@ MonoBehaviour:
     ParentPath: Events\Enemies
     guid: 48fd38db52193c43b60dbfeda18a94f4
     GuidInternal: 
-    m_lastTime: -8584690845910586313
+    m_lastTime: -8584690586777531903
     List:
     - name: Enemy_Aim
       guid: d2b0971a880a134bac216250651fe7e1
@@ -242,8 +242,8 @@ MonoBehaviour:
         guid: d2b0971a880a134bac216250651fe7e1
       Path: Events\Enemies\Forest_Skeleton\Enemy_Aim
       maxAttenuation: 0
-      maxDuration: 2.4108813
-      minDuration: 1.5733154
+      maxDuration: -1
+      minDuration: -1
     - name: Enemy_Death
       guid: 9f764ab759d5ea40af27dee88c8ca6b5
       id: 1205999388
@@ -262,8 +262,8 @@ MonoBehaviour:
         guid: 9f764ab759d5ea40af27dee88c8ca6b5
       Path: Events\Enemies\Forest_Skeleton\Enemy_Death
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Enemy_Hit
       guid: dceabedbbfd62e46a9b967798a8926ce
       id: 1010055213
@@ -282,8 +282,8 @@ MonoBehaviour:
         guid: dceabedbbfd62e46a9b967798a8926ce
       Path: Events\Enemies\Forest_Skeleton\Enemy_Hit
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Enemy_Hurt
       guid: dec324a9a6bcb14ebef97b31cfc6aec4
       id: 4185496761
@@ -302,8 +302,8 @@ MonoBehaviour:
         guid: dec324a9a6bcb14ebef97b31cfc6aec4
       Path: Events\Enemies\Forest_Skeleton\Enemy_Hurt
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Enemy_Shot
       guid: 5942096193743a418885a3bd8d056529
       id: 3598801546
@@ -322,8 +322,8 @@ MonoBehaviour:
         guid: 5942096193743a418885a3bd8d056529
       Path: Events\Enemies\Forest_Skeleton\Enemy_Shot
       maxAttenuation: 0
-      maxDuration: 1.4858496
-      minDuration: 1.1522088
+      maxDuration: -1
+      minDuration: -1
     - name: Forest_Skeleton
       guid: 39c0647cfec1664f92d53fb43fffaa25
       id: 1182069928
@@ -359,8 +359,8 @@ MonoBehaviour:
         guid: 0231665993e20a48a9411647de1680ad
       Path: Events\Enemies\Traps\Trap_Hit
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Traps
       guid: 6ecefbd97e5e734eba47f272d3fc3b01
       id: 3797942683
@@ -831,7 +831,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 16e6e60b67a09a40b2d1f957e5449311
     GuidInternal: 
-    m_lastTime: -8584690845910586313
+    m_lastTime: -8584690586777531903
     List:
     - name: LowPassPauseMenu_RTPC
       guid: 309fb879b074f5449e85117b90d48457

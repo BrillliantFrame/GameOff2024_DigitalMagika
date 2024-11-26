@@ -16,6 +16,43 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Transition_Room" ID="{6226F54E-B4F6-4331-A85D-BA451ED7771D}">
+					<ChildrenList>
+						<Action Name="" ID="{718251F0-035E-4A22-8621-E332B5E8A56A}" ShortID="159732737">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{0F3395FA-7A1E-40AB-A400-8EC5E0050FF5}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C1DB4B5D-8330-44A4-916D-723458057382}" ShortID="499046390">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB" ID="{53BB4863-BB47-405F-8140-CA3CDBCC3832}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6FCF77FA-42B7-46BE-BD8E-E01DCD8D3EF5}" ShortID="818916967">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="15"/>
+								<Property Name="Delay" Type="Real64" Value="0.2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -5,7 +5,17 @@
 			<ChildrenList>
 				<Folder Name="Forest_Skeleton" ID="{7C64C039-C1FE-4F66-92D5-3FB43FFFAA25}" ShortID="731444273">
 					<ChildrenList>
-						<Event Name="Enemy_Shot" ID="{61094259-7493-413A-8885-A3BD8D056529}"/>
+						<Event Name="Enemy_Shot" ID="{61094259-7493-413A-8885-A3BD8D056529}">
+							<ChildrenList>
+								<Action Name="" ID="{B3387FBA-38B7-4328-A9B0-B0C9D05B6279}" ShortID="222125792">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Skeleton_Shot" ID="{EC349982-D01C-412F-B6A4-2C521E1FCE20}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Enemy_Aim" ID="{1A97B0D2-0A88-4B13-AC21-6250651FE7E1}">
 							<ChildrenList>
 								<Action Name="" ID="{2D4CA20E-2EB5-482C-AABF-C6C817087E35}" ShortID="1060013777">

@@ -14,6 +14,7 @@
 						<ObjectRef Name="Player_Landing" ID="{66FB9937-6AB1-4256-9075-93CACE71C1BF}" WorkUnitID="{FC472346-4033-455D-8FDF-048B3BC7C508}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="UI_Pause" ID="{6E91BE5F-612E-42D2-BD87-F5AA6BEA1691}" WorkUnitID="{343418BD-87D3-4ED7-8289-2B59BB71619C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_Walk" ID="{A08A36FD-3B38-42FC-8706-9ACAD3715BF2}" WorkUnitID="{FC472346-4033-455D-8FDF-048B3BC7C508}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Transition_Room" ID="{6226F54E-B4F6-4331-A85D-BA451ED7771D}" WorkUnitID="{971CB372-59AE-4C72-8B25-5EFFB412F0B0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="GameOver_Music" ID="{43B3E351-E906-4464-964C-88832AEC8464}" WorkUnitID="{ED182F0B-B7E3-460F-946E-F0F770E6CA69}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="MainMenu_Music" ID="{3F321C79-5EF9-44EB-9E26-BFC45822CC86}" WorkUnitID="{ED182F0B-B7E3-460F-946E-F0F770E6CA69}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Enemy_Hit" ID="{DBBEEADC-D6BF-462E-A9B9-67798A8926CE}" WorkUnitID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" Origin="Manual" Filter="7"/>
@@ -23,6 +24,7 @@
 						<ObjectRef Name="Trap_Hit" ID="{59663102-E293-480A-A941-1647DE1680AD}" WorkUnitID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_AbilityReady" ID="{CB44A9D2-C904-48B1-854E-67B7990B03B9}" WorkUnitID="{FC472346-4033-455D-8FDF-048B3BC7C508}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pickup_interactible" ID="{2BA04F49-60F0-491C-AA94-8E603CA9DC3F}" WorkUnitID="{FC472346-4033-455D-8FDF-048B3BC7C508}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Back" ID="{54410EAB-622B-4A1F-B9EC-786FA3468363}" WorkUnitID="{343418BD-87D3-4ED7-8289-2B59BB71619C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_All" ID="{A30CD7B3-0266-4A97-9713-948E850DBC62}" WorkUnitID="{971CB372-59AE-4C72-8B25-5EFFB412F0B0}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Player_DoubleJump" ID="{5452BAF8-3B06-4ABC-99A0-E30CF68EABBC}" WorkUnitID="{FC472346-4033-455D-8FDF-048B3BC7C508}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Enemy_Aim" ID="{1A97B0D2-0A88-4B13-AC21-6250651FE7E1}" WorkUnitID="{DB38FD48-1952-433C-B60D-BFEDA18A94F4}" Origin="Manual" Filter="7"/>

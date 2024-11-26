@@ -49,7 +49,7 @@
 						<Action Name="" ID="{0E09EF02-7BD7-4C1F-9C7C-9DB78DB1EBE0}" ShortID="903672409">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>

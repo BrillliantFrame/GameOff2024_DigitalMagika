@@ -2855,7 +2855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88978a7d236d041429409d39f5f38bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDefaultListener: 1
+  isDefaultListener: 0
   listenerId: 0
 --- !u!114 &1085515113
 MonoBehaviour:

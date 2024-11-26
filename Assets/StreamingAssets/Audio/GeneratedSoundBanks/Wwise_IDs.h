@@ -33,7 +33,9 @@ namespace AK
         static const AkUniqueID PLAYER_REGEN = 2445914848U;
         static const AkUniqueID PLAYER_WALK = 2147561130U;
         static const AkUniqueID STOP_ALL = 452547817U;
+        static const AkUniqueID TRANSITION_ROOM = 3441409174U;
         static const AkUniqueID TRAP_HIT = 2814314654U;
+        static const AkUniqueID UI_BACK = 2024222415U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_HOVER = 2118900976U;
         static const AkUniqueID UI_PAUSE = 2792155208U;

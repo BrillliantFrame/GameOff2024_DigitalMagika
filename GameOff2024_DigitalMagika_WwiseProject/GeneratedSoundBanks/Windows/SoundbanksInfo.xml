@@ -39,7 +39,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{0DE590A5-BB2E-39CD-C648-129D5A7C0866}">
+		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{DEDD8CD4-EFF9-CA0A-7FF2-A7533FE54917}">
 			<ShortName>DigitalMagika_Soundbank</ShortName>
 			<Path>DigitalMagika_Soundbank.bnk</Path>
 			<Media>
@@ -54,6 +54,10 @@
 				<File Id="17072997" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OneShots\Birds_Chirp\OneShots_Birds-004.wav</ShortName>
 					<CachePath>SFX/OneShots/Birds_Chirp/OneShots_Birds-004_8E324C96.wem</CachePath>
+				</File>
+				<File Id="31418811" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_ClickAlt.wav</ShortName>
+					<CachePath>SFX/UI_ClickAlt_8E324C96.wem</CachePath>
 				</File>
 				<File Id="38002003" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Piano MSTR.wav</ShortName>
@@ -94,6 +98,10 @@
 				<File Id="147463476" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Viola MSTR.wav</ShortName>
 					<CachePath>SFX/Viola MSTR_56CEF360.wem</CachePath>
+				</File>
+				<File Id="149113307" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Back.wav</ShortName>
+					<CachePath>SFX/UI_Back_A11A8085.wem</CachePath>
 				</File>
 				<File Id="169326442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-006.wav</ShortName>
@@ -179,6 +187,10 @@
 					<ShortName>Marimba MSTR.wav</ShortName>
 					<CachePath>SFX/Marimba MSTR_56CEF360.wem</CachePath>
 				</File>
+				<File Id="624154734" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Resume.wav</ShortName>
+					<CachePath>SFX/UI_Resume_8E324C96.wem</CachePath>
+				</File>
 				<File Id="630368386" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Skeleton_Aim-001.wav</ShortName>
 					<CachePath>SFX/Skeleton_Aim-001_8E324C96.wem</CachePath>
@@ -198,6 +210,10 @@
 				<File Id="668997210" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bass MSTR.wav</ShortName>
 					<CachePath>SFX/Bass MSTR_56CEF360.wem</CachePath>
+				</File>
+				<File Id="673745938" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Begin Game SFX.wav</ShortName>
+					<CachePath>SFX/Begin Game SFX_8E324C96.wem</CachePath>
 				</File>
 				<File Id="685714306" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-004.wav</ShortName>
@@ -246,10 +262,6 @@
 				<File Id="870570205" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-005.wav</ShortName>
 					<CachePath>SFX/Player/Walk/SFX_Player_Walk-005_8E324C96.wem</CachePath>
-				</File>
-				<File Id="871603075" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI\UI_Hover.wav</ShortName>
-					<CachePath>SFX/UI/UI_Hover_323A5926.wem</CachePath>
 				</File>
 				<File Id="872003123" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-002.wav</ShortName>
@@ -462,20 +474,34 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="452547817" Name="Stop_All" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3441409174" Name="Transition_Room" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2814314654" Name="Trap_Hit" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2249769530" Name="UI_Click" DurationType="OneShot" DurationMin="0.019087015" DurationMax="0.026993115">
+				<Event Id="2024222415" Name="UI_Back" DurationType="OneShot" DurationMin="1.5909977" DurationMax="1.5909977">
+					<MediaRefs>
+						<MediaRef Id="149113307"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2249769530" Name="UI_Click" DurationType="OneShot" DurationMin="1.2803607" DurationMax="1.2952379">
+					<MediaRefs>
+						<MediaRef Id="31418811"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2118900976" Name="UI_Hover" DurationType="OneShot" DurationMin="0.019087015" DurationMax="0.026993115">
 					<MediaRefs>
 						<MediaRef Id="839807089"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2118900976" Name="UI_Hover" DurationType="OneShot" DurationMin="0.021963015" DurationMax="0.031060394">
+				<Event Id="2792155208" Name="UI_Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2391028579" Name="UI_Resume" DurationType="OneShot" DurationMin="1.452517" DurationMax="1.452517">
 					<MediaRefs>
-						<MediaRef Id="871603075"/>
+						<MediaRef Id="624154734"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2792155208" Name="UI_Pause" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2391028579" Name="UI_Resume" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="1219048826" Name="UI_Start" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1219048826" Name="UI_Start" DurationType="OneShot" DurationMin="1.6420408" DurationMax="1.6420408">
+					<MediaRefs>
+						<MediaRef Id="673745938"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="543675501" Name="LowPassPauseMenu_RTPC"/>
@@ -491,5 +517,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E2254095-AFE8-6D25-097B-A68CA1C8F32E}</FileHash>
+	<FileHash>{BA4A04F6-BF5F-01AD-292B-8B2E774C3340}</FileHash>
 </SoundBanksInfo>

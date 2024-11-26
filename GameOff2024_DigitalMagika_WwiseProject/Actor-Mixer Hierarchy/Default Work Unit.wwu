@@ -508,6 +508,7 @@
 						<Sound Name="Player_Regen" ID="{A99B3C93-4CAD-4F14-A0C1-3A25A398FC1D}" ShortID="516051538">
 							<PropertyList>
 								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
@@ -538,6 +539,7 @@
 								</AudioFileSource>
 							</ChildrenList>
 							<PositioningInfo>
+								<Panner Name="" ID="{320319F7-4563-4780-BEB0-29A59FADED74}"/>
 								<Position Name="" ID="{6D889AA5-EE4A-4909-AEB2-657491AEB8E2}">
 									<ChildrenList>
 										<Path2D Name="Player_Regen_Path" ID="{DF220F1C-EACE-4801-AF4C-7092F9CE2AFD}">
@@ -559,6 +561,7 @@
 						</Sound>
 						<SwitchContainer Name="Footstep" ID="{8D758C82-21BE-4638-B957-A5A5D57561A7}" ShortID="715224268">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>3</Value>
@@ -984,6 +987,154 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="UI_Hover" ID="{266820EE-E954-4940-ABCF-E379E9144D4A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Begin Game SFX" ID="{CE1248C7-2655-4AC1-9F6F-DEE35B30652D}" ShortID="835575415">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Begin Game SFX" ID="{AEEB6DB9-A9EE-46E4-A292-8B7C2EC16D07}">
+									<Language>SFX</Language>
+									<AudioFile>Begin Game SFX.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="673745938"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Begin Game SFX" ID="{AEEB6DB9-A9EE-46E4-A292-8B7C2EC16D07}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_Back" ID="{60B655D3-34B0-4AE3-8261-C7AE7C214B92}" ShortID="817120338">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Back" ID="{C59EE8E4-595E-4D90-B25C-CCBA2794678D}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00565520521004609"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.111219035797573"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>UI_Back.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="149113307"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Back" ID="{C59EE8E4-595E-4D90-B25C-CCBA2794678D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_ClickAlt" ID="{3FB552E2-D432-4B0F-9681-4ED842440B6B}" ShortID="222737670">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A7EE074A-CA28-4C82-8583-9C3FD2AB7443}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{98065B6F-0BE3-4089-B505-DDA3B3285E03}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_ClickAlt" ID="{A210E3AB-0A58-4195-8979-D404AF4FB0CB}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.0671353343865192"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>UI_ClickAlt.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="31418811"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_ClickAlt" ID="{A210E3AB-0A58-4195-8979-D404AF4FB0CB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_Resume" ID="{9B7ABFD0-E82C-472D-91A2-69E35E225CA5}" ShortID="1009043583">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Resume" ID="{50FE5FA7-EFAE-4B6E-934B-6DCFB6220C4C}">
+									<Language>SFX</Language>
+									<AudioFile>UI_Resume.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="624154734"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Resume" ID="{50FE5FA7-EFAE-4B6E-934B-6DCFB6220C4C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

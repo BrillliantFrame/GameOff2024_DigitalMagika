@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 48ea213a051154540a0755b783768c80
+guid: 23a97f28788858f43866a47e2cadd370
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2082459784715475791
-    second: CharacterTest1_0
+      213: 3107469707486398995
+    second: MonolithYellow1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CharacterTest1_0
+      name: MonolithYellow1_0
       rect:
         serializedVersion: 2
-        x: 31
+        x: 6
         y: 0
-        width: 56
-        height: 128
+        width: 170
+        height: 279
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f4b900f042266ec10800000000000000
-      internalID: 2082459784715475791
+      spriteID: 31a83012c33ff1b20800000000000000
+      internalID: 3107469707486398995
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      CharacterTest1_0: 2082459784715475791
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

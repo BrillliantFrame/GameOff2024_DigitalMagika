@@ -29,25 +29,6 @@ public class LifeDisplay : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.End))
-        {
-            ReplaceHeartWithBroken();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Home))
-        {
-            AddLife();
-        }
-
-        if (currentLives <= 0)
-        {
-            GameOver();
-
-        }
-    }
-
     private void Start()
     {
         if (CharacterController2D.Instance != null)
@@ -140,15 +121,13 @@ public class LifeDisplay : MonoBehaviour
         }
     }
 
-    private void GameOver()
+    public void GameOver()
     {
         gameOver.SetActive(true);
 
-        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-
-        
+        Time.timeScale = 0f;
     }
 
     public void ReturnToMainMenu()

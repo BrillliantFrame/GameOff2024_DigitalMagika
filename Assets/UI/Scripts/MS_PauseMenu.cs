@@ -1,41 +1,43 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class MS_PauseMenu : MonoBehaviour
 {
     public GameObject optionsMenu;
 
-    void Update()
+    public void ToggleOptionsMenu(InputAction.CallbackContext context)
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        Debug.Log("Escape key pressed");
+        if (context.performed)
         {
-            ToggleOptionsMenu();
-
-        }
-    }
-
-    public void ToggleOptionsMenu()
-    {
-        if (optionsMenu != null)
-        {
-            bool isActive = !optionsMenu.activeSelf;
-            optionsMenu.SetActive(isActive);
-
-            if (isActive)
+            if (optionsMenu != null)
             {
-                Time.timeScale = 0f;
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-                AkSoundEngine.SetRTPCValue("LowPassPauseMenu_RTPC", 0f);
-                AkSoundEngine.SetRTPCValue("PauseMenu_RTPC", 0f);
-            }
-            else
-            {
-                Time.timeScale = 1f;
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-                AkSoundEngine.SetRTPCValue("LowPassPauseMenu_RTPC", 100f);
-                AkSoundEngine.SetRTPCValue("PauseMenu_RTPC", 100f);
+                bool isActive = !optionsMenu.activeSelf;
+                optionsMenu.SetActive(isActive);
+
+                if (isActive)
+                {
+                    Time.timeScale = 0f;
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+
+                    CharacterController2D.Instance?.DisableInput();
+
+                    AkSoundEngine.SetRTPCValue("LowPassPauseMenu_RTPC", 0f);
+                    AkSoundEngine.SetRTPCValue("PauseMenu_RTPC", 0f);
+                }
+                else
+                {
+                    Time.timeScale = 1f;
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+
+                    CharacterController2D.Instance?.EnableInput();
+
+                    AkSoundEngine.SetRTPCValue("LowPassPauseMenu_RTPC", 100f);
+                    AkSoundEngine.SetRTPCValue("PauseMenu_RTPC", 100f);
+                }
             }
         }
     }

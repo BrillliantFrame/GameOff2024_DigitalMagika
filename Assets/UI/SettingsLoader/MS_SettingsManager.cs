@@ -122,9 +122,14 @@ public class MS_SettingsManager : MonoBehaviour
     public void SetQuality()
     {
         int qualityIndex = QualityDropdown.value;
-        QualitySettings.SetQualityLevel(qualityIndex);
+        QualitySettings.SetQualityLevel(qualityIndex, true);
         PlayerPrefs.SetInt("QualityLevel", qualityIndex);
         SafeSettings();
+
+        int quality = QualitySettings.GetQualityLevel();
+        Debug.Log($"Current quality is set to: {quality}");
+
+        Debug.Log($"Quality set to: {qualityIndex} = {QualityDropdown.value}");
     }
 
     //Optional

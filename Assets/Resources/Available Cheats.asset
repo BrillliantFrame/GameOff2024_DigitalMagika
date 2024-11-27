@@ -14,11 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cheats:
   - CheatName: 0
+    CheatDescription: Damage won't be an issue!
     Enabled: 0
     Found: 0
   - CheatName: 1
+    CheatDescription: Dash like you never could before
     Enabled: 0
     Found: 0
   - CheatName: 2
+    CheatDescription: Enhance your magical jumps
     Enabled: 0
     Found: 0

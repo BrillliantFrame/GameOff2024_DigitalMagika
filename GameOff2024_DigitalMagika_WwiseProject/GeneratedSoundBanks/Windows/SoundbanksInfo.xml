@@ -39,7 +39,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{DEDD8CD4-EFF9-CA0A-7FF2-A7533FE54917}">
+		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{277D3BAC-F2E2-8D77-1173-3AA1F43C8EB9}">
 			<ShortName>DigitalMagika_Soundbank</ShortName>
 			<Path>DigitalMagika_Soundbank.bnk</Path>
 			<Media>
@@ -101,7 +101,7 @@
 				</File>
 				<File Id="149113307" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Back.wav</ShortName>
-					<CachePath>SFX/UI_Back_A11A8085.wem</CachePath>
+					<CachePath>SFX/UI_Back_5277BBCB.wem</CachePath>
 				</File>
 				<File Id="169326442" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-006.wav</ShortName>
@@ -364,7 +364,7 @@
 						<MediaRef Id="1047474701"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="816370673" Name="GameOver_Music" DurationType="OneShot" DurationMin="40" DurationMax="40">
+				<Event Id="816370673" Name="GameOver_Music" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="464550981"/>
 					</MediaRefs>
@@ -391,7 +391,7 @@
 						<MediaRef Id="1038914040"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1929327811" Name="MainMenu_Music" DurationType="OneShot" DurationMin="86.4" DurationMax="86.4">
+				<Event Id="1929327811" Name="MainMenu_Music" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="332439656"/>
 					</MediaRefs>
@@ -517,5 +517,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BA4A04F6-BF5F-01AD-292B-8B2E774C3340}</FileHash>
+	<FileHash>{6923D222-E80B-B899-80F8-8C6E5DB21117}</FileHash>
 </SoundBanksInfo>

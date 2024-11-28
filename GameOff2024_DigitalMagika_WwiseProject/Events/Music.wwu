@@ -20,7 +20,7 @@
 						<Action Name="" ID="{F254696D-CB4A-4385-99B2-1003EE239D25}" ShortID="558579645">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{BD13E760-1683-461D-A0D0-C176B969B383}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+									<ObjectRef Name="MainMenu Music" ID="{E9800D89-879D-48A5-8B9B-63651DF8D9F8}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -38,7 +38,7 @@
 						<Action Name="" ID="{C0AD57C3-1BF1-4CEE-B2A6-C8CE7657AFDD}" ShortID="212745954">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{2C8A301E-48D4-467B-AFED-13C3C8C8C51B}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+									<ObjectRef Name="GameOver Music" ID="{86D6A44D-3458-4BF6-A332-99ABDC80ECA5}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -54,7 +54,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{BD13E760-1683-461D-A0D0-C176B969B383}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+									<ObjectRef Name="MainMenu Music" ID="{E9800D89-879D-48A5-8B9B-63651DF8D9F8}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

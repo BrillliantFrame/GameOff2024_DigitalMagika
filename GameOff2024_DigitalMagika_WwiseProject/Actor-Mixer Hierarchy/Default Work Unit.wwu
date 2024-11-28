@@ -561,7 +561,8 @@
 						</Sound>
 						<SwitchContainer Name="Footstep" ID="{8D758C82-21BE-4638-B957-A5A5D57561A7}" ShortID="715224268">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>3</Value>

@@ -5,204 +5,6 @@
 			<ChildrenList>
 				<Folder Name="Music" ID="{F790E7B4-EE68-4AB0-B76B-039F4962BBF7}" ShortID="965707569">
 					<ChildrenList>
-						<MusicSegment Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{2C8A301E-48D4-467B-AFED-13C3C8C8C51B}" ShortID="745896834">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="40000"/>
-								<Property Name="GridFrequencyPreset" Type="int16" Value="52"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Tempo" Type="Real64" Value="96"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Music" ID="{0F3395FA-7A1E-40AB-A400-8EC5E0050FF5}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{DD9F052D-03BA-4A9C-867F-F19A18556A1A}" ShortID="651493876">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{D802BC9C-FE48-4BAB-B1F6-C50D976DB85F}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{565E2B72-B48D-462E-8608-F12713E7C15F}">
-											<Language>SFX</Language>
-											<AudioFile>Music\Game Over MSTR LOOP - 4.4sig, 96bpm, 16bars.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="464550981"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{5817E6F3-C4E6-419E-BE98-982BC2DDA5B3}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{E66A94BC-9390-4E61-912F-9468A16CFC6A}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{565E2B72-B48D-462E-8608-F12713E7C15F}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Cues">
-									<Reference>
-										<Local>
-											<MusicCue Name="Entry Cue" ID="{382BCE35-1C0E-4E50-B757-E38531626679}"/>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicCue Name="Exit Cue" ID="{F7746EE4-40D9-4E8E-86DF-43E2E1D2CF89}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="40000"/>
-												</PropertyList>
-											</MusicCue>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicSegment>
-						<MusicSegment Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{BD13E760-1683-461D-A0D0-C176B969B383}" ShortID="33497593">
-							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="86400"/>
-								<Property Name="GridFrequencyPreset" Type="int16" Value="52"/>
-								<Property Name="GridOffsetPreset" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Tempo" Type="Real64" Value="100"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Music" ID="{0F3395FA-7A1E-40AB-A400-8EC5E0050FF5}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<MusicTrack Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{C8EB4902-5133-4A54-B6BA-F45397D3FD6E}" ShortID="107509744">
-									<ReferenceList>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
-										</Reference>
-										<Reference Name="TransitionRoot">
-											<Custom>
-												<MusicTransition Name="Root" ID="{4E8F1552-B5A9-42A5-A6EF-EA487C850A1A}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</Custom>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{F1647A58-D235-4A1C-BB9C-5869BE025B96}">
-											<Language>SFX</Language>
-											<AudioFile>Music\Main Menu MSTR LOOP - 4.4sig, 100bpm, 36 bars.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="332439656"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Sequences">
-											<Reference>
-												<Local>
-													<MusicTrackSequence Name="" ID="{DEAEFB1A-A02F-4B4D-89B4-33F6240312D0}">
-														<ObjectLists>
-															<ObjectList Name="Clips">
-																<Reference>
-																	<Local>
-																		<MusicClip Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{E3872602-C0F1-4CB5-8417-A264B946EDDE}">
-																			<PropertyList>
-																				<Property Name="EndTrimOffset" Type="Real64" Value="86400"/>
-																				<Property Name="FadeInMode" Type="int16" Value="0"/>
-																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																			</PropertyList>
-																			<AudioSourceRef Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{F1647A58-D235-4A1C-BB9C-5869BE025B96}"/>
-																		</MusicClip>
-																	</Local>
-																</Reference>
-															</ObjectList>
-														</ObjectLists>
-													</MusicTrackSequence>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicTrack>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Cues">
-									<Reference>
-										<Local>
-											<MusicCue Name="Entry Cue" ID="{DB735C05-546F-4328-AB0D-4CCBE3BAA967}"/>
-										</Local>
-									</Reference>
-									<Reference>
-										<Local>
-											<MusicCue Name="Exit Cue" ID="{2CCFD3A7-3845-42C8-A7CE-2654AC75A22B}">
-												<PropertyList>
-													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="86400"/>
-												</PropertyList>
-											</MusicCue>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicSegment>
 						<MusicPlaylistContainer Name="InGame Music" ID="{69AA76A0-4F50-4851-9F89-9B6940B01865}" ShortID="7112421">
 							<PropertyList>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
@@ -1377,6 +1179,302 @@
 															</Reference>
 														</ReferenceList>
 													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="MainMenu Music" ID="{E9800D89-879D-48A5-8B9B-63651DF8D9F8}" ShortID="834264604">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{BF71D045-4035-4C10-A6E9-82C03E83CCE3}" ShortID="17297117">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{3752E164-CCD6-4FC3-99AC-1EA5B3FD69A9}" ShortID="960426870">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{BD13E760-1683-461D-A0D0-C176B969B383}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{256D39AF-9D5A-4A7F-BAF2-C4DB75A49838}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{EF6F3305-ECAE-4A10-A805-60EFE675E98B}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{BD13E760-1683-461D-A0D0-C176B969B383}" ShortID="33497593">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="86400"/>
+										<Property Name="GridFrequencyPreset" Type="int16" Value="52"/>
+										<Property Name="GridOffsetPreset" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Tempo" Type="Real64" Value="100"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{0F3395FA-7A1E-40AB-A400-8EC5E0050FF5}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{C8EB4902-5133-4A54-B6BA-F45397D3FD6E}" ShortID="107509744">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{4E8F1552-B5A9-42A5-A6EF-EA487C850A1A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{F1647A58-D235-4A1C-BB9C-5869BE025B96}">
+													<Language>SFX</Language>
+													<AudioFile>Music\Main Menu MSTR LOOP - 4.4sig, 100bpm, 36 bars.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="332439656"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{DEAEFB1A-A02F-4B4D-89B4-33F6240312D0}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{E3872602-C0F1-4CB5-8417-A264B946EDDE}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="86400"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Main Menu MSTR LOOP - 4_4sig, 100bpm, 36 bars" ID="{F1647A58-D235-4A1C-BB9C-5869BE025B96}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{DB735C05-546F-4328-AB0D-4CCBE3BAA967}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{2CCFD3A7-3845-42C8-A7CE-2654AC75A22B}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="86400"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="GameOver Music" ID="{86D6A44D-3458-4BF6-A332-99ABDC80ECA5}" ShortID="13841913">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{AD4CD776-1761-49B7-8D49-D5E89AA00F0A}" ShortID="462810002">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{C138E714-4526-4BC4-A7CF-BC093F2ACC8E}" ShortID="914752694">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{2C8A301E-48D4-467B-AFED-13C3C8C8C51B}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{BE81C1E8-BA14-48FE-B922-35ABCD949B19}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{E215E6CF-E2F2-42E9-B19F-6ECB8CE4A669}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{2C8A301E-48D4-467B-AFED-13C3C8C8C51B}" ShortID="745896834">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="40000"/>
+										<Property Name="GridFrequencyPreset" Type="int16" Value="52"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Tempo" Type="Real64" Value="96"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Vorbis Quality High" ID="{53A9DE0F-3F4F-4B59-8614-3F9E3C7358FC}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{0F3395FA-7A1E-40AB-A400-8EC5E0050FF5}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{DD9F052D-03BA-4A9C-867F-F19A18556A1A}" ShortID="651493876">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{7735D17A-2AA6-40DB-926F-2D6ED13223F7}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{D802BC9C-FE48-4BAB-B1F6-C50D976DB85F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{565E2B72-B48D-462E-8608-F12713E7C15F}">
+													<Language>SFX</Language>
+													<AudioFile>Music\Game Over MSTR LOOP - 4.4sig, 96bpm, 16bars.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="464550981"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{5817E6F3-C4E6-419E-BE98-982BC2DDA5B3}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{E66A94BC-9390-4E61-912F-9468A16CFC6A}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Game Over MSTR LOOP - 4_4sig, 96bpm, 16bars" ID="{565E2B72-B48D-462E-8608-F12713E7C15F}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{382BCE35-1C0E-4E50-B757-E38531626679}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{F7746EE4-40D9-4E8E-86DF-43E2E1D2CF89}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="40000"/>
+														</PropertyList>
+													</MusicCue>
 												</Local>
 											</Reference>
 										</ObjectList>

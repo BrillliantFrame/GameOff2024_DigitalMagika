@@ -196,6 +196,12 @@ public class MS_SettingsManager : MonoBehaviour
             QualityDropdown.value = PlayerPrefs.GetInt("QualityLevel");
             QualitySettings.SetQualityLevel(QualityDropdown.value);
         }
+
+        if (Application.platform == RuntimePlatform.WebGLPlayer)
+        {
+            ResolutionDropdown.gameObject.SetActive(false);
+        }
+        QualityDropdown.gameObject.SetActive(false);
     }
 
     public void SafeSettings()

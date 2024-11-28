@@ -18,6 +18,11 @@ public class MS_SettingsManager : MonoBehaviour
     public Toggle FullscreenToggle;
     public TMP_Dropdown QualityDropdown;
 
+    [Header("Input fields")]
+    [SerializeField]
+    private GameObject _qualityField;
+    [SerializeField]
+    private GameObject _resolutionField;
 
     public Slider uiScaleSlider;
     public Canvas mainCanvas;
@@ -199,9 +204,9 @@ public class MS_SettingsManager : MonoBehaviour
 
         if (Application.platform == RuntimePlatform.WebGLPlayer)
         {
-            ResolutionDropdown.gameObject.SetActive(false);
+            _resolutionField.gameObject.SetActive(false);
         }
-        QualityDropdown.gameObject.SetActive(false);
+        _qualityField.gameObject.SetActive(false);
     }
 
     public void SafeSettings()

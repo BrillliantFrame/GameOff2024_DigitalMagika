@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -26,10 +27,8 @@ public class MS_SettingsManager : MonoBehaviour
     private void Start()
     {
         audioSources = Object.FindObjectsByType<AudioSource>(FindObjectsSortMode.None);
-
-        // Setup resolutions first before loading settings
-        SetupResolutionDropdown();
         LoadSettings();
+        SetupResolutionDropdown();
     }
 
     public void SetMasterVolume()
@@ -48,16 +47,9 @@ public class MS_SettingsManager : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-
     private void SetupResolutionDropdown()
     {
-        resolutions = Screen.resolutions;
-
-        if (resolutions == null || resolutions.Length == 0)
-        {
-            Debug.LogError("No screen resolutions found!");
-            return;
-        }
+        resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToArray();
 
         Debug.Log($"Found {resolutions.Length} screen resolutions.");
 
@@ -71,8 +63,8 @@ public class MS_SettingsManager : MonoBehaviour
             string option = resolutions[i].width + " x " + resolutions[i].height;
             options.Add(option);
 
-            if (resolutions[i].width == Screen.currentResolution.width &&
-                resolutions[i].height == Screen.currentResolution.height)
+            if (resolutions[i].width == Screen.width &&
+                resolutions[i].height == Screen.height)
             {
                 currentResolutionIndex = i;
             }
@@ -104,8 +96,9 @@ public class MS_SettingsManager : MonoBehaviour
         }
 
         Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-        PlayerPrefs.SetInt("ResolutionIndex", resolutionIndex);
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreenMode);
+        PlayerPrefs.SetInt("ResolutionWidth", resolution.width);
+        PlayerPrefs.SetInt("ResolutionHeight", resolution.height);
         SafeSettings();
 
         Debug.Log($"Resolution set to: {resolution.width} x {resolution.height}");
@@ -114,7 +107,10 @@ public class MS_SettingsManager : MonoBehaviour
     public void SetFullscreen()
     {
         bool isFullscreen = FullscreenToggle.isOn;
-        Screen.fullScreen = isFullscreen;
+        if (isFullscreen)
+            Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+        else
+            Screen.fullScreenMode = FullScreenMode.Windowed;
         PlayerPrefs.SetInt("Fullscreen", isFullscreen ? 1 : 0);
         SafeSettings();
     }
@@ -170,27 +166,29 @@ public class MS_SettingsManager : MonoBehaviour
         if (PlayerPrefs.HasKey("MusicVolume"))
         {
             musicVolumeSlider.value = PlayerPrefs.GetFloat("MusicVolume");
-            // musicSource.volume = musicVolumeSlider.value;
         }
 
         if (PlayerPrefs.HasKey("SFXVolume"))
         {
             sfxVolumeSlider.value = PlayerPrefs.GetFloat("SFXVolume");
-            // sfxSource.volume = sfxVolumeSlider.value;
         }
 
-        if (PlayerPrefs.HasKey("ResolutionIndex"))
+        if (PlayerPrefs.HasKey("ResolutionWidth") && PlayerPrefs.HasKey("ResolutionHeight"))
         {
-            int resolutionIndex = PlayerPrefs.GetInt("ResolutionIndex");
-            ResolutionDropdown.value = resolutionIndex;
-            Resolution resolution = resolutions[resolutionIndex];
-            Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+            int resolutionWidth = PlayerPrefs.GetInt("ResolutionWidth");
+            int resolutionHeight = PlayerPrefs.GetInt("ResolutionHeight");
+            Screen.SetResolution(resolutionWidth, resolutionHeight, Screen.fullScreenMode);
+            Debug.Log($"Init: Resolution set to: {resolutionWidth} x {resolutionHeight}");
         }
 
         if (PlayerPrefs.HasKey("Fullscreen"))
         {
-            FullscreenToggle.isOn = PlayerPrefs.GetInt("Fullscreen") == 1;
-            Screen.fullScreen = FullscreenToggle.isOn;
+            var isFullscreen = PlayerPrefs.GetInt("Fullscreen") == 1;
+            FullscreenToggle.isOn = isFullscreen;
+            if (isFullscreen)
+                Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
+            else
+                Screen.fullScreenMode = FullScreenMode.Windowed;
         }
 
         if (PlayerPrefs.HasKey("QualityLevel"))

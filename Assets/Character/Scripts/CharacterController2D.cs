@@ -38,6 +38,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
     [Header("Cheats")]
     [SerializeField] private bool _isGodMode = false;
 
+    [SerializeField] private int _maxHealth = 3;
     //Movement
     private float _horizontalMovement;
     private float _originalGravity = 0f;
@@ -55,6 +56,10 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
     //Damage handling
     private int _playerLives = 0;
+    public int CurrentLives
+    {
+        get { return _playerLives; }
+    }
     private Vector2 _respawnPoint = Vector2.zero; //Should be set as the door location when entering a room
     //Damage events
     public event Action OnPlayerHealed;
@@ -235,10 +240,15 @@ public class CharacterController2D : Singleton<CharacterController2D>
         }
     }
 
-    public void ReceiveHealing(int healAmount)
+    public bool ReceiveHealing(int healAmount)
     {
-        _playerLives += healAmount;
-        OnPlayerHealed?.Invoke();
+        if (_playerLives < _maxHealth)
+        {
+            _playerLives += healAmount;
+            OnPlayerHealed?.Invoke();
+            return true;
+        }
+        return false;
     }
 
     public void OnDamage()

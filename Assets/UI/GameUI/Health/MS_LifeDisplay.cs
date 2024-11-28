@@ -87,4 +87,11 @@ public class LifeDisplay : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
+
+    public void TryAgain()
+    {
+        AkSoundEngine.PostEvent("Stop_All", gameObject);
+        Time.timeScale = 1f;
+        AppCore.Instance?.RetryGame();
+    }
 }

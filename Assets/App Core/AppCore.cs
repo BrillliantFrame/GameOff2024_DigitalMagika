@@ -92,9 +92,10 @@ public class AppCore : Singleton<AppCore>
 
     public void StartGame()
     {
-        Debug.Log("============Fade out main menu music here============");
         _isTeleporting = true;
         _currentDoorIndex = -1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         StartCoroutine(wrapLoadingAwait(() =>
         {
             Resources.Load<GameItemsManager>("Game Items Manager").ResetGameItems();
@@ -107,6 +108,39 @@ public class AppCore : Singleton<AppCore>
             _currentMapIndex = _scenes.GetFirstRoomIndex();
             _scenesLoading.Add(SceneManager.LoadSceneAsync(_currentMapIndex, LoadSceneMode.Additive));
         }));
+    }
+
+    public void RetryGame()
+    {
+        _isTeleporting = true;
+        _currentDoorIndex = -1;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        StartCoroutine(retryGame());
+    }
+
+    private IEnumerator retryGame()
+    {
+        yield return wrapLoadingAwait(() =>
+        {
+            _scenes.GetGameplayScenes().ForEach(scene =>
+            {
+                _scenesLoading.Add(SceneManager.UnloadSceneAsync(scene.BuildIndex));
+            });
+            _scenesLoading.Add(SceneManager.UnloadSceneAsync(_currentMapIndex));
+        });
+
+        yield return wrapLoadingAwait(() =>
+        {
+            Resources.Load<GameItemsManager>("Game Items Manager").ResetGameItems();
+            Resources.Load<MonolythManager>("Monolyth Manager").ShuffleMonolyths();
+            _scenes.GetGameplayScenes().ForEach(scene =>
+            {
+                _scenesLoading.Add(SceneManager.LoadSceneAsync(scene.BuildIndex, LoadSceneMode.Additive));
+            });
+            _currentMapIndex = _scenes.GetFirstRoomIndex();
+            _scenesLoading.Add(SceneManager.LoadSceneAsync(_currentMapIndex, LoadSceneMode.Additive));
+        });
     }
 
     public void MoveToRoom(MapScenes levelDestination, int doorIndex)
@@ -137,7 +171,6 @@ public class AppCore : Singleton<AppCore>
     {
         StartCoroutine(wrapLoading(() =>
         {
-            //Resources.Load<CharacterData>("Character Data").ResetData();
             _scenes.GetGameplayScenes().ForEach(scene =>
             {
                 _scenesLoading.Add(SceneManager.UnloadSceneAsync(scene.BuildIndex));

@@ -11,33 +11,38 @@ public class MS_PauseMenu : MonoBehaviour
         Debug.Log("Escape key pressed");
         if (context.performed)
         {
-            if (optionsMenu != null)
+            ToggleOptionsMenu();
+        }
+    }
+
+    public void ToggleOptionsMenu()
+    {
+        if (optionsMenu != null)
+        {
+            bool isActive = !optionsMenu.activeSelf;
+            optionsMenu.SetActive(isActive);
+
+            if (isActive)
             {
-                bool isActive = !optionsMenu.activeSelf;
-                optionsMenu.SetActive(isActive);
+                Time.timeScale = 0f;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
 
-                if (isActive)
-                {
-                    Time.timeScale = 0f;
-                    Cursor.lockState = CursorLockMode.None;
-                    Cursor.visible = true;
+                CharacterController2D.Instance?.DisableInput();
 
-                    CharacterController2D.Instance?.DisableInput();
+                AkSoundEngine.SetRTPCValue("LowPassPauseMenu_RTPC", 0f);
+                AkSoundEngine.SetRTPCValue("PauseMenu_RTPC", 0f);
+            }
+            else
+            {
+                Time.timeScale = 1f;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
 
-                    AkSoundEngine.SetRTPCValue("LowPassPauseMenu_RTPC", 0f);
-                    AkSoundEngine.SetRTPCValue("PauseMenu_RTPC", 0f);
-                }
-                else
-                {
-                    Time.timeScale = 1f;
-                    Cursor.lockState = CursorLockMode.Locked;
-                    Cursor.visible = false;
+                CharacterController2D.Instance?.EnableInput();
 
-                    CharacterController2D.Instance?.EnableInput();
-
-                    AkSoundEngine.SetRTPCValue("LowPassPauseMenu_RTPC", 100f);
-                    AkSoundEngine.SetRTPCValue("PauseMenu_RTPC", 100f);
-                }
+                AkSoundEngine.SetRTPCValue("LowPassPauseMenu_RTPC", 100f);
+                AkSoundEngine.SetRTPCValue("PauseMenu_RTPC", 100f);
             }
         }
     }
@@ -53,6 +58,6 @@ public class MS_PauseMenu : MonoBehaviour
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        
+
     }
 }

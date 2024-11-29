@@ -82,7 +82,7 @@ public class SkeletonArcher : MonoBehaviour
 
     private void shootArrow()
     {
-        Arrow prefab = Instantiate(_arrowPrefab, transform.position, Quaternion.identity);
+        Arrow prefab = Instantiate(_arrowPrefab, transform.position, Quaternion.identity, transform);
         prefab.Shoot(transform.localScale.x);
         AkSoundEngine.PostEvent("Enemy_Shot", gameObject);
     }

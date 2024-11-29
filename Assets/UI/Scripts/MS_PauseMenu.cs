@@ -8,7 +8,6 @@ public class MS_PauseMenu : MonoBehaviour
 
     public void ToggleOptionsMenu(InputAction.CallbackContext context)
     {
-        Debug.Log("Escape key pressed");
         if (context.performed)
         {
             ToggleOptionsMenu();

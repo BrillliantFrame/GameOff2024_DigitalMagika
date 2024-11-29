@@ -9,11 +9,12 @@ public class HealthPickup : CollectableObject
     {
         if (collider.tag == "Player")
         {
-            AkSoundEngine.PostEvent("Player_Regen", gameObject);
-            CharacterController2D.Instance?.ReceiveHealing(_healthRecovered);
-            AppCore.Instance?.PickUpItem(gameObject);
-            gameObject.SetActive(false);
-            //Destroy(gameObject);
+            if (CharacterController2D.Instance?.ReceiveHealing(_healthRecovered) ?? false)
+            {
+                AkSoundEngine.PostEvent("Player_Regen", gameObject);
+                AppCore.Instance?.PickUpItem(gameObject);
+                gameObject.SetActive(false);
+            }
         }
     }
 }

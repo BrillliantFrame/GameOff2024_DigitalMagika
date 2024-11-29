@@ -29,7 +29,7 @@ public class SpinFunction : MonoBehaviour
         else
         {
             //Flips the animation and spin direction whilst reseting the rotation counter
-            Flip();
+            //Flip();
             SpinDirection *= -1;
             CurrentRotation = 0;
         }

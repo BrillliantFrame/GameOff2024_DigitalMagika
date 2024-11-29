@@ -15,7 +15,7 @@ MonoBehaviour:
   Cheats:
   - CheatName: 0
     CheatDescription: Damage won't be an issue!
-    Enabled: 0
+    Enabled: 1
     Found: 0
   - CheatName: 1
     CheatDescription: Dash like you never could before

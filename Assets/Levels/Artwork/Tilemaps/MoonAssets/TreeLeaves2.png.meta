@@ -116,12 +116,12 @@ TextureImporter:
       name: TreeLeaves2_0
       rect:
         serializedVersion: 2
-        x: 349
+        x: 421
         y: 480
-        width: 705
+        width: 554
         height: 227
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c72b501cd18fd1b4f828d5dc4682d3fc
     internalID: 0
     vertices: []
     indices: 

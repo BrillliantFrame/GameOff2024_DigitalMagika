@@ -18,60 +18,54 @@ MonoBehaviour:
   _gameplayScenes:
   - BuildIndex: 2
     SceneName: Player
-  - BuildIndex: 5
+  - BuildIndex: 3
     SceneName: Scene_GameUI
   _mapScenes:
-  - BuildIndex: 6
+  - BuildIndex: 4
     Scene: 0
-  - BuildIndex: 7
+  - BuildIndex: 5
     Scene: 1
-  - BuildIndex: 8
+  - BuildIndex: 6
     Scene: 2
-  - BuildIndex: 9
+  - BuildIndex: 7
     Scene: 3
-  - BuildIndex: 10
+  - BuildIndex: 8
     Scene: 4
-  - BuildIndex: 11
+  - BuildIndex: 9
     Scene: 5
-  - BuildIndex: 12
+  - BuildIndex: 10
     Scene: 6
-  - BuildIndex: 13
+  - BuildIndex: 11
     Scene: 7
-  - BuildIndex: 14
+  - BuildIndex: 12
     Scene: 8
-  - BuildIndex: 15
+  - BuildIndex: 13
     Scene: 9
-  - BuildIndex: 16
+  - BuildIndex: 14
     Scene: 10
-  - BuildIndex: 17
+  - BuildIndex: 15
     Scene: 11
-  - BuildIndex: 18
+  - BuildIndex: 16
     Scene: 12
-  - BuildIndex: 19
+  - BuildIndex: 17
     Scene: 13
-  - BuildIndex: 20
+  - BuildIndex: 18
     Scene: 14
-  - BuildIndex: 21
+  - BuildIndex: 19
     Scene: 15
-  - BuildIndex: 22
+  - BuildIndex: 20
     Scene: 16
-  - BuildIndex: 23
+  - BuildIndex: 21
     Scene: 17
-  - BuildIndex: 24
+  - BuildIndex: 22
     Scene: 18
-  - BuildIndex: 25
+  - BuildIndex: 23
     Scene: 19
-  - BuildIndex: 26
+  - BuildIndex: 24
     Scene: 20
-  - BuildIndex: 27
+  - BuildIndex: 25
     Scene: 21
-  - BuildIndex: 28
+  - BuildIndex: 26
     Scene: 22
-  - BuildIndex: 29
+  - BuildIndex: 27
     Scene: 23
-  - BuildIndex: 30
-    Scene: 24
-  - BuildIndex: 31
-    Scene: 25
-  - BuildIndex: 32
-    Scene: 26

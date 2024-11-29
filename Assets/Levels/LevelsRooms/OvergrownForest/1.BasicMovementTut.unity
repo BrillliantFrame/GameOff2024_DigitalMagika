@@ -4882,6 +4882,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2420886307960362499, guid: 0636820331f71d441aab581eb113b6e9, type: 3}
+      propertyPath: tutorialText
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2674246732739159624, guid: 0636820331f71d441aab581eb113b6e9, type: 3}
       propertyPath: m_ScreenMatchMode
       value: 0
@@ -5058,9 +5062,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2420886307960362499, guid: 0636820331f71d441aab581eb113b6e9, type: 3}
     m_RemovedGameObjects:
     - {fileID: 6869092160400620977, guid: 0636820331f71d441aab581eb113b6e9, type: 3}
+    - {fileID: 7562432385746121585, guid: 0636820331f71d441aab581eb113b6e9, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0636820331f71d441aab581eb113b6e9, type: 3}

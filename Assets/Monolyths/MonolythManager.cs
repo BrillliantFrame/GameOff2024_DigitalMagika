@@ -1,5 +1,5 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TextCore;
 
 [CreateAssetMenu(fileName = "Monolyth Manager", menuName = "ScriptableObjects/Monolyth Items/New Monolyth Manager", order = 1)]
 public class MonolythManager : ScriptableObject
@@ -33,41 +33,46 @@ public class MonolythManager : ScriptableObject
     }
 
     [SerializeField]
-    private Sprite _firstKeystoneGlyph;
+    private List<Sprite> _redMonolythGlyphs;
 
     [SerializeField]
-    private Sprite _secondKeystoneGlyph;
+    private List<Sprite> _blueMonolythGlyphs;
 
     [SerializeField]
-    private Sprite _thirdKeystoneGlyph;
+    private List<Sprite> _greenMonolythGlyphs;
 
     [SerializeField]
-    private Sprite _fourthKeystoneGlyph;
+    private List<Sprite> _yellowMonolythGlyphs;
 
-    [SerializeField]
-    private Sprite _fifthKeystoneGlyph;
-
-    [SerializeField]
-    private Sprite _sixthKeystoneGlyph;
-
-    public void ShuffleMonolyths()
+    public void ShuffleMonolythsAnswer()
     {
-        _firstMonolyth = Random.Range(0, 7);
-        _secondMonolyth = Random.Range(0, 7);
-        _thirdMonolyth = Random.Range(0, 7);
-        _fourthMonolyth = Random.Range(0, 7);
+        _firstMonolyth = Random.Range(0, 3);
+        _secondMonolyth = Random.Range(0, 3);
+        _thirdMonolyth = Random.Range(0, 3);
+        _fourthMonolyth = Random.Range(0, 3);
     }
 
-    public Sprite GetKeystoneGlyph(int glyph)
+    public Sprite GetKeystoneGlyph(int monolyth, int glyph)
     {
-        switch (glyph)
+        switch (monolyth)
         {
-            default: return _firstKeystoneGlyph;
-            case 1: return _secondKeystoneGlyph;
-            case 2: return _thirdKeystoneGlyph;
-            case 3: return _fourthKeystoneGlyph;
-            case 4: return _fifthKeystoneGlyph;
-            case 5: return _sixthKeystoneGlyph;
+            default:
+                if (glyph < _redMonolythGlyphs.Count)
+                    return _redMonolythGlyphs[glyph];
+                return _redMonolythGlyphs[0];
+
+            case 1:
+                if (glyph < _blueMonolythGlyphs.Count)
+                    return _blueMonolythGlyphs[glyph];
+                return _blueMonolythGlyphs[0];
+            case 2:
+                if (glyph < _greenMonolythGlyphs.Count)
+                    return _greenMonolythGlyphs[glyph];
+                return _greenMonolythGlyphs[0];
+            case 3:
+                if (glyph < _yellowMonolythGlyphs.Count)
+                    return _yellowMonolythGlyphs[glyph];
+                return _yellowMonolythGlyphs[0];
         }
     }
 }

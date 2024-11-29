@@ -12,13 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d25ca7bb61d15e42b50dbe1ff234543, type: 3}
   m_Name: Monolyth Manager
   m_EditorClassIdentifier: 
-  _firstMonolyth: 0
-  _secondMonolyth: 0
-  _thirdMonolyth: 0
-  _fourthMonolyth: 0
-  _firstKeystoneGlyph: {fileID: 2189292911971096897, guid: b47f5fb3df57e2c4fbd03682d2c66268, type: 3}
-  _secondKeystoneGlyph: {fileID: -225568313693726576, guid: bcc41c0b075b897429a5899f3126c907, type: 3}
-  _thirdKeystoneGlyph: {fileID: -5692259767792655896, guid: a754e1ce1d5db164485d0e7483884c1f, type: 3}
-  _fourthKeystoneGlyph: {fileID: -5157649950783654657, guid: 725a1a5893faf6c46ac28ee0f9f24745, type: 3}
-  _fifthKeystoneGlyph: {fileID: -3875992275732404595, guid: aa7b253fb9ed06e4cba0a9b8254aabc4, type: 3}
-  _sixthKeystoneGlyph: {fileID: -2161726813862364105, guid: 63cf77545b481b243bd9c9b68ff47e69, type: 3}
+  _firstMonolyth: 1
+  _secondMonolyth: 2
+  _thirdMonolyth: 1
+  _fourthMonolyth: 2
+  _redMonolythGlyphs:
+  - {fileID: 21300000, guid: 373fc402c5e53e741a287d05e86d9a17, type: 3}
+  - {fileID: 21300000, guid: bd143d9ddbef12a4e9af403df2ff6024, type: 3}
+  - {fileID: 21300000, guid: 7e24201016b855d40ba649b3273f5997, type: 3}
+  - {fileID: 21300000, guid: 779ce94b90a01ed44a38273190bba2e7, type: 3}
+  _blueMonolythGlyphs:
+  - {fileID: 21300000, guid: ca77da62853a5ea468883c097eb057eb, type: 3}
+  - {fileID: 21300000, guid: 66bd170b5d8d2fa438f3093ac39c1b1f, type: 3}
+  - {fileID: 21300000, guid: dca194e5ff64d264988294e0d60504f8, type: 3}
+  - {fileID: 21300000, guid: 1531de8c6384a824d8df8c9c0de6ac31, type: 3}
+  _greenMonolythGlyphs:
+  - {fileID: 21300000, guid: d762951a6ab91db4ca25e844fe4f4f5c, type: 3}
+  - {fileID: 21300000, guid: bf19a8568c2f0d44092a54cb7a230b24, type: 3}
+  - {fileID: 21300000, guid: b4078e6b2ec73d9438310c96f9708d57, type: 3}
+  - {fileID: 21300000, guid: cca06bb4e3cd9784fb6b13751a824855, type: 3}
+  _yellowMonolythGlyphs:
+  - {fileID: 21300000, guid: 23a97f28788858f43866a47e2cadd370, type: 3}
+  - {fileID: 21300000, guid: e3a95bf025751ff46998f99101d73bf2, type: 3}
+  - {fileID: 21300000, guid: 1dc82eb4212055f4f9d4dc1a00899ef3, type: 3}
+  - {fileID: 21300000, guid: 4ff1a4227408b194dbd21abac9a43580, type: 3}

@@ -99,7 +99,7 @@ public class AppCore : Singleton<AppCore>
         StartCoroutine(wrapLoadingAwait(() =>
         {
             Resources.Load<GameItemsManager>("Game Items Manager").ResetGameItems();
-            Resources.Load<MonolythManager>("Monolyth Manager").ShuffleMonolyths();
+            Resources.Load<MonolythManager>("Monolyth Manager").ShuffleMonolythsAnswer();
             _scenesLoading.Add(SceneManager.UnloadSceneAsync(_scenes.GetMainMenuIndex()));
             _scenes.GetGameplayScenes().ForEach(scene =>
             {
@@ -133,7 +133,7 @@ public class AppCore : Singleton<AppCore>
         yield return wrapLoadingAwait(() =>
         {
             Resources.Load<GameItemsManager>("Game Items Manager").ResetGameItems();
-            Resources.Load<MonolythManager>("Monolyth Manager").ShuffleMonolyths();
+            Resources.Load<MonolythManager>("Monolyth Manager").ShuffleMonolythsAnswer();
             _scenes.GetGameplayScenes().ForEach(scene =>
             {
                 _scenesLoading.Add(SceneManager.LoadSceneAsync(scene.BuildIndex, LoadSceneMode.Additive));

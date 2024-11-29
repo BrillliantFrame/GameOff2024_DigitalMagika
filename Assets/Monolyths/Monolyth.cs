@@ -5,6 +5,8 @@ public class Monolyth : MonoBehaviour
     [SerializeField]
     [Range(0, 3)]
     private int _monolythNumber;
+    [SerializeField]
+    private SpriteRenderer _spriteRenderer;
 
     private int _glyph;
 
@@ -27,5 +29,7 @@ public class Monolyth : MonoBehaviour
                 _glyph = manager.FourthMonolyth;
                 break;
         }
+
+        _spriteRenderer.sprite = manager.GetKeystoneGlyph(_monolythNumber, _glyph);
     }
 }

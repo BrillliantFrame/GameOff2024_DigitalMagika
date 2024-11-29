@@ -11,6 +11,14 @@ public class FinalDoor : MonoBehaviour
     [SerializeField]
     private Keystone _fourthkeystone;
 
+    private void Awake()
+    {
+        _firstkeystone.SetMonolyth(0);
+        _secondkeystone.SetMonolyth(1);
+        _thirdkeystone.SetMonolyth(2);
+        _fourthkeystone.SetMonolyth(3);
+    }
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.tag == "Player")

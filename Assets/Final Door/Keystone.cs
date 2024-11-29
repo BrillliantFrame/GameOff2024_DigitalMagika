@@ -3,28 +3,27 @@ using UnityEngine;
 public class Keystone : MonoBehaviour
 {
     [SerializeField]
-    [Range(0, 6)]
+    [Range(0, 3)]
     private int _glyph = 0;
-
-    [SerializeField]
-    private SpriteRenderer _spriteRenderer;
-
-    private MonolythManager _monolythManager;
-
-    private void Awake()
-    {
-        _monolythManager = Resources.Load<MonolythManager>("Monolyth Manager");
-        _spriteRenderer.sprite = _monolythManager.GetKeystoneGlyph(_glyph);
-    }
-
     public int Glyph
     {
         get { return _glyph; }
     }
 
+    [SerializeField]
+    private SpriteRenderer _spriteRenderer;
+
+    private int _connectedMonolyth = 0;
+
+    public void SetMonolyth(int connectedMonolyth)
+    {
+        _connectedMonolyth = connectedMonolyth;
+        _spriteRenderer.sprite = Resources.Load<MonolythManager>("Monolyth Manager").GetKeystoneGlyph(_connectedMonolyth, _glyph);
+    }
+
     public void ActivateKeystone()
     {
-        if (_glyph < 5)
+        if (_glyph < 3)
         {
             _glyph++;
         }
@@ -33,8 +32,9 @@ public class Keystone : MonoBehaviour
             _glyph = 0;
         }
 
-        _spriteRenderer.sprite = _monolythManager.GetKeystoneGlyph(_glyph);
+        _spriteRenderer.sprite = Resources.Load<MonolythManager>("Monolyth Manager").GetKeystoneGlyph(_connectedMonolyth, _glyph);
     }
+
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.tag == "Player")

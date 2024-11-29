@@ -46,6 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _monolythNumber: 1
+  _spriteRenderer: {fileID: 4065223097921016257}
 --- !u!1 &4722996427552127347
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,7 +58,7 @@ GameObject:
   - component: {fileID: 3735494306020591643}
   - component: {fileID: 4065223097921016257}
   m_Layer: 0
-  m_Name: MonoConcept_0
+  m_Name: Monolyth Visuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5736802144507726786}
   - component: {fileID: 9161447124286566255}
   m_Layer: 0
-  m_Name: Arrow
+  m_Name: Slime Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

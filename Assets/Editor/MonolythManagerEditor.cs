@@ -8,6 +8,6 @@ class MonolythManagerEditor : Editor
     {
         base.OnInspectorGUI();
         if (GUILayout.Button("Shuffle Monolyths"))
-            (target as MonolythManager).ShuffleMonolyths();
+            (target as MonolythManager).ShuffleMonolythsAnswer();
     }
 }

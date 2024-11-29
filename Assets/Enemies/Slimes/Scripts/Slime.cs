@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SkeletonArcher : MonoBehaviour
+public class Slime : MonoBehaviour
 {
 
     [SerializeField] private float _bowDrawTime = 1f;
@@ -9,10 +9,17 @@ public class SkeletonArcher : MonoBehaviour
     [SerializeField] private LayerMask _playerLayer;
     [SerializeField] private float _horizontalDetectionSize = 2f;
 
+    private Animator _animator;
+
     //Skill Cooldown
     private float _cooldownTime = 0.0f;
     private float _drawTime = 0.0f;
     private SkillState _currentState = SkillState.READY;
+
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -64,9 +71,11 @@ public class SkeletonArcher : MonoBehaviour
         if (collider.tag == "Player")
         {
             if (collider.transform.position.x < transform.position.x)
-                transform.localScale = new Vector3(-1, 1, 1);
+                _animator.SetTrigger("TurnLeft");
+            //transform.localScale = new Vector3(-1, 1, 1);
             else
-                transform.localScale = new Vector3(1, 1, 1);
+                _animator.SetTrigger("TurnLeft");
+            //transform.localScale = new Vector3(1, 1, 1);
             return true;
         }
         return false;

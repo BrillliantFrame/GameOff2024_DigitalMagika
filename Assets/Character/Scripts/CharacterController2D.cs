@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
 
 public class CharacterController2D : Singleton<CharacterController2D>
 {
@@ -18,7 +17,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
     [SerializeField] private float _dashingPower = 24f;
     [SerializeField] private float _coyoteTime = 0.2f;
     [SerializeField] private float _jumpBufferTime = 0.2f;
-    [SerializeField] private PlayerInput _playerInput;
+    private bool _inputActive = false;
 
     [Header("Animation")]
     [SerializeField] private Animator _animator;
@@ -81,6 +80,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
         _respawnPoint = _rigidBody.transform.position; //Should be set as the door location when entering a room
         _characterAnimationEvents.OnDeathAnimationEnd += onDeathAnimationEnd;
         _remainingExtraJumps = _extraJumps;
+        _inputActive = true;
     }
 
     private void Update()
@@ -198,8 +198,18 @@ public class CharacterController2D : Singleton<CharacterController2D>
         _animator.SetBool("IsGrounded", _isGrounded);
     }
 
+    public void OnPausePressed(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            MS_PauseMenu.Instance?.ToggleOptionsMenu();
+        }
+    }
+
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (!_inputActive)
+            return;
         _horizontalMovement = context.ReadValue<Vector2>().x;
 
         if (_horizontalMovement != 0)
@@ -210,6 +220,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
     public void OnJump(InputAction.CallbackContext context)
     {
+        if (!_inputActive)
+            return;
         if (context.canceled)
         {
             _jumpPerformed = false;
@@ -225,6 +237,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
     public void OnDash(InputAction.CallbackContext context)
     {
+        if (!_inputActive)
+            return;
         if (context.performed && _currentState == SkillState.READY)
         {
             Flip();
@@ -281,12 +295,12 @@ public class CharacterController2D : Singleton<CharacterController2D>
     public void DisableInput()
     {
         _invulnerable = true;
-        _playerInput.enabled = false;
+        _inputActive = false;
     }
 
     public void EnableInput()
     {
-        _playerInput.enabled = true;
+        _inputActive = true;
         _invulnerable = false || _isGodMode;
     }
 

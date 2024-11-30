@@ -8,6 +8,14 @@ public class AvailableCheats : ScriptableObject
     [SerializeField]
     public List<Cheat> Cheats = new List<Cheat>();
 
+    [SerializeField]
+    public bool GameFinished = false;
+
+    public bool CanUseCheats()
+    {
+        return HasFoundCheatcodes() && GameFinished;
+    }
+
     public bool HasFoundCheatcodes()
     {
         return Cheats.FindAll(x => x.Found == true).Count > 0;

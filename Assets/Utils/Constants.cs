@@ -1,6 +1,7 @@
 public enum UIScenes
 {
-    MainMenu
+    MainMenu,
+    Credits
 }
 
 public enum MapScenes

@@ -1,18 +1,8 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
-public class MS_PauseMenu : MonoBehaviour
+public class MS_PauseMenu : Singleton<MS_PauseMenu>
 {
     public GameObject optionsMenu;
-
-    public void ToggleOptionsMenu(InputAction.CallbackContext context)
-    {
-        if (context.performed)
-        {
-            ToggleOptionsMenu();
-        }
-    }
 
     public void ToggleOptionsMenu()
     {

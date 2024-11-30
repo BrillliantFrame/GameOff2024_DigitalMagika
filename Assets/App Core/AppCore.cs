@@ -16,6 +16,7 @@ public class AppCore : Singleton<AppCore>
 
     private int _currentMapIndex = -1;
     private int _currentDoorIndex = -1;
+    private bool _gameStartup = false;
     private bool _isTeleporting = false;
 
     private RoomManager _currentRoomManager;
@@ -78,6 +79,11 @@ public class AppCore : Singleton<AppCore>
 
     private IEnumerator loadingDone()
     {
+        if (_gameStartup)
+        {
+            AkSoundEngine.PostEvent("InGame_Music", gameObject);
+            _gameStartup = false;
+        }
         yield return _loadingScreen.hide();
         CharacterController2D.Instance?.EnableInput();
     }
@@ -92,6 +98,7 @@ public class AppCore : Singleton<AppCore>
 
     public void StartGame()
     {
+        _gameStartup = true;
         _isTeleporting = true;
         _currentDoorIndex = -1;
         Cursor.lockState = CursorLockMode.Locked;
@@ -176,6 +183,28 @@ public class AppCore : Singleton<AppCore>
                 _scenesLoading.Add(SceneManager.UnloadSceneAsync(scene.BuildIndex));
             });
             _scenesLoading.Add(SceneManager.UnloadSceneAsync(_currentMapIndex));
+            _scenesLoading.Add(SceneManager.LoadSceneAsync(_scenes.GetMainMenuIndex(), LoadSceneMode.Additive));
+        }));
+    }
+
+    public void RollCredits()
+    {
+        StartCoroutine(wrapLoading(() =>
+        {
+            _scenes.GetGameplayScenes().ForEach(scene =>
+            {
+                _scenesLoading.Add(SceneManager.UnloadSceneAsync(scene.BuildIndex));
+            });
+            _scenesLoading.Add(SceneManager.UnloadSceneAsync(_currentMapIndex));
+            _scenesLoading.Add(SceneManager.LoadSceneAsync(_scenes.GetCreditsIndex(), LoadSceneMode.Additive));
+        }));
+    }
+
+    public void CreditsToMain()
+    {
+        StartCoroutine(wrapLoading(() =>
+        {
+            _scenesLoading.Add(SceneManager.UnloadSceneAsync(_scenes.GetCreditsIndex()));
             _scenesLoading.Add(SceneManager.LoadSceneAsync(_scenes.GetMainMenuIndex(), LoadSceneMode.Additive));
         }));
     }

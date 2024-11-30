@@ -14,7 +14,7 @@ public class MS_MainMenu : MonoBehaviour
 
     public void Start()
     {
-        _cheatsButton.gameObject.SetActive(Resources.Load<AvailableCheats>("Available Cheats").HasFoundCheatcodes());
+        _cheatsButton.gameObject.SetActive(Resources.Load<AvailableCheats>("Available Cheats").CanUseCheats());
         AkSoundEngine.PostEvent("MainMenu_Music", gameObject);
         Debug.Log("LAUNCHED");
     }

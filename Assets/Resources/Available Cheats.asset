@@ -25,3 +25,4 @@ MonoBehaviour:
     CheatDescription: Enhance your magical jumps
     Enabled: 0
     Found: 0
+  GameFinished: 0

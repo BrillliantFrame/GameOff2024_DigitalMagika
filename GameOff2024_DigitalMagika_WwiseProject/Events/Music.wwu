@@ -8,12 +8,23 @@
 						<Action Name="" ID="{7AFE526A-DA28-4076-9E98-CDE3850FC45C}" ShortID="862358054">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="InGame Music" ID="{69AA76A0-4F50-4851-9F89-9B6940B01865}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7B9B5272-5388-4C0B-8A9B-BCE70B3A9EE7}" ShortID="222684338">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GameOver Music" ID="{86D6A44D-3458-4BF6-A332-99ABDC80ECA5}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -62,6 +73,57 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="InGame Music" ID="{69AA76A0-4F50-4851-9F89-9B6940B01865}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Victory_Music" ID="{4BF14D31-5DCA-4EEC-A114-E1F640A3801F}">
+					<ChildrenList>
+						<Action Name="" ID="{39C56A17-B67C-45DD-AB8D-9C77EA25C5FE}" ShortID="861644502">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{789571D1-5EF7-4032-82A9-DE426C6A6BA4}" ShortID="538127941">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="InGame Music" ID="{69AA76A0-4F50-4851-9F89-9B6940B01865}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2CB6C803-43F3-45A9-A69A-71CEABB9E9DF}" ShortID="950355336">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GameOver Music" ID="{86D6A44D-3458-4BF6-A332-99ABDC80ECA5}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0934C105-6A5C-4BB9-BB59-BBD7949740C7}" ShortID="368366053">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenu Music" ID="{E9800D89-879D-48A5-8B9B-63651DF8D9F8}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3B90F682-28AE-481F-8EF5-F65EEF6393B7}" ShortID="447949671">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Victory_Music" ID="{185A7F35-3F71-4C14-A7EF-A5FC67B69C85}" WorkUnitID="{0EC74A05-3169-4E03-BF48-DC36A4065A91}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

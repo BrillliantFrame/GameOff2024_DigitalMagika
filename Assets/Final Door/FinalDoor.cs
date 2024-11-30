@@ -28,6 +28,7 @@ public class FinalDoor : MonoBehaviour
             {
                 Resources.Load<AvailableCheats>("Available Cheats").GameFinished = true;
                 AppCore.Instance?.RollCredits();
+                AkSoundEngine.PostEvent("Victory_Music", gameObject);
             }
             else
             {

@@ -91,7 +91,7 @@ public class Slime : MonoBehaviour
     {
         _currentState = SkillState.ACTIVE;
         _drawTime = _bowDrawTime;
-        AkSoundEngine.PostEvent("Enemy_Aim", gameObject);
+        AkSoundEngine.PostEvent("Slime_Charge", gameObject);
         Debug.Log("Taking aim");
     }
 
@@ -100,7 +100,7 @@ public class Slime : MonoBehaviour
         Arrow prefab = Instantiate(_arrowPrefab, _projectileOrigin.position, Quaternion.identity, transform);
         _animator.SetTrigger("Shoot");
         prefab.Shoot(_shootDirection);
-        AkSoundEngine.PostEvent("Enemy_Shot", gameObject);
+        AkSoundEngine.PostEvent("Slime_Shot", gameObject);
     }
 
     void OnDrawGizmos()

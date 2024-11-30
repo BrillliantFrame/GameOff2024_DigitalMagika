@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C53D4C7C-92FA-9BB1-10B9-6F2ACB531253}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0A179C2A-094C-E5D0-EA18-3DDF54411D2B}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -29,6 +29,7 @@
 				<GameParameter Id="543675501" Name="LowPassPauseMenu_RTPC"/>
 				<GameParameter Id="1823067074" Name="PauseMenu_RTPC"/>
 				<GameParameter Id="2918011349" Name="MasterVolume"/>
+				<GameParameter Id="3752168521" Name="Swing_RTPC"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="1866025847" Name="Footstep">
@@ -39,7 +40,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{277D3BAC-F2E2-8D77-1173-3AA1F43C8EB9}">
+		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{BDF78CAD-1AF4-4A53-4431-BF665E0CC1FB}">
 			<ShortName>DigitalMagika_Soundbank</ShortName>
 			<Path>DigitalMagika_Soundbank.bnk</Path>
 			<Media>
@@ -82,6 +83,10 @@
 				<File Id="103463811" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OneShots\Birds_Chirp\OneShots_Birds-011.wav</ShortName>
 					<CachePath>SFX/OneShots/Birds_Chirp/OneShots_Birds-011_8E324C96.wem</CachePath>
+				</File>
+				<File Id="110031719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trap_Hit.wav</ShortName>
+					<CachePath>SFX/Trap_Hit_8E324C96.wem</CachePath>
 				</File>
 				<File Id="112216464" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Jump\Player_Jump-005.wav</ShortName>
@@ -131,6 +136,10 @@
 					<ShortName>OneShots\Birds_Chirp\OneShots_Birds-006.wav</ShortName>
 					<CachePath>SFX/OneShots/Birds_Chirp/OneShots_Birds-006_8E324C96.wem</CachePath>
 				</File>
+				<File Id="317090763" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Monolith\Player_MonolithInteraction-001.wav</ShortName>
+					<CachePath>SFX/Monolith/Player_MonolithInteraction-001_8E324C96.wem</CachePath>
+				</File>
 				<File Id="329842174" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Jump\Player_Jump-002.wav</ShortName>
 					<CachePath>SFX/Player/Jump/Player_Jump-002_818F3B66.wem</CachePath>
@@ -151,6 +160,10 @@
 					<ShortName>2nd Violin MSTR.wav</ShortName>
 					<CachePath>SFX/2nd Violin MSTR_56CEF360.wem</CachePath>
 				</File>
+				<File Id="386833493" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Last Door SFX (1).wav</ShortName>
+					<CachePath>SFX/Last Door SFX (1)_8E324C96.wem</CachePath>
+				</File>
 				<File Id="393426045" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>OneShots\Birds_Chirp\OneShots_Birds-001.wav</ShortName>
 					<CachePath>SFX/OneShots/Birds_Chirp/OneShots_Birds-001_8E324C96.wem</CachePath>
@@ -158,6 +171,10 @@
 				<File Id="417206342" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Shaker MSTR.wav</ShortName>
 					<CachePath>SFX/Shaker MSTR_56CEF360.wem</CachePath>
+				</File>
+				<File Id="421397601" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slime\Slime_Shot.wav</ShortName>
+					<CachePath>SFX/Slime/Slime_Shot_8E324C96.wem</CachePath>
 				</File>
 				<File Id="464550981" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Music\Game Over MSTR LOOP - 4.4sig, 96bpm, 16bars.wav</ShortName>
@@ -207,6 +224,10 @@
 					<ShortName>Player\Dash\SFX_Player_Dash-003.wav</ShortName>
 					<CachePath>SFX/Player/Dash/SFX_Player_Dash-003_818F3B66.wem</CachePath>
 				</File>
+				<File Id="668973984" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Slime\Slime_Charge.wav</ShortName>
+					<CachePath>SFX/Slime/Slime_Charge_8E324C96.wem</CachePath>
+				</File>
 				<File Id="668997210" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Bass MSTR.wav</ShortName>
 					<CachePath>SFX/Bass MSTR_56CEF360.wem</CachePath>
@@ -218,6 +239,14 @@
 				<File Id="685714306" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-004.wav</ShortName>
 					<CachePath>SFX/Player/Walk/SFX_Player_Walk-004_8E324C96.wem</CachePath>
+				</File>
+				<File Id="699050953" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Monolith\Player_MonolithInteraction-002.wav</ShortName>
+					<CachePath>SFX/Monolith/Player_MonolithInteraction-002_CD2EB821.wem</CachePath>
+				</File>
+				<File Id="703697226" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Victory MSTR LOOP - 3.4sig, 110bpm, 32bars.wav</ShortName>
+					<CachePath>SFX/Victory MSTR LOOP - 3.4sig, 110bpm, 32bars_56CEF360.wem</CachePath>
 				</File>
 				<File Id="710320465" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Cello MSTR.wav</ShortName>
@@ -239,6 +268,14 @@
 					<ShortName>Xylophone MSTR.wav</ShortName>
 					<CachePath>SFX/Xylophone MSTR_56CEF360.wem</CachePath>
 				</File>
+				<File Id="825459786" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Trap_Swing.wav</ShortName>
+					<CachePath>SFX/Trap_Swing_8E324C96.wem</CachePath>
+				</File>
+				<File Id="828969216" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hurt\Player_Hurt-003.wav</ShortName>
+					<CachePath>SFX/Hurt/Player_Hurt-003_8E324C96.wem</CachePath>
+				</File>
 				<File Id="829965618" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-003.wav</ShortName>
 					<CachePath>SFX/Player/Walk/SFX_Player_Walk-003_8E324C96.wem</CachePath>
@@ -259,6 +296,10 @@
 					<ShortName>OneShots\Birds_Chirp\OneShots_Birds-005.wav</ShortName>
 					<CachePath>SFX/OneShots/Birds_Chirp/OneShots_Birds-005_8E324C96.wem</CachePath>
 				</File>
+				<File Id="862393585" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hurt\Player_Hurt-002.wav</ShortName>
+					<CachePath>SFX/Hurt/Player_Hurt-002_8E324C96.wem</CachePath>
+				</File>
 				<File Id="870570205" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-005.wav</ShortName>
 					<CachePath>SFX/Player/Walk/SFX_Player_Walk-005_8E324C96.wem</CachePath>
@@ -266,6 +307,10 @@
 				<File Id="872003123" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-002.wav</ShortName>
 					<CachePath>SFX/Player/Walk/SFX_Player_Walk-002_8E324C96.wem</CachePath>
+				</File>
+				<File Id="891266735" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Monolith\Player_MonolithInteraction-003.wav</ShortName>
+					<CachePath>SFX/Monolith/Player_MonolithInteraction-003_E935851E.wem</CachePath>
 				</File>
 				<File Id="929754404" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_DoubleJump-002.wav</ShortName>
@@ -278,6 +323,10 @@
 				<File Id="960420287" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Skeleton_Shot\Skeleton_Shot-003.wav</ShortName>
 					<CachePath>SFX/Skeleton_Shot/Skeleton_Shot-003_8E324C96.wem</CachePath>
+				</File>
+				<File Id="961229536" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Hurt\Player_Hurt-001.wav</ShortName>
+					<CachePath>SFX/Hurt/Player_Hurt-001_8E324C96.wem</CachePath>
 				</File>
 				<File Id="986366127" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player\Walk\SFX_Player_Walk-009.wav</ShortName>
@@ -417,7 +466,20 @@
 						<MediaRef Id="929754404"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1068092414" Name="Player_Hurt" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1068092414" Name="Player_Hurt" DurationType="OneShot" DurationMin="0.1188083" DurationMax="0.27834332">
+					<MediaRefs>
+						<MediaRef Id="828969216"/>
+						<MediaRef Id="862393585"/>
+						<MediaRef Id="961229536"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3880647715" Name="Player_InteractionMonolith" DurationType="OneShot" DurationMin="0.9045791" DurationMax="1.2650276">
+					<MediaRefs>
+						<MediaRef Id="317090763"/>
+						<MediaRef Id="699050953"/>
+						<MediaRef Id="891266735"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1305133589" Name="Player_Jump" DurationType="OneShot" DurationMin="0.21997723" DurationMax="0.32709205">
 					<MediaRefs>
 						<MediaRef Id="70717869"/>
@@ -432,6 +494,11 @@
 						<MediaRef Id="14838391"/>
 						<MediaRef Id="216896190"/>
 						<MediaRef Id="1048895883"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3803312641" Name="Player_LastDoor" DurationType="OneShot" DurationMin="3.0052154" DurationMax="3.0052154">
+					<MediaRefs>
+						<MediaRef Id="386833493"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2445914848" Name="Player_Regen" DurationType="OneShot" DurationMin="1.2289344" DurationMax="1.2289344">
@@ -473,9 +540,28 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3495433746" Name="Slime_Charge" DurationType="OneShot" DurationMin="1.4199431" DurationMax="1.7890162">
+					<MediaRefs>
+						<MediaRef Id="668973984"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1223016266" Name="Slime_Shot" DurationType="OneShot" DurationMin="0.45576206" DurationMax="0.64454484">
+					<MediaRefs>
+						<MediaRef Id="421397601"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="452547817" Name="Stop_All" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3441409174" Name="Transition_Room" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="2814314654" Name="Trap_Hit" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2814314654" Name="Trap_Hit" DurationType="OneShot" DurationMin="0.1529881" DurationMax="0.19275294">
+					<MediaRefs>
+						<MediaRef Id="110031719"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2378445379" Name="Trap_Swing" DurationType="OneShot" DurationMin="0.30716553" DurationMax="0.30716553">
+					<MediaRefs>
+						<MediaRef Id="825459786"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2024222415" Name="UI_Back" DurationType="OneShot" DurationMin="1.5909977" DurationMax="1.5909977">
 					<MediaRefs>
 						<MediaRef Id="149113307"/>
@@ -502,10 +588,16 @@
 						<MediaRef Id="673745938"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1984291205" Name="Victory_Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="703697226"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 			<GameParameters>
 				<GameParameter Id="543675501" Name="LowPassPauseMenu_RTPC"/>
 				<GameParameter Id="1823067074" Name="PauseMenu_RTPC"/>
+				<GameParameter Id="3752168521" Name="Swing_RTPC"/>
 			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="1866025847" Name="Footstep">
@@ -517,5 +609,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6923D222-E80B-B899-80F8-8C6E5DB21117}</FileHash>
+	<FileHash>{C132FA47-99E3-E8FD-8EC7-B2AACD4A8D72}</FileHash>
 </SoundBanksInfo>

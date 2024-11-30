@@ -28,19 +28,25 @@ namespace AK
         static const AkUniqueID PLAYER_DEATH = 3083087645U;
         static const AkUniqueID PLAYER_DOUBLEJUMP = 979951458U;
         static const AkUniqueID PLAYER_HURT = 1068092414U;
+        static const AkUniqueID PLAYER_INTERACTIONMONOLITH = 3880647715U;
         static const AkUniqueID PLAYER_JUMP = 1305133589U;
         static const AkUniqueID PLAYER_LANDING = 1282282006U;
+        static const AkUniqueID PLAYER_LASTDOOR = 3803312641U;
         static const AkUniqueID PLAYER_REGEN = 2445914848U;
         static const AkUniqueID PLAYER_WALK = 2147561130U;
+        static const AkUniqueID SLIME_CHARGE = 3495433746U;
+        static const AkUniqueID SLIME_SHOT = 1223016266U;
         static const AkUniqueID STOP_ALL = 452547817U;
         static const AkUniqueID TRANSITION_ROOM = 3441409174U;
         static const AkUniqueID TRAP_HIT = 2814314654U;
+        static const AkUniqueID TRAP_SWING = 2378445379U;
         static const AkUniqueID UI_BACK = 2024222415U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_HOVER = 2118900976U;
         static const AkUniqueID UI_PAUSE = 2792155208U;
         static const AkUniqueID UI_RESUME = 2391028579U;
         static const AkUniqueID UI_START = 1219048826U;
+        static const AkUniqueID VICTORY_MUSIC = 1984291205U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -63,6 +69,7 @@ namespace AK
         static const AkUniqueID LOWPASSPAUSEMENU_RTPC = 543675501U;
         static const AkUniqueID MASTERVOLUME = 2918011349U;
         static const AkUniqueID PAUSEMENU_RTPC = 1823067074U;
+        static const AkUniqueID SWING_RTPC = 3752168521U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

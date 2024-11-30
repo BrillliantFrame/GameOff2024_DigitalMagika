@@ -49,7 +49,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Player_Hurt" ID="{FCADF5FD-9F02-4F0F-B712-F2ACD3672A51}"/>
+						<Event Name="Player_Hurt" ID="{FCADF5FD-9F02-4F0F-B712-F2ACD3672A51}">
+							<ChildrenList>
+								<Action Name="" ID="{3DBE457B-F93F-4AA1-B26E-A4ABF4DBD9AC}" ShortID="924727540">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Hurt" ID="{C9851C9D-CBCF-4AF7-A435-042A9F26F988}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Player_Regen" ID="{7A442C94-A87D-411E-8D2B-C76D3C219ABC}">
 							<ChildrenList>
 								<Action Name="" ID="{FFBC330C-CA42-4356-BD5A-2FE45F32CCBE}" ShortID="456872269">
@@ -80,6 +90,35 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Land" ID="{FD71B238-6115-45DB-BFEF-B78F2990FA6C}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_InteractionMonolith" ID="{5A690E30-9763-4901-981F-E36B050AB1AD}">
+							<ChildrenList>
+								<Action Name="" ID="{BD82DF37-84B8-4D03-9B3D-148BD9D8D923}" ShortID="192354488">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Monolith" ID="{F42ADF78-04B1-436B-85F3-7149937CFC5A}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Player_LastDoor" ID="{8F2D7D6C-0AF6-43AF-AF98-58A625AA16B5}">
+							<ChildrenList>
+								<Action Name="" ID="{C283C72B-6DCD-429B-AA0D-9917EBE1E81C}" ShortID="567148878">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+								<Action Name="" ID="{9C758AA0-82BC-45A8-916D-9382A1B7A5DC}" ShortID="800219685">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Player_LastDoor" ID="{8A00635B-F1DA-4EE8-927D-E7B5A8DF0C2B}" WorkUnitID="{132D474D-A4A3-43B6-A61B-F1ED02909972}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

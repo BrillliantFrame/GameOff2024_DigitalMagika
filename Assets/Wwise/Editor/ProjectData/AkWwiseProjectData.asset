@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 82a4ce4cf142d943902904ea4d8dd2ba
     GuidInternal: 
-    m_lastTime: -8584689583312705654
+    m_lastTime: -8584686084091279152
     List:
     - name: DigitalMagika_Soundbank
       guid: e9c276abb091af46adfd241bb7311241
@@ -239,7 +239,7 @@ MonoBehaviour:
     ParentPath: Events\Enemies
     guid: 48fd38db52193c43b60dbfeda18a94f4
     GuidInternal: 
-    m_lastTime: -8584689583315830623
+    m_lastTime: -8584686065792407435
     List:
     - name: Enemy_Aim
       guid: d2b0971a880a134bac216250651fe7e1
@@ -358,6 +358,63 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Slime
+      guid: 8a46b541af352148ac0bd2dd5dfc5973
+      id: 3803999823
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enemies
+        ObjectType: 12
+        guid: 48fd38db52193c43b60dbfeda18a94f4
+      - ElementName: Slime
+        ObjectType: 4
+        guid: 8a46b541af352148ac0bd2dd5dfc5973
+      Path: Events\Enemies\Slime
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Slime_Charge
+      guid: 0e45821a5548e0419dc315182da7e8be
+      id: 3495433746
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enemies
+        ObjectType: 12
+        guid: 48fd38db52193c43b60dbfeda18a94f4
+      - ElementName: Slime
+        ObjectType: 4
+        guid: 8a46b541af352148ac0bd2dd5dfc5973
+      - ElementName: Slime_Charge
+        ObjectType: 3
+        guid: 0e45821a5548e0419dc315182da7e8be
+      Path: Events\Enemies\Slime\Slime_Charge
+      maxAttenuation: 0
+      maxDuration: 1.7890162
+      minDuration: 1.4199431
+    - name: Slime_Shot
+      guid: 91b11866d4fdaa42bd28c64e2817602b
+      id: 1223016266
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enemies
+        ObjectType: 12
+        guid: 48fd38db52193c43b60dbfeda18a94f4
+      - ElementName: Slime
+        ObjectType: 4
+        guid: 8a46b541af352148ac0bd2dd5dfc5973
+      - ElementName: Slime_Shot
+        ObjectType: 3
+        guid: 91b11866d4fdaa42bd28c64e2817602b
+      Path: Events\Enemies\Slime\Slime_Shot
+      maxAttenuation: 0
+      maxDuration: 0.64454484
+      minDuration: 0.45576206
     - name: Trap_Hit
       guid: 0231665993e20a48a9411647de1680ad
       id: 2814314654
@@ -376,8 +433,28 @@ MonoBehaviour:
         guid: 0231665993e20a48a9411647de1680ad
       Path: Events\Enemies\Traps\Trap_Hit
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.19275294
+      minDuration: 0.1529881
+    - name: Trap_Swing
+      guid: 6d6235d81096244dbbca908adaf15704
+      id: 2378445379
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Enemies
+        ObjectType: 12
+        guid: 48fd38db52193c43b60dbfeda18a94f4
+      - ElementName: Traps
+        ObjectType: 4
+        guid: 6ecefbd97e5e734eba47f272d3fc3b01
+      - ElementName: Trap_Swing
+        ObjectType: 3
+        guid: 6d6235d81096244dbbca908adaf15704
+      Path: Events\Enemies\Traps\Trap_Swing
+      maxAttenuation: 0
+      maxDuration: 0.30716553
+      minDuration: 0.30716553
     - name: Traps
       guid: 6ecefbd97e5e734eba47f272d3fc3b01
       id: 3797942683
@@ -406,7 +483,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 0b2f18ede3b70f46946ef0f770e6ca69
     GuidInternal: 
-    m_lastTime: -8584687846049198347
+    m_lastTime: -8584686067869777780
     List:
     - name: GameOver_Music
       guid: 51e3b34306e96444964c88832aec8464
@@ -459,6 +536,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Victory_Music
+      guid: 314df14bca5dec4ea114e1f640a3801f
+      id: 1984291205
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Music
+        ObjectType: 12
+        guid: 0b2f18ede3b70f46946ef0f770e6ca69
+      - ElementName: Victory_Music
+        ObjectType: 3
+        guid: 314df14bca5dec4ea114e1f640a3801f
+      Path: Events\Music\Victory_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Player.wwu
     PathAndIcons:
     - ElementName: Events
@@ -470,7 +564,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 462347fc33405d458fdf048b3bc7c508
     GuidInternal: 
-    m_lastTime: -8584698043233236692
+    m_lastTime: -8584686051572007066
     List:
     - name: General
       guid: 653452eff36f4e49abb3650129e3d146
@@ -607,8 +701,28 @@ MonoBehaviour:
         guid: fdf5adfc029f0f4fb712f2acd3672a51
       Path: Events\Player\General\Player_Hurt
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 0.27834332
+      minDuration: 0.1188083
+    - name: Player_InteractionMonolith
+      guid: 300e695a63970149981fe36b050ab1ad
+      id: 3880647715
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 462347fc33405d458fdf048b3bc7c508
+      - ElementName: General
+        ObjectType: 4
+        guid: 653452eff36f4e49abb3650129e3d146
+      - ElementName: Player_InteractionMonolith
+        ObjectType: 3
+        guid: 300e695a63970149981fe36b050ab1ad
+      Path: Events\Player\General\Player_InteractionMonolith
+      maxAttenuation: 0
+      maxDuration: 1.2650276
+      minDuration: 0.9045791
     - name: Player_Jump
       guid: 09053af0f7db014fb3df50df378c98fc
       id: 1305133589
@@ -649,6 +763,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.24487999
       minDuration: 0.15708907
+    - name: Player_LastDoor
+      guid: 6c7d2d8ff60aaf43af9858a625aa16b5
+      id: 3803312641
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Player
+        ObjectType: 12
+        guid: 462347fc33405d458fdf048b3bc7c508
+      - ElementName: General
+        ObjectType: 4
+        guid: 653452eff36f4e49abb3650129e3d146
+      - ElementName: Player_LastDoor
+        ObjectType: 3
+        guid: 6c7d2d8ff60aaf43af9858a625aa16b5
+      Path: Events\Player\General\Player_LastDoor
+      maxAttenuation: 0
+      maxDuration: 3.0052154
+      minDuration: 3.0052154
     - name: Player_Regen
       guid: 942c447a7da81e418d2bc76d3c219abc
       id: 2445914848
@@ -700,7 +834,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: bd183434d387d74e82892b59bb71619c
     GuidInternal: 
-    m_lastTime: -8584688531141048856
+    m_lastTime: -8584686028601014626
     List:
     - name: Generic
       guid: b128a502dc92bb47ac0ec03d3521f897
@@ -868,7 +1002,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 16e6e60b67a09a40b2d1f957e5449311
     GuidInternal: 
-    m_lastTime: -8584690586777531903
+    m_lastTime: -8584686086168065579
     List:
     - name: LowPassPauseMenu_RTPC
       guid: 309fb879b074f5449e85117b90d48457
@@ -912,6 +1046,20 @@ MonoBehaviour:
         ObjectType: 13
         guid: 27d5cd3d9333ff46a870d2660884219f
       Path: Game Parameters\Default Work Unit\PauseMenu_RTPC
+    - name: Swing_RTPC
+      guid: 63383aa34f37bb45a58c29ffc6839fe5
+      id: 3752168521
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 16e6e60b67a09a40b2d1f957e5449311
+      - ElementName: Swing_RTPC
+        ObjectType: 13
+        guid: 63383aa34f37bb45a58c29ffc6839fe5
+      Path: Game Parameters\Default Work Unit\Swing_RTPC
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -1005,7 +1153,7 @@ MonoBehaviour:
     m_lastTime: -8584705152648318377
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000090000000f00000013000000150000001600000092000000a0000000a2000000
+  ExpandedWaapiItemIds: 0500000006000000090000000f0000001300000015000000160000001700000092000000a0000000a2000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -39,6 +39,7 @@ public class Keystone : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
+            AkSoundEngine.PostEvent("Player_InteractionMonolith", gameObject);
             ActivateKeystone();
         }
     }

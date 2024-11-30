@@ -275,6 +275,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
             if (_playerLives > 0)
             {
                 _animator.SetBool("IsDead", true);
+                AkSoundEngine.PostEvent("Player_Hurt", gameObject);
             }
             else
             {

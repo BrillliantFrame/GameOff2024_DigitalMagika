@@ -10,6 +10,7 @@
 						<Property Name="InitialValue" Type="Real64" Value="75"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Swing_RTPC" ID="{A33A3863-374F-45BB-A58C-29FFC6839FE5}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

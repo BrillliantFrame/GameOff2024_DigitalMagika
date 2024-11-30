@@ -7,6 +7,7 @@ public class DamagingObject : MonoBehaviour
         if (collision.collider.tag == "Player")
         {
             CharacterController2D.Instance?.OnDamage();
+            AkSoundEngine.PostEvent("Trap_Hit", gameObject);
         }
     }
 }

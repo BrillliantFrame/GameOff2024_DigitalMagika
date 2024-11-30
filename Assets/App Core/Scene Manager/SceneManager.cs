@@ -41,8 +41,8 @@ public class SceneManagement : ScriptableObject
 
     public int GetFirstRoomIndex()
     {
-        //return getMapSceneIndexByType(MapScenes.I_BasicMovementTut);
-        return getMapSceneIndexByType(MapScenes.X_A_MonolithRoom);
+        return getMapSceneIndexByType(MapScenes.I_BasicMovementTut);
+        
     }
 
     public int GetCreditsIndex()

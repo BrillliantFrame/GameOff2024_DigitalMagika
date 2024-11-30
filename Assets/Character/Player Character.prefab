@@ -97,6 +97,7 @@ MonoBehaviour:
   _dashTrailRenderer: {fileID: 7176500817598254185}
   _jumpParticleSystem: {fileID: 3166182864164573109}
   _isGodMode: 0
+  _maxHealth: 3
 --- !u!1 &3842062064335531889
 GameObject:
   m_ObjectHideFlags: 0
@@ -5150,6 +5151,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: aa45fa67-a2a2-4e41-b611-cce55cfd5dc9
+    m_ActionName: 'UI/Pause[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -10278,7 +10283,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1877302275
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1823960955880165282, guid: 49b9fb1cdebde9f41a083b3f550011b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

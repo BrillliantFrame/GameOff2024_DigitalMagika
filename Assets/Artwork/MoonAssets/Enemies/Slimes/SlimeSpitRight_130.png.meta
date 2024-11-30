@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 5655e86d10e6cfb42b2db8caa97153ac
+guid: f16b2e72fc15ee24f9f1754431ec05f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2384384790894271449
-    second: SlimeTurnRight130x424_0
+      213: 809893826048404699
+    second: SlimeSpitRight_130_0
   - first:
-      213: -6433321342304453921
-    second: SlimeTurnRight130x424_1
+      213: 7355422898362791606
+    second: SlimeSpitRight_130_1
+  - first:
+      213: -1082491442063267686
+    second: SlimeSpitRight_130_2
+  - first:
+      213: 8095227783363199896
+    second: SlimeSpitRight_130_3
+  - first:
+      213: -6004705432080283964
+    second: SlimeSpitRight_130_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -99,24 +108,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SlimeTurnRight130x424_0
+      name: SlimeSpitRight_130_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +127,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9dbd8159559071120800000000000000
-      internalID: 2384384790894271449
+      spriteID: bdca56fc4225d3b00800000000000000
+      internalID: 809893826048404699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeTurnRight130x424_1
+      name: SlimeSpitRight_130_2
       rect:
         serializedVersion: 2
         x: 212
@@ -153,8 +149,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fdaf00a035048b6a0800000000000000
-      internalID: -6433321342304453921
+      spriteID: a982b6bc4c73af0f0800000000000000
+      internalID: -1082491442063267686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeSpitRight_130_3
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 0
+        width: 212
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8938c3357c6085070800000000000000
+      internalID: 8095227783363199896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeSpitRight_130_4
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 0
+        width: 212
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c60ffb49300baca0800000000000000
+      internalID: -6004705432080283964
       vertices: []
       indices: 
       edges: []
@@ -163,7 +203,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c1ea61d1af9674f49a85f64fde7b13ac
+    spriteID: a55a467da7bb8a449a40eca638a3f4fc
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +213,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SlimeTurnRight130x424_0: 2384384790894271449
-      SlimeTurnRight130x424_1: -6433321342304453921
+      SlimeSpitRight_130_0: 809893826048404699
+      SlimeSpitRight_130_1: 7355422898362791606
+      SlimeSpitRight_130_2: -1082491442063267686
+      SlimeSpitRight_130_3: 8095227783363199896
+      SlimeSpitRight_130_4: -6004705432080283964
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

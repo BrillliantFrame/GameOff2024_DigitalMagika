@@ -1,46 +1,46 @@
 fileFormatVersion: 2
-guid: a1c4bf866c0b47641bb149de39bab816
+guid: fb237cda2224b104da89f517a42cda1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1839384398633671791
-    second: SlimeSpitLeft130x1060_0
+      213: 1398013813939876967
+    second: SlimeWindupLeft130_0
   - first:
-      213: 3568346370705961936
-    second: SlimeSpitLeft130x1060_1
+      213: -4082072282449362797
+    second: SlimeWindupLeft130_1
   - first:
-      213: 6943446381399847100
-    second: SlimeSpitLeft130x1060_2
+      213: 1306857465462791813
+    second: SlimeWindupLeft130_2
   - first:
-      213: -3087751791623223202
-    second: SlimeSpitLeft130x1060_3
+      213: -3916464193431149635
+    second: SlimeWindupLeft130_3
   - first:
-      213: 1673047727715435584
-    second: SlimeSpitLeft130x1060_4
+      213: -6133383516109072214
+    second: SlimeWindupLeft130_4
   - first:
-      213: -1195922343448612936
-    second: SlimeSpitLeft130x1060_5
+      213: 3539178136565725929
+    second: SlimeWindupLeft130_5
   - first:
-      213: -8226918645382838405
-    second: SlimeSpitLeft130x1060_6
+      213: 2421887643540120759
+    second: SlimeWindupLeft130_6
   - first:
-      213: -6477315887895997710
-    second: SlimeSpitLeft130x1060_7
+      213: 7375903817286677282
+    second: SlimeWindupLeft130_7
   - first:
-      213: -3437332218107001087
-    second: SlimeSpitLeft130x1060_8
+      213: -7954876297441160107
+    second: SlimeWindupLeft130_8
   - first:
-      213: -5873338722571553395
-    second: SlimeSpitLeft130x1060_9
+      213: -2571687699979645580
+    second: SlimeWindupLeft130_9
   - first:
-      213: 1473144054815438884
-    second: SlimeSpitLeft130x1060_10
+      213: -7012928100623197475
+    second: SlimeWindupLeft130_10
   - first:
-      213: -6305484974797715912
-    second: SlimeSpitLeft130x1060_11
+      213: -5294308973168902447
+    second: SlimeWindupLeft130_11
   - first:
-      213: 4241118265618774225
-    second: SlimeSpitLeft130x1060_12
+      213: 5957096150229451910
+    second: SlimeWindupLeft130_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,24 +132,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SlimeSpitLeft130x1060_0
+      name: SlimeWindupLeft130_0
       rect:
         serializedVersion: 2
         x: 0
@@ -164,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f6c94f57d5ec68910800000000000000
-      internalID: 1839384398633671791
+      spriteID: 764b9f2282eb66310800000000000000
+      internalID: 1398013813939876967
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeSpitLeft130x1060_2
+      name: SlimeWindupLeft130_1
       rect:
         serializedVersion: 2
         x: 212
@@ -186,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cb03f4822b31c5060800000000000000
-      internalID: 6943446381399847100
+      spriteID: 390432903e09957c0800000000000000
+      internalID: -4082072282449362797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeSpitLeft130x1060_5
+      name: SlimeWindupLeft130_2
       rect:
         serializedVersion: 2
         x: 424
@@ -208,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8bfeac307fa376fe0800000000000000
-      internalID: -1195922343448612936
+      spriteID: 58e1af8d0f3e22210800000000000000
+      internalID: 1306857465462791813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeSpitLeft130x1060_6
+      name: SlimeWindupLeft130_4
       rect:
         serializedVersion: 2
         x: 636
@@ -230,14 +217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b770be1841d14dd80800000000000000
-      internalID: -8226918645382838405
+      spriteID: aa8151b2038d1eaa0800000000000000
+      internalID: -6133383516109072214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeSpitLeft130x1060_7
+      name: SlimeWindupLeft130_7
       rect:
         serializedVersion: 2
         x: 848
@@ -252,8 +239,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2f217fba483fb16a0800000000000000
-      internalID: -6477315887895997710
+      spriteID: 223f1de41797c5660800000000000000
+      internalID: 7375903817286677282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWindupLeft130_8
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 0
+        width: 212
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55458da772a9a9190800000000000000
+      internalID: -7954876297441160107
       vertices: []
       indices: 
       edges: []
@@ -262,7 +271,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: e588c0a91fd5c4440a7d63eaa9256862
+    spriteID: 947fb4f995bc21f4e8234bd1e7741500
     internalID: 0
     vertices: []
     indices: 
@@ -272,19 +281,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SlimeSpitLeft130x1060_0: 1839384398633671791
-      SlimeSpitLeft130x1060_1: 3568346370705961936
-      SlimeSpitLeft130x1060_10: 1473144054815438884
-      SlimeSpitLeft130x1060_11: -6305484974797715912
-      SlimeSpitLeft130x1060_12: 4241118265618774225
-      SlimeSpitLeft130x1060_2: 6943446381399847100
-      SlimeSpitLeft130x1060_3: -3087751791623223202
-      SlimeSpitLeft130x1060_4: 1673047727715435584
-      SlimeSpitLeft130x1060_5: -1195922343448612936
-      SlimeSpitLeft130x1060_6: -8226918645382838405
-      SlimeSpitLeft130x1060_7: -6477315887895997710
-      SlimeSpitLeft130x1060_8: -3437332218107001087
-      SlimeSpitLeft130x1060_9: -5873338722571553395
+      SlimeWindupLeft130_0: 1398013813939876967
+      SlimeWindupLeft130_1: -4082072282449362797
+      SlimeWindupLeft130_10: -7012928100623197475
+      SlimeWindupLeft130_11: -5294308973168902447
+      SlimeWindupLeft130_12: 5957096150229451910
+      SlimeWindupLeft130_2: 1306857465462791813
+      SlimeWindupLeft130_3: -3916464193431149635
+      SlimeWindupLeft130_4: -6133383516109072214
+      SlimeWindupLeft130_5: 3539178136565725929
+      SlimeWindupLeft130_6: 2421887643540120759
+      SlimeWindupLeft130_7: 7375903817286677282
+      SlimeWindupLeft130_8: -7954876297441160107
+      SlimeWindupLeft130_9: -2571687699979645580
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

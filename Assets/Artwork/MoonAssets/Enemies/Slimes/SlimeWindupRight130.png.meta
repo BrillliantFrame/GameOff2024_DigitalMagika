@@ -1,46 +1,46 @@
 fileFormatVersion: 2
-guid: 349278ae3733d3744aa31589b21d3b31
+guid: b55216d68a2a35143ade507f89ffd3fe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7017225720077895784
-    second: SlimeSpitRight130x1060_0
+      213: -8515705160448732174
+    second: SlimeWindupRight130_0
   - first:
-      213: 6623152890870966830
-    second: SlimeSpitRight130x1060_1
+      213: -4737791396119840433
+    second: SlimeWindupRight130_1
   - first:
-      213: -2109702016847527472
-    second: SlimeSpitRight130x1060_2
+      213: 8142351886102372726
+    second: SlimeWindupRight130_2
   - first:
-      213: -8558060165490617670
-    second: SlimeSpitRight130x1060_3
+      213: -4436564844082760087
+    second: SlimeWindupRight130_3
   - first:
-      213: -831227071724427731
-    second: SlimeSpitRight130x1060_4
+      213: -24694099691762901
+    second: SlimeWindupRight130_4
   - first:
-      213: -1607280216797987246
-    second: SlimeSpitRight130x1060_5
+      213: -4069926559093294018
+    second: SlimeWindupRight130_5
   - first:
-      213: 4843295836090260806
-    second: SlimeSpitRight130x1060_6
+      213: -5513349600041931633
+    second: SlimeWindupRight130_6
   - first:
-      213: 5228313881178226975
-    second: SlimeSpitRight130x1060_7
+      213: -261766976850220321
+    second: SlimeWindupRight130_7
   - first:
-      213: 7924095103106981146
-    second: SlimeSpitRight130x1060_8
+      213: 2315151430422819178
+    second: SlimeWindupRight130_8
   - first:
-      213: 5739471325102199249
-    second: SlimeSpitRight130x1060_9
+      213: 8073037216347543758
+    second: SlimeWindupRight130_9
   - first:
-      213: 7222519875177054070
-    second: SlimeSpitRight130x1060_10
+      213: -1819151891218711454
+    second: SlimeWindupRight130_10
   - first:
-      213: -6655859204959226204
-    second: SlimeSpitRight130x1060_11
+      213: -5991769114144350880
+    second: SlimeWindupRight130_11
   - first:
-      213: -6933266101543368659
-    second: SlimeSpitRight130x1060_12
+      213: 1525271177592037603
+    second: SlimeWindupRight130_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -132,24 +132,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SlimeSpitRight130x1060_0
+      name: SlimeWindupRight130_0
       rect:
         serializedVersion: 2
         x: 0
@@ -164,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8684af11d91326160800000000000000
-      internalID: 7017225720077895784
+      spriteID: 2f31e73564322d980800000000000000
+      internalID: -8515705160448732174
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeSpitRight130x1060_1
+      name: SlimeWindupRight130_1
       rect:
         serializedVersion: 2
         x: 212
@@ -186,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2a2779967a2aeb50800000000000000
-      internalID: 6623152890870966830
+      spriteID: f49ff5eb3dbff3eb0800000000000000
+      internalID: -4737791396119840433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeSpitRight130x1060_3
+      name: SlimeWindupRight130_2
       rect:
         serializedVersion: 2
         x: 424
@@ -208,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab2d28d3f99ab3980800000000000000
-      internalID: -8558060165490617670
+      spriteID: 6712d5f76e17ff070800000000000000
+      internalID: 8142351886102372726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeSpitRight130x1060_6
+      name: SlimeWindupRight130_3
       rect:
         serializedVersion: 2
         x: 636
@@ -230,14 +217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 64dd94ce6e7d63340800000000000000
-      internalID: 4843295836090260806
+      spriteID: 966f57db7c72e62c0800000000000000
+      internalID: -4436564844082760087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SlimeSpitRight130x1060_7
+      name: SlimeWindupRight130_5
       rect:
         serializedVersion: 2
         x: 848
@@ -252,8 +239,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f114fdd26c3be8840800000000000000
-      internalID: 5228313881178226975
+      spriteID: e3cf05f9b57b487c0800000000000000
+      internalID: -4069926559093294018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SlimeWindupRight130_8
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 0
+        width: 212
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a61f693b5f1112020800000000000000
+      internalID: 2315151430422819178
       vertices: []
       indices: 
       edges: []
@@ -262,7 +271,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ad582e0ac1be4c645b3f6893f5a634f3
+    spriteID: 86a04536211cc274d8ee1e9cb9873497
     internalID: 0
     vertices: []
     indices: 
@@ -272,19 +281,19 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SlimeSpitRight130x1060_0: 7017225720077895784
-      SlimeSpitRight130x1060_1: 6623152890870966830
-      SlimeSpitRight130x1060_10: 7222519875177054070
-      SlimeSpitRight130x1060_11: -6655859204959226204
-      SlimeSpitRight130x1060_12: -6933266101543368659
-      SlimeSpitRight130x1060_2: -2109702016847527472
-      SlimeSpitRight130x1060_3: -8558060165490617670
-      SlimeSpitRight130x1060_4: -831227071724427731
-      SlimeSpitRight130x1060_5: -1607280216797987246
-      SlimeSpitRight130x1060_6: 4843295836090260806
-      SlimeSpitRight130x1060_7: 5228313881178226975
-      SlimeSpitRight130x1060_8: 7924095103106981146
-      SlimeSpitRight130x1060_9: 5739471325102199249
+      SlimeWindupRight130_0: -8515705160448732174
+      SlimeWindupRight130_1: -4737791396119840433
+      SlimeWindupRight130_10: -1819151891218711454
+      SlimeWindupRight130_11: -5991769114144350880
+      SlimeWindupRight130_12: 1525271177592037603
+      SlimeWindupRight130_2: 8142351886102372726
+      SlimeWindupRight130_3: -4436564844082760087
+      SlimeWindupRight130_4: -24694099691762901
+      SlimeWindupRight130_5: -4069926559093294018
+      SlimeWindupRight130_6: -5513349600041931633
+      SlimeWindupRight130_7: -261766976850220321
+      SlimeWindupRight130_8: 2315151430422819178
+      SlimeWindupRight130_9: 8073037216347543758
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

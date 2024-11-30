@@ -87,6 +87,7 @@ MonoBehaviour:
   _dashingPower: 20
   _coyoteTime: 0.2
   _jumpBufferTime: 0.2
+  _playerInput: {fileID: 4746998734886452354}
   _animator: {fileID: 3580601843160015879}
   _characterAnimationEvents: {fileID: 1245736618023054127}
   _extraJumps: 1
@@ -5167,7 +5168,19 @@ MonoBehaviour:
     m_ActionId: 903f88f5-4433-4968-a8de-08bf5aa18748
     m_ActionName: 'Player/Test[/Keyboard/t]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1482350249026094900}
+        m_TargetAssemblyTypeName: CharacterController2D, Assembly-CSharp
+        m_MethodName: OnPausePressed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: aa45fa67-a2a2-4e41-b611-cce55cfd5dc9
     m_ActionName: 'UI/Pause[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0

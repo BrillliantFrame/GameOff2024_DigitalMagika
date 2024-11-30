@@ -17,7 +17,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
     [SerializeField] private float _dashingPower = 24f;
     [SerializeField] private float _coyoteTime = 0.2f;
     [SerializeField] private float _jumpBufferTime = 0.2f;
-    private bool _inputActive = false;
+    [SerializeField] private PlayerInput _playerInput;
 
     [Header("Animation")]
     [SerializeField] private Animator _animator;
@@ -80,7 +80,7 @@ public class CharacterController2D : Singleton<CharacterController2D>
         _respawnPoint = _rigidBody.transform.position; //Should be set as the door location when entering a room
         _characterAnimationEvents.OnDeathAnimationEnd += onDeathAnimationEnd;
         _remainingExtraJumps = _extraJumps;
-        _inputActive = true;
+        //_inputActive = true;
     }
 
     private void Update()
@@ -208,8 +208,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (!_inputActive)
-            return;
+        //if (!_inputActive)
+        //    return;
         _horizontalMovement = context.ReadValue<Vector2>().x;
 
         if (_horizontalMovement != 0)
@@ -220,8 +220,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (!_inputActive)
-            return;
+        //if (!_inputActive)
+        //    return;
         if (context.canceled)
         {
             _jumpPerformed = false;
@@ -237,8 +237,8 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
     public void OnDash(InputAction.CallbackContext context)
     {
-        if (!_inputActive)
-            return;
+        //if (!_inputActive)
+        //    return;
         if (context.performed && _currentState == SkillState.READY)
         {
             Flip();
@@ -294,13 +294,19 @@ public class CharacterController2D : Singleton<CharacterController2D>
 
     public void DisableInput()
     {
+        _playerInput.SwitchCurrentActionMap("UI");
         _invulnerable = true;
-        _inputActive = false;
+        //_inputActive = false;
+        /*_horizontalMovement = 0;
+        _jumpPerformed = false;
+        _jumpReleased = true;*/
     }
 
     public void EnableInput()
     {
-        _inputActive = true;
+        _playerInput.SwitchCurrentActionMap("Player");
+        //_horizontalMovement = 0;
+        //_inputActive = true;
         _invulnerable = false || _isGodMode;
     }
 

@@ -8,6 +8,7 @@ public class Slime : MonoBehaviour
     [SerializeField] private Arrow _arrowPrefab;
     [SerializeField] private LayerMask _playerLayer;
     [SerializeField] private float _horizontalDetectionSize = 2f;
+    [SerializeField] private Transform _projectileOrigin;
 
     private Animator _animator;
 
@@ -15,6 +16,8 @@ public class Slime : MonoBehaviour
     private float _cooldownTime = 0.0f;
     private float _drawTime = 0.0f;
     private SkillState _currentState = SkillState.READY;
+
+    private int _shootDirection = 1;
 
     private void Awake()
     {
@@ -38,7 +41,6 @@ public class Slime : MonoBehaviour
                     if (_drawTime > 0)
                     {
                         _drawTime -= Time.deltaTime;
-                        checkForPlayer();
                     }
                     else
                     {
@@ -71,11 +73,15 @@ public class Slime : MonoBehaviour
         if (collider.tag == "Player")
         {
             if (collider.transform.position.x < transform.position.x)
+            {
                 _animator.SetTrigger("TurnLeft");
-            //transform.localScale = new Vector3(-1, 1, 1);
+                _shootDirection = -1;
+            }
             else
-                _animator.SetTrigger("TurnLeft");
-            //transform.localScale = new Vector3(1, 1, 1);
+            {
+                _animator.SetTrigger("TurnRight");
+                _shootDirection = 1;
+            }
             return true;
         }
         return false;
@@ -91,8 +97,9 @@ public class Slime : MonoBehaviour
 
     private void shootArrow()
     {
-        Arrow prefab = Instantiate(_arrowPrefab, transform.position, Quaternion.identity, transform);
-        prefab.Shoot(transform.localScale.x);
+        Arrow prefab = Instantiate(_arrowPrefab, _projectileOrigin.position, Quaternion.identity, transform);
+        _animator.SetTrigger("Shoot");
+        prefab.Shoot(_shootDirection);
         AkSoundEngine.PostEvent("Enemy_Shot", gameObject);
     }
 

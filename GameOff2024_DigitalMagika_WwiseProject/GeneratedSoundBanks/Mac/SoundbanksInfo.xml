@@ -40,7 +40,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{BDF78CAD-1AF4-4A53-4431-BF665E0CC1FB}">
+		<SoundBank Id="3988690895" Type="User" Language="SFX" Hash="{1D743813-B40C-CE07-DBB4-D8E47601A83B}">
 			<ShortName>DigitalMagika_Soundbank</ShortName>
 			<Path>DigitalMagika_Soundbank.bnk</Path>
 			<Media>
@@ -609,5 +609,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{568C7961-865E-5684-C5E1-87FAF5147040}</FileHash>
+	<FileHash>{90C9F460-94E7-6D26-3627-EB06891E03DF}</FileHash>
 </SoundBanksInfo>

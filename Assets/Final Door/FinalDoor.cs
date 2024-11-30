@@ -23,9 +23,8 @@ public class FinalDoor : MonoBehaviour
     {
         if (collider.tag == "Player")
         {
-            Resources.Load<AvailableCheats>("Available Cheats").GameFinished = true;
-            AppCore.Instance?.RollCredits();
-            /*if (IsLockOpen())
+            
+            if (IsLockOpen())
             {
                 Resources.Load<AvailableCheats>("Available Cheats").GameFinished = true;
                 AppCore.Instance?.RollCredits();
@@ -34,7 +33,7 @@ public class FinalDoor : MonoBehaviour
             {
                 //IDK, play a sound and/or animate the door
                 Debug.Log("Door closed!");
-            }*/
+            }
         }
     }
 

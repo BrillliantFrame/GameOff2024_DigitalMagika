@@ -46,10 +46,10 @@ public class MonolythManager : ScriptableObject
 
     public void ShuffleMonolythsAnswer()
     {
-        _firstMonolyth = Random.Range(0, 3);
-        _secondMonolyth = Random.Range(0, 3);
-        _thirdMonolyth = Random.Range(0, 3);
-        _fourthMonolyth = Random.Range(0, 3);
+        _firstMonolyth = Random.Range(0, 4);
+        _secondMonolyth = Random.Range(0, 4);
+        _thirdMonolyth = Random.Range(0, 4);
+        _fourthMonolyth = Random.Range(0, 4);
     }
 
     public Sprite GetKeystoneGlyph(int monolyth, int glyph)

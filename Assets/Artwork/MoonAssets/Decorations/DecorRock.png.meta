@@ -1,0 +1,357 @@
+fileFormatVersion: 2
+guid: 85bac06c62140a9429930d098f714acd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -447398206883657337
+    second: DecorRock_0
+  - first:
+      213: -1667122230076452677
+    second: DecorRock_1
+  - first:
+      213: 3534107903937305452
+    second: DecorRock_2
+  - first:
+      213: -2398872433836501218
+    second: DecorRock_3
+  - first:
+      213: 26022727200207231
+    second: DecorRock_4
+  - first:
+      213: -6841330332670001863
+    second: DecorRock_5
+  - first:
+      213: -6956869095111399358
+    second: DecorRock_6
+  - first:
+      213: 3650873708439936238
+    second: DecorRock_7
+  - first:
+      213: -6232738431849095167
+    second: DecorRock_8
+  - first:
+      213: -3467073223548073074
+    second: DecorRock_9
+  - first:
+      213: -7302319253317561901
+    second: DecorRock_10
+  - first:
+      213: -7283637110299871946
+    second: DecorRock_11
+  - first:
+      213: -5504090524181660880
+    second: DecorRock_12
+  - first:
+      213: -8715822620487094311
+    second: DecorRock_13
+  - first:
+      213: 1399061850051770926
+    second: DecorRock_14
+  - first:
+      213: -226411790006406893
+    second: DecorRock_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DecorRock_0
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 248
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7898d8583b58ac9f0800000000000000
+      internalID: -447398206883657337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorRock_1
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 232
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0d22f1a213dd8e0800000000000000
+      internalID: -1667122230076452677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorRock_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 169
+        width: 35
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6b55140a6cab0130800000000000000
+      internalID: 3534107903937305452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorRock_6
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 79
+        width: 107
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248edf4ca6c347f90800000000000000
+      internalID: -6956869095111399358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorRock_11
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 60
+        width: 57
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63539b773a25bea90800000000000000
+      internalID: -7283637110299871946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorRock_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 8
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bfe8684da8d93b0800000000000000
+      internalID: -5504090524181660880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorRock_14
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 14
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2af22f07577a6310800000000000000
+      internalID: 1399061850051770926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorRock_15
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 0
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31135b33daf9bdcf0800000000000000
+      internalID: -226411790006406893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 302c1eab4ab5fe149bc41d23e7af9666
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DecorRock_0: -447398206883657337
+      DecorRock_1: -1667122230076452677
+      DecorRock_10: -7302319253317561901
+      DecorRock_11: -7283637110299871946
+      DecorRock_12: -5504090524181660880
+      DecorRock_13: -8715822620487094311
+      DecorRock_14: 1399061850051770926
+      DecorRock_15: -226411790006406893
+      DecorRock_2: 3534107903937305452
+      DecorRock_3: -2398872433836501218
+      DecorRock_4: 26022727200207231
+      DecorRock_5: -6841330332670001863
+      DecorRock_6: -6956869095111399358
+      DecorRock_7: 3650873708439936238
+      DecorRock_8: -6232738431849095167
+      DecorRock_9: -3467073223548073074
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

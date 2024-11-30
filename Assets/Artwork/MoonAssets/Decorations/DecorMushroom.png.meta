@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 1dde0ef39338a834e94f4d7cf4d390f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6397152653313672811
+    second: DecorMushroom 1_0
+  - first:
+      213: -6244043486296744602
+    second: DecorMushroom 1_1
+  - first:
+      213: 542964031545687945
+    second: DecorMushroom 1_2
+  - first:
+      213: -1798370382574309937
+    second: DecorMushroom 1_3
+  - first:
+      213: 7878135510696306638
+    second: DecorMushroom 1_4
+  - first:
+      213: -6890672036354901652
+    second: DecorMushroom 1_5
+  - first:
+      213: -8011781215521291399
+    second: DecorMushroom 1_6
+  - first:
+      213: -4191257424981562345
+    second: DecorMushroom 1_7
+  - first:
+      213: -4075209053564742295
+    second: DecorMushroom 1_8
+  - first:
+      213: -3407600518774466321
+    second: DecorMushroom 1_9
+  - first:
+      213: -513646848199671305
+    second: DecorMushroom 1_10
+  - first:
+      213: 5954585400755834664
+    second: DecorMushroom 1_11
+  - first:
+      213: -6526704713289027615
+    second: DecorMushroom 1_12
+  - first:
+      213: 758621150523941660
+    second: DecorMushroom 1_13
+  - first:
+      213: -6734065513092860830
+    second: DecorMushroom 1_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DecorMushroom 1_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 245
+        width: 132
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6685b2d17047c850800000000000000
+      internalID: 6397152653313672811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorMushroom 1_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 108
+        width: 98
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec7a17fb182c45d60800000000000000
+      internalID: 7878135510696306638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorMushroom 1_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 167
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6939519a4a6f50a0800000000000000
+      internalID: -6890672036354901652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorMushroom 1_8
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 108
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96551d805f2f177c0800000000000000
+      internalID: -4075209053564742295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorMushroom 1_9
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 101
+        width: 43
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8d206e165c5b0d0800000000000000
+      internalID: -3407600518774466321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorMushroom 1_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 44
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f14f09b9e82fd8f0800000000000000
+      internalID: -513646848199671305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorMushroom 1_11
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 27
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82f47cc8fdfe2a250800000000000000
+      internalID: 5954585400755834664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorMushroom 1_12
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef2a8aa4ac7c65a0800000000000000
+      internalID: -6526704713289027615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorMushroom 1_13
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13e314cae9278a00800000000000000
+      internalID: 758621150523941660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DecorMushroom 1_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 17
+        width: 29
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26434ed281bcb82a0800000000000000
+      internalID: -6734065513092860830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e61c6259222c681438a9baabc49b36c3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DecorMushroom 1_0: 6397152653313672811
+      DecorMushroom 1_1: -6244043486296744602
+      DecorMushroom 1_10: -513646848199671305
+      DecorMushroom 1_11: 5954585400755834664
+      DecorMushroom 1_12: -6526704713289027615
+      DecorMushroom 1_13: 758621150523941660
+      DecorMushroom 1_14: -6734065513092860830
+      DecorMushroom 1_2: 542964031545687945
+      DecorMushroom 1_3: -1798370382574309937
+      DecorMushroom 1_4: 7878135510696306638
+      DecorMushroom 1_5: -6890672036354901652
+      DecorMushroom 1_6: -8011781215521291399
+      DecorMushroom 1_7: -4191257424981562345
+      DecorMushroom 1_8: -4075209053564742295
+      DecorMushroom 1_9: -3407600518774466321
+      DecorMushroom_0: -1110364513
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

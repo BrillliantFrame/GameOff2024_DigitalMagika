@@ -847,7 +847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5429269543871706109, guid: f94756988af489a4a8761281b13d0d53, type: 3}
       propertyPath: m_SortingOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17210,13 +17210,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1494888777}
     m_Modifications:
+    - target: {fileID: 3165948948079913125, guid: 44fd3253a40aca94a9515dadea3c997c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4019064290189326841, guid: 44fd3253a40aca94a9515dadea3c997c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.12
+      value: 3.968
       objectReference: {fileID: 0}
     - target: {fileID: 4019064290189326841, guid: 44fd3253a40aca94a9515dadea3c997c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.55
+      value: 3.646
       objectReference: {fileID: 0}
     - target: {fileID: 4019064290189326841, guid: 44fd3253a40aca94a9515dadea3c997c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17517,7 +17521,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019064290189326841, guid: 44fd3253a40aca94a9515dadea3c997c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.95
+      value: -0.862
       objectReference: {fileID: 0}
     - target: {fileID: 4019064290189326841, guid: 44fd3253a40aca94a9515dadea3c997c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17816,7 +17820,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -17859,10 +17863,10 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 9fcb56c0b8d555b4ba81b112d000755e, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: -3428732987711243728, guid: db2a05836e6ce854d80e3ea5df1f96a2, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -3428732987711243728, guid: db2a05836e6ce854d80e3ea5df1f96a2, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -8097422877496702248, guid: db2a05836e6ce854d80e3ea5df1f96a2, type: 3}
   - m_RefCount: 1

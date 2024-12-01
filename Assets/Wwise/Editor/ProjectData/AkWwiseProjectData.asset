@@ -192,7 +192,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 72b31c97ae59724c8b255effb412f0b0
     GuidInternal: 
-    m_lastTime: -8584685605985376856
+    m_lastTime: -8584685272453787291
     List:
     - name: Stop_All
       guid: b3d70ca36602974a9713948e850dbc62
@@ -209,8 +209,8 @@ MonoBehaviour:
         guid: b3d70ca36602974a9713948e850dbc62
       Path: Events\Default Work Unit\Stop_All
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Transition_Room
       guid: 4ef52662f6b43143a85dba451ed7771d
       id: 3441409174
@@ -226,8 +226,8 @@ MonoBehaviour:
         guid: 4ef52662f6b43143a85dba451ed7771d
       Path: Events\Default Work Unit\Transition_Room
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Enemies.wwu
     PathAndIcons:
     - ElementName: Events

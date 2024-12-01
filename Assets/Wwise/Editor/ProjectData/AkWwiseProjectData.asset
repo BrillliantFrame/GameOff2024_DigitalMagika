@@ -134,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 82a4ce4cf142d943902904ea4d8dd2ba
     GuidInternal: 
-    m_lastTime: -8584685993239628230
+    m_lastTime: -8584685961002409567
     List:
     - name: DigitalMagika_Soundbank
       guid: e9c276abb091af46adfd241bb7311241
@@ -192,7 +192,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 72b31c97ae59724c8b255effb412f0b0
     GuidInternal: 
-    m_lastTime: -8584687846049198347
+    m_lastTime: -8584685961006824098
     List:
     - name: Stop_All
       guid: b3d70ca36602974a9713948e850dbc62
@@ -209,8 +209,8 @@ MonoBehaviour:
         guid: b3d70ca36602974a9713948e850dbc62
       Path: Events\Default Work Unit\Stop_All
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Transition_Room
       guid: 4ef52662f6b43143a85dba451ed7771d
       id: 3441409174
@@ -226,8 +226,8 @@ MonoBehaviour:
         guid: 4ef52662f6b43143a85dba451ed7771d
       Path: Events\Default Work Unit\Transition_Room
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Enemies.wwu
     PathAndIcons:
     - ElementName: Events
@@ -239,7 +239,7 @@ MonoBehaviour:
     ParentPath: Events\Enemies
     guid: 48fd38db52193c43b60dbfeda18a94f4
     GuidInternal: 
-    m_lastTime: -8584685993245944023
+    m_lastTime: -8584685961006814117
     List:
     - name: Enemy_Aim
       guid: d2b0971a880a134bac216250651fe7e1
@@ -483,7 +483,7 @@ MonoBehaviour:
     ParentPath: Events\Music
     guid: 0b2f18ede3b70f46946ef0f770e6ca69
     GuidInternal: 
-    m_lastTime: -8584685993245934033
+    m_lastTime: -8584685961006664523
     List:
     - name: GameOver_Music
       guid: 51e3b34306e96444964c88832aec8464
@@ -564,7 +564,7 @@ MonoBehaviour:
     ParentPath: Events\Player
     guid: 462347fc33405d458fdf048b3bc7c508
     GuidInternal: 
-    m_lastTime: -8584685993245934033
+    m_lastTime: -8584685961006604686
     List:
     - name: General
       guid: 653452eff36f4e49abb3650129e3d146
@@ -834,7 +834,7 @@ MonoBehaviour:
     ParentPath: Events\UI
     guid: bd183434d387d74e82892b59bb71619c
     GuidInternal: 
-    m_lastTime: -8584685993245924031
+    m_lastTime: -8584685961006604686
     List:
     - name: Generic
       guid: b128a502dc92bb47ac0ec03d3521f897
@@ -1002,7 +1002,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 16e6e60b67a09a40b2d1f957e5449311
     GuidInternal: 
-    m_lastTime: -8584685993245924031
+    m_lastTime: -8584685961006594699
     List:
     - name: LowPassPauseMenu_RTPC
       guid: 309fb879b074f5449e85117b90d48457

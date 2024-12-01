@@ -192,7 +192,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 72b31c97ae59724c8b255effb412f0b0
     GuidInternal: 
-    m_lastTime: -8584685961006824098
+    m_lastTime: -8584685605985376856
     List:
     - name: Stop_All
       guid: b3d70ca36602974a9713948e850dbc62
@@ -209,8 +209,8 @@ MonoBehaviour:
         guid: b3d70ca36602974a9713948e850dbc62
       Path: Events\Default Work Unit\Stop_All
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Transition_Room
       guid: 4ef52662f6b43143a85dba451ed7771d
       id: 3441409174
@@ -226,8 +226,8 @@ MonoBehaviour:
         guid: 4ef52662f6b43143a85dba451ed7771d
       Path: Events\Default Work Unit\Transition_Room
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Enemies.wwu
     PathAndIcons:
     - ElementName: Events
@@ -259,8 +259,8 @@ MonoBehaviour:
         guid: d2b0971a880a134bac216250651fe7e1
       Path: Events\Enemies\Forest_Skeleton\Enemy_Aim
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.4108813
+      minDuration: 1.5733154
     - name: Enemy_Death
       guid: 9f764ab759d5ea40af27dee88c8ca6b5
       id: 1205999388
@@ -279,8 +279,8 @@ MonoBehaviour:
         guid: 9f764ab759d5ea40af27dee88c8ca6b5
       Path: Events\Enemies\Forest_Skeleton\Enemy_Death
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Enemy_Hit
       guid: dceabedbbfd62e46a9b967798a8926ce
       id: 1010055213
@@ -299,8 +299,8 @@ MonoBehaviour:
         guid: dceabedbbfd62e46a9b967798a8926ce
       Path: Events\Enemies\Forest_Skeleton\Enemy_Hit
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Enemy_Hurt
       guid: dec324a9a6bcb14ebef97b31cfc6aec4
       id: 4185496761
@@ -319,8 +319,8 @@ MonoBehaviour:
         guid: dec324a9a6bcb14ebef97b31cfc6aec4
       Path: Events\Enemies\Forest_Skeleton\Enemy_Hurt
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Enemy_Shot
       guid: 5942096193743a418885a3bd8d056529
       id: 3598801546
@@ -339,8 +339,8 @@ MonoBehaviour:
         guid: 5942096193743a418885a3bd8d056529
       Path: Events\Enemies\Forest_Skeleton\Enemy_Shot
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.4858496
+      minDuration: 1.1522088
     - name: Forest_Skeleton
       guid: 39c0647cfec1664f92d53fb43fffaa25
       id: 1182069928
@@ -393,8 +393,8 @@ MonoBehaviour:
         guid: 0e45821a5548e0419dc315182da7e8be
       Path: Events\Enemies\Slime\Slime_Charge
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.7890162
+      minDuration: 1.4199431
     - name: Slime_Shot
       guid: 91b11866d4fdaa42bd28c64e2817602b
       id: 1223016266
@@ -413,8 +413,8 @@ MonoBehaviour:
         guid: 91b11866d4fdaa42bd28c64e2817602b
       Path: Events\Enemies\Slime\Slime_Shot
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.64454484
+      minDuration: 0.45576206
     - name: Trap_Hit
       guid: 0231665993e20a48a9411647de1680ad
       id: 2814314654
@@ -433,8 +433,8 @@ MonoBehaviour:
         guid: 0231665993e20a48a9411647de1680ad
       Path: Events\Enemies\Traps\Trap_Hit
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.19275294
+      minDuration: 0.1529881
     - name: Trap_Swing
       guid: 6d6235d81096244dbbca908adaf15704
       id: 2378445379
@@ -453,8 +453,8 @@ MonoBehaviour:
         guid: 6d6235d81096244dbbca908adaf15704
       Path: Events\Enemies\Traps\Trap_Swing
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.30716553
+      minDuration: 0.30716553
     - name: Traps
       guid: 6ecefbd97e5e734eba47f272d3fc3b01
       id: 3797942683
@@ -601,8 +601,8 @@ MonoBehaviour:
         guid: 494fa02bf0601c49aa948e603ca9dc3f
       Path: Events\Player\General\Pickup_interactible
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Player_AbilityReady
       guid: d2a944cb04c9b148854e67b7990b03b9
       id: 1400460010
@@ -621,8 +621,8 @@ MonoBehaviour:
         guid: d2a944cb04c9b148854e67b7990b03b9
       Path: Events\Player\General\Player_AbilityReady
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.70914835
+      minDuration: 0.5014436
     - name: Player_Dash
       guid: 0f49efdbbad1d746b2dc5e89ac1fbcf3
       id: 2394582229
@@ -641,8 +641,8 @@ MonoBehaviour:
         guid: 0f49efdbbad1d746b2dc5e89ac1fbcf3
       Path: Events\Player\General\Player_Dash
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.520125
+      minDuration: 0.38841748
     - name: Player_Death
       guid: 5bf28d008e1f30468506fdfa2e6f56ce
       id: 3083087645
@@ -661,8 +661,8 @@ MonoBehaviour:
         guid: 5bf28d008e1f30468506fdfa2e6f56ce
       Path: Events\Player\General\Player_Death
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Player_DoubleJump
       guid: f8ba5254063bbc4a99a0e30cf68eabbc
       id: 979951458
@@ -681,8 +681,8 @@ MonoBehaviour:
         guid: f8ba5254063bbc4a99a0e30cf68eabbc
       Path: Events\Player\General\Player_DoubleJump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.6181686
+      minDuration: 0.4073084
     - name: Player_Hurt
       guid: fdf5adfc029f0f4fb712f2acd3672a51
       id: 1068092414
@@ -701,8 +701,8 @@ MonoBehaviour:
         guid: fdf5adfc029f0f4fb712f2acd3672a51
       Path: Events\Player\General\Player_Hurt
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.27834332
+      minDuration: 0.1188083
     - name: Player_InteractionMonolith
       guid: 300e695a63970149981fe36b050ab1ad
       id: 3880647715
@@ -721,8 +721,8 @@ MonoBehaviour:
         guid: 300e695a63970149981fe36b050ab1ad
       Path: Events\Player\General\Player_InteractionMonolith
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.2650276
+      minDuration: 0.9045791
     - name: Player_Jump
       guid: 09053af0f7db014fb3df50df378c98fc
       id: 1305133589
@@ -741,8 +741,8 @@ MonoBehaviour:
         guid: 09053af0f7db014fb3df50df378c98fc
       Path: Events\Player\General\Player_Jump
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.32709205
+      minDuration: 0.21997723
     - name: Player_Landing
       guid: 3799fb66b16a5642907593cace71c1bf
       id: 1282282006
@@ -761,8 +761,8 @@ MonoBehaviour:
         guid: 3799fb66b16a5642907593cace71c1bf
       Path: Events\Player\General\Player_Landing
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.24487999
+      minDuration: 0.15708907
     - name: Player_LastDoor
       guid: 6c7d2d8ff60aaf43af9858a625aa16b5
       id: 3803312641
@@ -781,8 +781,8 @@ MonoBehaviour:
         guid: 6c7d2d8ff60aaf43af9858a625aa16b5
       Path: Events\Player\General\Player_LastDoor
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.0052154
+      minDuration: 3.0052154
     - name: Player_Regen
       guid: 942c447a7da81e418d2bc76d3c219abc
       id: 2445914848
@@ -801,8 +801,8 @@ MonoBehaviour:
         guid: 942c447a7da81e418d2bc76d3c219abc
       Path: Events\Player\General\Player_Regen
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.2289344
+      minDuration: 1.2289344
     - name: Player_Walk
       guid: fd368aa0383bfc4287069acad3715bf2
       id: 2147561130
@@ -821,8 +821,8 @@ MonoBehaviour:
         guid: fd368aa0383bfc4287069acad3715bf2
       Path: Events\Player\General\Player_Walk
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.29156017
+      minDuration: 0.13486712
   - PhysicalPath: Events\UI.wwu
     PathAndIcons:
     - ElementName: Events
@@ -888,8 +888,8 @@ MonoBehaviour:
         guid: ab0e41542b621f4ab9ec786fa3468363
       Path: Events\UI\Generic\UI_Back
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.5909977
+      minDuration: 1.5909977
     - name: UI_Click
       guid: 5bd72a5bdb1bf541972c18929275a26b
       id: 2249769530
@@ -908,8 +908,8 @@ MonoBehaviour:
         guid: 5bd72a5bdb1bf541972c18929275a26b
       Path: Events\UI\Generic\UI_Click
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.2952379
+      minDuration: 1.2803607
     - name: UI_Hover
       guid: 3c11d750488ab641928bdd32d67f8496
       id: 2118900976
@@ -928,8 +928,8 @@ MonoBehaviour:
         guid: 3c11d750488ab641928bdd32d67f8496
       Path: Events\UI\Generic\UI_Hover
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.026993115
+      minDuration: 0.019087015
     - name: UI_Pause
       guid: 5fbe916e2e61d242bd87f5aa6bea1691
       id: 2792155208
@@ -948,8 +948,8 @@ MonoBehaviour:
         guid: 5fbe916e2e61d242bd87f5aa6bea1691
       Path: Events\UI\Menu\UI_Pause
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: UI_Resume
       guid: 06484bb1a712ef41ae22cadf02ac7aaa
       id: 2391028579
@@ -968,8 +968,8 @@ MonoBehaviour:
         guid: 06484bb1a712ef41ae22cadf02ac7aaa
       Path: Events\UI\Menu\UI_Resume
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.452517
+      minDuration: 1.452517
     - name: UI_Start
       guid: 7e7a4dd8870a934fb7aaeeec5c52066c
       id: 1219048826
@@ -988,8 +988,8 @@ MonoBehaviour:
         guid: 7e7a4dd8870a934fb7aaeeec5c52066c
       Path: Events\UI\Menu\UI_Start
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.6420408
+      minDuration: 1.6420408
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

@@ -107,7 +107,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3120172296720477396}
   m_Layer: 0
-  m_Name: Thorns
+  m_Name: SwingingSpike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
